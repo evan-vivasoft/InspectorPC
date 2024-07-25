@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Kamstrup b.v.-->
+<PLEXORS xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<PLEXOR>
+		<Name>100156</Name>
+		<SerialNumber>100156</SerialNumber>
+		<BTAddress>00:80:98:C4:21:A3</BTAddress>
+		<PN>0..16 bar</PN>
+		<CalibrationDate>2011-03-02</CalibrationDate>
+	</PLEXOR>
+	<PLEXOR>
+		<Name>100157</Name>
+		<SerialNumber>100157</SerialNumber>
+		<BTAddress>00:80:98:C4:20:F4</BTAddress>
+		<PN>0..16 bar</PN>
+		<CalibrationDate>2011-03-01</CalibrationDate>
+	</PLEXOR>
+	<PLEXOR>
+		<Name>100173</Name>
+		<SerialNumber>100173</SerialNumber>
+		<BTAddress>00:80:98:C4:D4:B7</BTAddress>
+		<PN>0..16 bar</PN>
+		<CalibrationDate>2012-04-01</CalibrationDate>
+	</PLEXOR>
+	<PLEXOR>
+		<Name>100174</Name>
+		<SerialNumber>100174</SerialNumber>
+		<BTAddress>00:80:98:C4:D4:E4</BTAddress>
+		<PN>0..16 bar</PN>
+		<CalibrationDate>2012-07-11</CalibrationDate>
+	</PLEXOR>
+	<PLEXOR>
+		<Name>Kamstrup PLEXOR PN16 100110</Name>
+		<SerialNumber>100110</SerialNumber>
+		<BTAddress>00:80:98:C4:20:F4</BTAddress>
+		<PN>0..16 bar</PN>
+		<CalibrationDate>2012-04-01</CalibrationDate>
+	</PLEXOR>
+</PLEXORS>

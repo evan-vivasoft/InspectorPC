@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Michel De Clercq (Kamstrup b.v.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="COMMUNICATORSettings">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Common">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Language"/>
+							<xsd:element name="UserResultData"/>
+							<xsd:element name="UserPRSData"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Paths">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="PathSyncData">
+								<xsd:complexType/>
+							</xsd:element>
+							<xsd:element name="AppllicationPath"/>
+							<xsd:element name="TempDir"/>
+							<xsd:element name="UpdatePath"/>
+							<xsd:element name="OptionalData">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="DirDPCDataPRSLoad"/>
+										<xsd:element name="DirDPCDataInspectionProcedure"/>
+										<xsd:element name="DirDataPLEXOR"/>
+										<xsd:element name="DirDPCDataMeasurementdData"/>
+										<xsd:element name="DirDPCDataResult"/>
+										<xsd:element name="DirDataArchive"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="TypeStatus">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Error">
+				<xsd:annotation>
+					<xsd:documentation>An Error occurd during executing application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Running">
+				<xsd:annotation>
+					<xsd:documentation>No function</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Succeed">
+				<xsd:annotation>
+					<xsd:documentation>The program is completed with success</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Stop">
+				<xsd:annotation>
+					<xsd:documentation>No function</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

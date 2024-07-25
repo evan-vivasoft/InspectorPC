@@ -1,0 +1,17 @@
+﻿<Window x:Class="Inspector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:init="clr-namespace:Inspector.UI.Initialization.View;assembly=Inspector.UI.Initialization"
+        xmlns:insp="clr-namespace:Inspector.UI.Inspection.View;assembly=Inspector.UI.Inspection"
+        Title="MainWindow" Height="600" Width="1024" Closing="Window_Closing">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Initialization">
+                <init:InitializationView Width="Auto" Height="Auto"></init:InitializationView>
+            </TabItem>
+            <TabItem Header="Inspection">
+                <insp:InspectionView x:Name="vwInspection" Width="Auto" Height="Auto"></insp:InspectionView>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

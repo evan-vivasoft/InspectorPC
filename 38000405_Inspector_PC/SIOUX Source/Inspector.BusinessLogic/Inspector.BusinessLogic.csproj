@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEC254F5-3712-4E2E-BF75-2F7A157DBE52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspector.BusinessLogic</RootNamespace>
+    <AssemblyName>Inspector.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Tools\SiouxCodingRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\Tools\SiouxCodingRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KAM.INSPECTOR.Infra">
+      <HintPath>..\Import\KAM.INSPECTOR.Infra.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Import\Log4Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\Import\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionGlobals\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="ContinuousMeasurementWorker.cs" />
+    <Compile Include="ConversionExtensionMethods.cs" />
+    <Compile Include="Exceptions\InspectionException.cs" />
+    <Compile Include="InitializationActivityControl.cs" />
+    <Compile Include="InitializationExecutorControl.cs" />
+    <Compile Include="InspectionActivityControl.cs" />
+    <Compile Include="InspectionUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SSDInitialisationExecutorControl.cs" />
+    <Compile Include="VersionInformation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Configuration.Interfaces\Inspector.BusinessLogic.Data.Configuration.Interfaces.csproj">
+      <Project>{ECF2C1BE-46B2-4B1E-820E-CFAA8A08CF65}</Project>
+      <Name>Inspector.BusinessLogic.Data.Configuration.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Reporting.Interfaces\Inspector.BusinessLogic.Data.Reporting.Interfaces.csproj">
+      <Project>{C0E6768B-663E-430B-8829-460CC63D2934}</Project>
+      <Name>Inspector.BusinessLogic.Data.Reporting.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Interfaces\Inspector.BusinessLogic.Interfaces.csproj">
+      <Project>{B6A8F018-65B9-4FD4-9E83-68114AA85F79}</Project>
+      <Name>Inspector.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Connection.Manager.Interfaces\Inspector.Connection.Manager.Interfaces.csproj">
+      <Project>{8A17DF56-0DB2-43F4-A495-5015C728B570}</Project>
+      <Name>Inspector.Connection.Manager.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Hal.Infra\Inspector.Hal.Infra.csproj">
+      <Project>{415A48F8-D4F2-493D-909B-F78BC46E971C}</Project>
+      <Name>Inspector.Hal.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Infra\Inspector.Infra.csproj">
+      <Project>{E1DDB8BC-A377-4AE7-A304-E2FEFEB07643}</Project>
+      <Name>Inspector.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Model\Inspector.Model.csproj">
+      <Project>{40C1CCC9-4D77-4F23-BFEE-92319C6B80F2}</Project>
+      <Name>Inspector.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

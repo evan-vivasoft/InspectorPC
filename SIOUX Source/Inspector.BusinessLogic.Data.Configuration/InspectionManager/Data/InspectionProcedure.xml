@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Kamstrup b.v.-->
+<InspectionProcedureFile xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<InspectionProcedure>
+		<Name>Kamstrup AS PN16 (ohne SBV)</Name>
+		<Version>1.0</Version>
+		<InspectionSequence>
+			<Scriptcommand_5x>
+				<SequenceNumber>1</SequenceNumber>
+				<ObjectName/>
+				<ObjectNameDescription>object name description</ObjectNameDescription>
+				<MeasurePoint/>
+				<MeasurePointDescription>Measure point description</MeasurePointDescription>
+				<FieldNo>1</FieldNo>
+				<Scriptcommand>57</Scriptcommand>
+				<Instruction>60 Sekunden Messdauer</Instruction>
+				<DigitalManometer>TH1</DigitalManometer>
+				<MeasurementFrequency>10</MeasurementFrequency>
+				<MeasurementPeriod>0</MeasurementPeriod>
+				<ExtraMeasurementPeriod>5</ExtraMeasurementPeriod>
+			</Scriptcommand_5x>
+			<Scriptcommand_5x>
+				<SequenceNumber>2</SequenceNumber>
+				<ObjectName/>
+				<ObjectNameDescription>object name description</ObjectNameDescription>
+				<MeasurePoint/>
+				<MeasurePointDescription>Measure point description</MeasurePointDescription>
+				<FieldNo>2</FieldNo>
+				<Scriptcommand>57</Scriptcommand>
+				<Instruction>60 Sekunden Messdauer</Instruction>
+				<DigitalManometer>TH2</DigitalManometer>
+				<MeasurementFrequency>10</MeasurementFrequency>
+				<MeasurementPeriod>0</MeasurementPeriod>
+				<ExtraMeasurementPeriod>5</ExtraMeasurementPeriod>
+			</Scriptcommand_5x>
+		</InspectionSequence>
+	</InspectionProcedure>
+	<InspectionProcedure>
+		<Name>Kamstrup RS PN16 (ohne SBV)</Name>
+		<Version>1.0</Version>
+		<InspectionSequence>
+			<Scriptcommand_5x>
+				<SequenceNumber>1</SequenceNumber>
+				<ObjectName/>
+				<ObjectNameDescription>object name description</ObjectNameDescription>
+				<MeasurePoint/>
+				<MeasurePointDescription>Measure point description</MeasurePointDescription>
+				<FieldNo>1</FieldNo>
+				<Scriptcommand>56</Scriptcommand>
+				<Instruction>60 Sekunden Messdauer</Instruction>
+				<DigitalManometer>TH1</DigitalManometer>
+				<MeasurementFrequency>10</MeasurementFrequency>
+				<MeasurementPeriod>5</MeasurementPeriod>
+				<ExtraMeasurementPeriod>5</ExtraMeasurementPeriod>
+			</Scriptcommand_5x>
+			<Scriptcommand_5x>
+				<SequenceNumber>2</SequenceNumber>
+				<ObjectName/>
+				<ObjectNameDescription>object name description</ObjectNameDescription>
+				<MeasurePoint/>
+				<MeasurePointDescription>Measure point description</MeasurePointDescription>
+				<FieldNo>2</FieldNo>
+				<Scriptcommand>51</Scriptcommand>
+				<Instruction>60 Sekunden Messdauer</Instruction>
+				<DigitalManometer>TH2</DigitalManometer>
+				<MeasurementFrequency>10</MeasurementFrequency>
+				<MeasurementPeriod>5</MeasurementPeriod>
+				<ExtraMeasurementPeriod>5</ExtraMeasurementPeriod>
+			</Scriptcommand_5x>
+		</InspectionSequence>
+	</InspectionProcedure>
+</InspectionProcedureFile>

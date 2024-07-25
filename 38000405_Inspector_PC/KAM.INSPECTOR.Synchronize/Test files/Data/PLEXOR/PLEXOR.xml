@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Kamstrup b.v.-->
+<PLEXORS xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<PLEXOR>
+		<Name>PLEXOR Wigersma 1</Name>
+		<SerialNumber>0xxxxxx</SerialNumber>
+		<BTAddress>00:80:98:FA:C5:76</BTAddress>
+		<PN>0..16 bar</PN>
+		<CalibrationDate>2012-03-02</CalibrationDate>
+	</PLEXOR>
+	<PLEXOR>
+		<Name>PLEXOR Wigersma 2</Name>
+		<SerialNumber>1xxxxxx</SerialNumber>
+		<BTAddress>00:80:98:FA:C5:9D</BTAddress>
+		<PN>0..16 bar</PN>
+		<CalibrationDate>2011-12-01</CalibrationDate>
+	</PLEXOR>
+</PLEXORS>

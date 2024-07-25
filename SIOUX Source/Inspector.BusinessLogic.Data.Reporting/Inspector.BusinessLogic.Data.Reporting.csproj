@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27A32818-C724-474A-BED3-264FECF9FC9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspector.BusinessLogic.Data.Reporting</RootNamespace>
+    <AssemblyName>Inspector.BusinessLogic.Data.Reporting</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Tools\SiouxCodingRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Tools\SiouxCodingRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="KAM.INSPECTOR.Infra">
+      <HintPath>..\Import\KAM.INSPECTOR.Infra.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Import\Log4Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionGlobals\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Measurements\MeasurementReportControl.cs" />
+    <Compile Include="Measurements\MeasurementTranslations.cs" />
+    <Compile Include="Measurements\Model\MeasurementReportMeasuredEntity.cs" />
+    <Compile Include="Measurements\Model\DataHeader.cs" />
+    <Compile Include="Measurements\Model\FileHeader.cs" />
+    <Compile Include="Measurements\Model\Measurement.cs" />
+    <Compile Include="Measurements\Model\MeasurementReport.cs" />
+    <Compile Include="Results\AutMapper\MapperClass.cs" />
+    <Compile Include="Results\AutMapper\MappingProfile.cs" />
+    <Compile Include="Results\InspectionResultReader.cs" />
+    <Compile Include="Results\InspectionReportsData.cs" />
+    <Compile Include="Results\Model\DateTimeStamp.cs" />
+    <Compile Include="Results\Model\InspectionProcedure.cs" />
+    <Compile Include="Results\Model\InspectionReport.cs" />
+    <Compile Include="Results\Model\InspectionResult.cs" />
+    <Compile Include="Results\Model\MeasurementEquipment.cs" />
+    <Compile Include="Results\Model\MeasureValue.cs" />
+    <Compile Include="Results\ReportConstants.cs" />
+    <Compile Include="Results\ReportControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results\Model\Result.cs" />
+    <Compile Include="Results\Model\TimeSetting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ParserOlderVersionCompatible\JSONParser\JSONParser.csproj">
+      <Project>{0f8fa240-ef49-405b-986a-2c4c8737cf02}</Project>
+      <Name>JSONParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Configuration.Interfaces\Inspector.BusinessLogic.Data.Configuration.Interfaces.csproj">
+      <Project>{ECF2C1BE-46B2-4B1E-820E-CFAA8A08CF65}</Project>
+      <Name>Inspector.BusinessLogic.Data.Configuration.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Reporting.Interfaces\Inspector.BusinessLogic.Data.Reporting.Interfaces.csproj">
+      <Project>{C0E6768B-663E-430B-8829-460CC63D2934}</Project>
+      <Name>Inspector.BusinessLogic.Data.Reporting.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Infra\Inspector.Infra.csproj">
+      <Project>{E1DDB8BC-A377-4AE7-A304-E2FEFEB07643}</Project>
+      <Name>Inspector.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Model\Inspector.Model.csproj">
+      <Project>{40C1CCC9-4D77-4F23-BFEE-92319C6B80F2}</Project>
+      <Name>Inspector.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="InspectionResultsData.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

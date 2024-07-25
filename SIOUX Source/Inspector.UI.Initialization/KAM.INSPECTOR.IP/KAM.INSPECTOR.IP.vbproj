@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{E8DB4A31-296D-4498-B84F-A7C0234756BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KAM.INSPECTOR.IP</RootNamespace>
+    <AssemblyName>KAM.INSPECTOR.IP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.IP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.IP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug COM|AnyCPU'">
+    <OutputPath>bin\Debug COM\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release COMMUNICATOR|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release COMMUNICATOR\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.IP.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.IP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.IP.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug COM|x86'">
+    <OutputPath>bin\x86\Debug COM\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release COMMUNICATOR|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release COMMUNICATOR\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.IP.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Data.Configuration, Version=0.0.0.18201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Componenten\Inspector.BusinessLogic.Data.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Data.Configuration.Interfaces, Version=0.3.0.350, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Componenten\Inspector.BusinessLogic.Data.Configuration.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Data.Reporting.Interfaces">
+      <HintPath>..\Componenten\Inspector.BusinessLogic.Data.Reporting.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Interfaces, Version=0.1.0.153, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Componenten\Inspector.BusinessLogic.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Inspector.Infra, Version=0.1.0.153, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Componenten\Inspector.Infra.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Inspector.Model">
+      <HintPath>..\Componenten\Inspector.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.RichTextBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.RichTextEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\TelerikData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckBoxHeaderCell.vb" />
+    <Compile Include="clsGeneral.vb" />
+    <Compile Include="modGeneral.vb" />
+    <Compile Include="Resources\InspectionProcedureResx.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InspectionProcedureResx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SoundsResx.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoundsResx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_InspectionInformation.Designer.vb">
+      <DependentUpon>usctrl_InspectionInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_InspectionInformation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_MainInspection.Designer.vb">
+      <DependentUpon>usctrl_MainInspection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_MainInspection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand3.Designer.vb">
+      <DependentUpon>usctrl_ScriptCommand3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand3.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_Scriptcommand41.designer.vb">
+      <DependentUpon>usctrl_Scriptcommand41.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_Scriptcommand41.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand41_ControlList.designer.vb">
+      <DependentUpon>usctrl_ScriptCommand41_ControlList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand41_ControlList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_Scriptcommand42.Designer.vb">
+      <DependentUpon>usctrl_Scriptcommand42.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_Scriptcommand42.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand5x.Designer.vb">
+      <DependentUpon>usctrl_ScriptCommand5x.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand5x.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand4.Designer.vb">
+      <DependentUpon>usctrl_ScriptCommand4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand4.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_ChartResults.designer.vb">
+      <DependentUpon>usctrl_ChartResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_ChartResults.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_MainInspectionStep.designer.vb">
+      <DependentUpon>usctrl_MainInspectionStep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_MainInspectionStep.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Scriptcommand70.vb" />
+    <Compile Include="usctrl_ScriptCommand1.Designer.vb">
+      <DependentUpon>usctrl_ScriptCommand1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand43.Designer.vb">
+      <DependentUpon>usctrl_ScriptCommand43.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_ScriptCommand43.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Resources\InspectionProcedureResx.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InspectionProcedureResx.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SoundsResx.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SoundsResx.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_InspectionInformation.resx">
+      <DependentUpon>usctrl_InspectionInformation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_MainInspection.resx">
+      <DependentUpon>usctrl_MainInspection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_ScriptCommand3.resx">
+      <DependentUpon>usctrl_ScriptCommand3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_ScriptCommand4.resx">
+      <DependentUpon>usctrl_ScriptCommand4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_Scriptcommand41.resx">
+      <DependentUpon>usctrl_Scriptcommand41.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_ScriptCommand41_ControlList.resx">
+      <DependentUpon>usctrl_ScriptCommand41_ControlList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_Scriptcommand42.resx">
+      <DependentUpon>usctrl_Scriptcommand42.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_ScriptCommand5x.resx">
+      <DependentUpon>usctrl_ScriptCommand5x.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_ChartResults.resx">
+      <DependentUpon>usctrl_ChartResults.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_MainInspectionStep.resx">
+      <DependentUpon>usctrl_MainInspectionStep.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_ScriptCommand1.resx">
+      <DependentUpon>usctrl_ScriptCommand1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_ScriptCommand43.resx">
+      <DependentUpon>usctrl_ScriptCommand43.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KAM.INSPECTOR.info\KAM.INSPECTOR.info.vbproj">
+      <Project>{E8520601-0D14-4F5E-8D73-13A02A852936}</Project>
+      <Name>KAM.INSPECTOR.info</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kam.INSPECTOR.Infra\KAM.INSPECTOR.Infra.vbproj">
+      <Project>{D952F51D-FC43-49B9-81B4-60CC3F4399D3}</Project>
+      <Name>KAM.INSPECTOR.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.PLEXOR\KAM.INSPECTOR.PLEXOR.vbproj">
+      <Project>{D20C00A7-BDEF-4DBC-A864-2F0706389F53}</Project>
+      <Name>KAM.INSPECTOR.PLEXOR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.PRS\KAM.INSPECTOR.PRS.vbproj">
+      <Project>{721407B3-2017-4C5F-958E-C6C0F5C0C37A}</Project>
+      <Name>KAM.INSPECTOR.PRS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.Results\KAM.INSPECTOR.Results.vbproj">
+      <Project>{3258D146-DC57-493C-9362-75BA9DC8BB4E}</Project>
+      <Name>KAM.INSPECTOR.Results</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\beep-7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_yellow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

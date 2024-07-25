@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2816790E-EDC3-4E8B-8788-19871F11049D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KAM.INSPECTOR.Main.My.MyApplication</StartupObject>
+    <RootNamespace>KAM.INSPECTOR.Main</RootNamespace>
+    <AssemblyName>INSPECTORPC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>INSPECTORPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>INSPECTORPC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Vlam.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug COM|x86'">
+    <OutputPath>bin\x86\Debug COM\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release COMMUNICATOR|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release COMMUNICATOR\</OutputPath>
+    <DocumentationFile>INSPECTORPC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Components\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Components\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="QlmLicenseLib">
+      <HintPath>..\LicenceTool\QlmLicenseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.RichTextBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Desert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.HighContrastBlack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Office2007Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.Themes.Windows7.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q3 2015\Bin40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutLicenseForm.Designer.vb">
+      <DependentUpon>AboutLicenseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutLicenseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="General.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TelerikGridResx.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TelerikGridResx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translations\countryFlags.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>countryFlags.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User controls forms\uscrtl_ChartSettings.designer.vb">
+      <DependentUpon>uscrtl_ChartSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User controls forms\uscrtl_ChartSettings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\INSPECTORMainResx.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INSPECTORMainResx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translations\usctrl_TranslationSelection.designer.vb">
+      <DependentUpon>usctrl_TranslationSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Translations\usctrl_TranslationSelection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User controls forms\usctrl_About.designer.vb">
+      <DependentUpon>usctrl_About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User controls forms\usctrl_About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User controls forms\usctrl_GeneralUI.designer.vb">
+      <DependentUpon>usctrl_GeneralUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User controls forms\usctrl_GeneralUI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutLicenseForm.resx">
+      <DependentUpon>AboutLicenseForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TelerikGridResx.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TelerikGridResx.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User controls forms\uscrtl_ChartSettings.resx">
+      <DependentUpon>uscrtl_ChartSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\INSPECTORMainResx.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>INSPECTORMainResx.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translations\countryFlags.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>countryFlags.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translations\usctrl_TranslationSelection.resx">
+      <DependentUpon>usctrl_TranslationSelection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User controls forms\usctrl_About.resx">
+      <DependentUpon>usctrl_About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User controls forms\usctrl_GeneralUI.resx">
+      <DependentUpon>usctrl_GeneralUI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Belgium flag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\European Union flag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Germany flag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nederland flag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\United Kingdom flag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Chartsettings.xml" />
+    <Content Include="Config\INSPECTORSettings.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="External Components\Common.Logging.dll" />
+    <Content Include="External Components\Inspector.BusinessLogic.Data.Configuration.dll" />
+    <Content Include="External Components\Inspector.BusinessLogic.Data.Configuration.Interfaces.dll" />
+    <Content Include="External Components\Inspector.BusinessLogic.Data.Reporting.dll" />
+    <Content Include="External Components\Inspector.BusinessLogic.Data.Reporting.Interfaces.dll" />
+    <Content Include="External Components\Inspector.BusinessLogic.dll" />
+    <Content Include="External Components\Inspector.BusinessLogic.Interfaces.dll" />
+    <Content Include="External Components\Inspector.Connection.Manager.dll" />
+    <Content Include="External Components\Inspector.Connection.Manager.Interfaces.dll" />
+    <Content Include="External Components\Inspector.Connection.StateMachine.dll" />
+    <Content Include="External Components\Inspector.Hal.dll" />
+    <Content Include="External Components\Inspector.Hal.Infra.dll" />
+    <Content Include="External Components\Inspector.Hal.Interfaces.dll" />
+    <Content Include="External Components\Inspector.Infra.dll" />
+    <Content Include="External Components\Inspector.Model.dll" />
+    <Content Include="External Components\log4net.dll" />
+    <Content Include="External Components\msvcp100.dll" />
+    <Content Include="External Components\msvcr100.dll" />
+    <Content Include="External Components\Spring.Core.dll" />
+    <Content Include="External Components\wcl.dll" />
+    <Content Include="Modifications.txt" />
+    <None Include="Resources\Afghanistan-Flag.ico" />
+    <None Include="Resources\Aland-Islands.ico" />
+    <None Include="Resources\Albania-Flag.ico" />
+    <None Include="Resources\Algeria-Flag.ico" />
+    <None Include="Resources\American-Samoa.ico" />
+    <None Include="Resources\Andorra-Flag.ico" />
+    <None Include="Resources\Angola-Flag.ico" />
+    <None Include="Resources\Anguilla-Flag.ico" />
+    <None Include="Resources\Antarctica.ico" />
+    <None Include="Resources\Antigua-and-Barbuda.ico" />
+    <None Include="Resources\Argentina-Flag.ico" />
+    <None Include="Resources\Armenia-Flag.ico" />
+    <None Include="Resources\Aruba.ico" />
+    <None Include="Resources\Australia-Flag.ico" />
+    <None Include="Resources\Austria-Flag.ico" />
+    <None Include="Resources\Azerbaijan-Flag.ico" />
+    <None Include="Resources\Bahamas-Flag.ico" />
+    <None Include="Resources\Bahrain-Flag.ico" />
+    <None Include="Resources\Bangladesh-Flag.ico" />
+    <None Include="Resources\Barbados-Flag.ico" />
+    <None Include="Resources\Belarus-Flag.ico" />
+    <None Include="Resources\Belgium-Flag.ico" />
+    <None Include="Resources\Belize-Flag.ico" />
+    <None Include="Resources\Benin-Flag.ico" />
+    <None Include="Resources\Bermuda.ico" />
+    <None Include="Resources\Bhutan-Flag.ico" />
+    <None Include="Resources\BIOT.ico" />
+    <None Include="Resources\Bolivia-Flag.ico" />
+    <None Include="Resources\Bosnian-Flag.ico" />
+    <None Include="Resources\Botswana-Flag.ico" />
+    <None Include="Resources\Bouvet-Island.ico" />
+    <None Include="Resources\Brazil-Flag.ico" />
+    <None Include="Resources\British-Antarctic-Territory.ico" />
+    <None Include="Resources\British-Virgin-Islands.ico" />
+    <None Include="Resources\Brunei-Flag.ico" />
+    <None Include="Resources\Bulgaria-Flag.ico" />
+    <None Include="Resources\Burkina-Faso-Flag.ico" />
+    <None Include="Resources\Burma-Flag.ico" />
+    <None Include="Resources\Burundi-Flag.ico" />
+    <None Include="Resources\Cambodia-Flag.ico" />
+    <None Include="Resources\Cameroon-Flag.ico" />
+    <None Include="Resources\Canada-Flag.ico" />
+    <None Include="Resources\Cape-Verde-Flag.ico" />
+    <None Include="Resources\Cayman-Islands.ico" />
+    <None Include="Resources\CentralAfricanRepublic.ico" />
+    <None Include="Resources\Chad-Flag.ico" />
+    <None Include="Resources\Chile-Flag.ico" />
+    <None Include="Resources\China-Flag.ico" />
+    <None Include="Resources\Christmas-Island.ico" />
+    <None Include="Resources\Cocos-Islands.ico" />
+    <None Include="Resources\Colombia-Flag.ico" />
+    <None Include="Resources\Comoros-Flag.ico" />
+    <None Include="Resources\Congo-Flag.ico" />
+    <None Include="Resources\Congo-Kinshasa.ico" />
+    <None Include="Resources\Cook-Islands.ico" />
+    <None Include="Resources\Costa-Rica-Flag.ico" />
+    <None Include="Resources\Croatian-Flag.ico" />
+    <None Include="Resources\Cuba-Flag.ico" />
+    <None Include="Resources\Cyprus-Flag.ico" />
+    <None Include="Resources\Czech-Republic-Flag.ico" />
+    <None Include="Resources\Denmark-Flag.ico" />
+    <None Include="Resources\Djibouti-Flag.ico" />
+    <None Include="Resources\Dominicana.ico" />
+    <None Include="Resources\Dominican-Republic-Flag.ico" />
+    <None Include="Resources\East-Timor.ico" />
+    <None Include="Resources\Ecuador-Flag.ico" />
+    <None Include="Resources\Egypt-Flag.ico" />
+    <None Include="Resources\El-Salvador-Flag.ico" />
+    <None Include="Resources\England-Flag.ico" />
+    <None Include="Resources\Equatorial-Guinea-Flag.ico" />
+    <None Include="Resources\Eritrea-Flag.ico" />
+    <None Include="Resources\Estonia.ico" />
+    <None Include="Resources\Ethiopia-Flag.ico" />
+    <None Include="Resources\European-Union-Flag.ico" />
+    <None Include="Resources\Ex-Yugoslavia-Flag.ico" />
+    <None Include="Resources\Falkland-Islands.ico" />
+    <None Include="Resources\Faroe-Islands.ico" />
+    <None Include="Resources\Fiji-Flag.ico" />
+    <None Include="Resources\Finland-Flag.ico" />
+    <None Include="Resources\France-Flag.ico" />
+    <None Include="Resources\French-Polynesia.ico" />
+    <None Include="Resources\French-Southern-Territories.ico" />
+    <None Include="Resources\Gabon-Flag.ico" />
+    <None Include="Resources\Gambia-Flag.ico" />
+    <None Include="Resources\Georgia-Flag.ico" />
+    <None Include="Resources\Germany-Flag.ico" />
+    <None Include="Resources\Ghana-Flag.ico" />
+    <None Include="Resources\Gibraltar-Flag.ico" />
+    <None Include="Resources\Greece-Flag.ico" />
+    <None Include="Resources\Greenland-Flag.ico" />
+    <None Include="Resources\Grenada-Flag.ico" />
+    <None Include="Resources\Guadeloupe.ico" />
+    <None Include="Resources\Guam-Flag.ico" />
+    <None Include="Resources\Guatemala-Flag.ico" />
+    <None Include="Resources\Guernsey.ico" />
+    <None Include="Resources\Guinea-Bissau-Flag.ico" />
+    <None Include="Resources\Guinea-Flag.ico" />
+    <None Include="Resources\Guyana-Flag.ico" />
+    <None Include="Resources\Haiti-Flag.ico" />
+    <None Include="Resources\Holy-see-Flag.ico" />
+    <None Include="Resources\Honduras-Flag.ico" />
+    <None Include="Resources\Hong-Kong-Flag.ico" />
+    <None Include="Resources\Hungary-Flag.ico" />
+    <None Include="Resources\Iceland-Flag.ico" />
+    <None Include="Resources\India-Flag.ico" />
+    <None Include="Resources\Indonesia-Flag.ico" />
+    <None Include="Resources\Iran-Flag.ico" />
+    <None Include="Resources\Iraq-Flag.ico" />
+    <None Include="Resources\Ireland-Flag.ico" />
+    <None Include="Resources\Isle-of-Man-Flag.ico" />
+    <None Include="Resources\Israel-Flag.ico" />
+    <None Include="Resources\Italy-Flag.ico" />
+    <None Include="Resources\Ivory-Coast-Flag.ico" />
+    <None Include="Resources\Jamaica-Flag.ico" />
+    <None Include="Resources\Jan-Mayen-Flag.ico" />
+    <None Include="Resources\Japan-Flag.ico" />
+    <None Include="Resources\Jarvis-Island-Flag.ico" />
+    <None Include="Resources\Jersey-Flag.ico" />
+    <None Include="Resources\Jordan-Flag.ico" />
+    <None Include="Resources\Kazakhstan-Flag.ico" />
+    <None Include="Resources\Kenya-Flag.ico" />
+    <None Include="Resources\Kiribati.ico" />
+    <None Include="Resources\Korea-Flag.ico" />
+    <None Include="Resources\Kuwait-Flag.ico" />
+    <None Include="Resources\Kyrgyzstan-Flag.ico" />
+    <None Include="Resources\Laos-Flag.ico" />
+    <None Include="Resources\Latvia-Flag.ico" />
+    <None Include="Resources\Lebanon-Flag.ico" />
+    <None Include="Resources\Lesotho-Flag.ico" />
+    <None Include="Resources\Liberia-Flag.ico" />
+    <None Include="Resources\Libya-Flag.ico" />
+    <None Include="Resources\Liechtenstein-Flag.ico" />
+    <None Include="Resources\Lithuania-Flag.ico" />
+    <None Include="Resources\Luxembourg-Flag.ico" />
+    <None Include="Resources\Macau-Flag.ico" />
+    <None Include="Resources\Macedonia-Flag.ico" />
+    <None Include="Resources\Madagascar-Flag.ico" />
+    <None Include="Resources\Malawi-Flag.ico" />
+    <None Include="Resources\Malaysia-Flag.ico" />
+    <None Include="Resources\Maldives-Flag.ico" />
+    <None Include="Resources\Mali-Flag.ico" />
+    <None Include="Resources\Malta-Flag.ico" />
+    <None Include="Resources\Marshall-Islands-Flag.ico" />
+    <None Include="Resources\Martinique.ico" />
+    <None Include="Resources\Mauritania-Flag.ico" />
+    <None Include="Resources\Mauritius-Flag.ico" />
+    <None Include="Resources\Mayotte-Flag.ico" />
+    <None Include="Resources\Mexico-Flag.ico" />
+    <None Include="Resources\Micronesia-Flag.ico" />
+    <None Include="Resources\Moldova-Flag.ico" />
+    <None Include="Resources\Monaco-Flag.ico" />
+    <None Include="Resources\Mongolia-Flag.ico" />
+    <None Include="Resources\Montenegro-Flag.ico" />
+    <None Include="Resources\Montserrat-Flag.ico" />
+    <None Include="Resources\Morocco-Flag.ico" />
+    <None Include="Resources\Mozambique-Flag.ico" />
+    <None Include="Resources\Myanmar.ico" />
+    <None Include="Resources\Namibia-Flag.ico" />
+    <None Include="Resources\Nauru-Flag.ico" />
+    <None Include="Resources\Nepal-Flag.ico" />
+    <None Include="Resources\Netherlands-Antilles.ico" />
+    <None Include="Resources\Russian_Flag.ico" />
+    <None Include="Resources\Polish_Flag.ico" />
+    <None Include="Resources\Netherlands-Flag.ico" />
+    <None Include="Resources\New-Caledonia-Flag.ico" />
+    <None Include="Resources\New-Zealand-Flag.ico" />
+    <None Include="Resources\Nicaragua-Flag.ico" />
+    <None Include="Resources\Niger-Flag.ico" />
+    <None Include="Resources\Nigeria-Flag.ico" />
+    <None Include="Resources\Niue-Flag.ico" />
+    <None Include="Resources\Norfolk-Island.ico" />
+    <None Include="Resources\Northern-Ireland.ico" />
+    <None Include="Resources\Northern-Mariana-Islands.ico" />
+    <None Include="Resources\North-Korea-Flag.ico" />
+    <None Include="Resources\Norway-Flag.ico" />
+    <None Include="Resources\Oman-Flag.ico" />
+    <None Include="Resources\Pakistan-Flag.ico" />
+    <None Include="Resources\Palau-Flag.ico" />
+    <None Include="Resources\Palestinian-Territory.ico" />
+    <None Include="Resources\Panama-Flag.ico" />
+    <None Include="Resources\Papua-New-Guinea-Flag.ico" />
+    <None Include="Resources\Paraguay-Flag.ico" />
+    <None Include="Resources\Peru-Flag.ico" />
+    <None Include="Resources\Philippines-Flag.ico" />
+    <None Include="Resources\Pitcairn.ico" />
+    <None Include="Resources\Poland-Flag.ico" />
+    <None Include="Resources\Portugal-Flag.ico" />
+    <None Include="Resources\Puerto-Rico-Flag.ico" />
+    <None Include="Resources\Qatar-Flag.ico" />
+    <None Include="Resources\Reunion.ico" />
+    <None Include="Resources\Romania-Flag.ico" />
+    <None Include="Resources\Russia-Flag.ico" />
+    <None Include="Resources\Rwanda-Flag.ico" />
+    <None Include="Resources\Saint Pierre and Miquelon.ico" />
+    <None Include="Resources\Saint Vincent and the Grenadines.ico" />
+    <None Include="Resources\Saint-Barthelemy.ico" />
+    <None Include="Resources\Saint-Barthelemy-Flag.ico" />
+    <None Include="Resources\Saint-Helena-Dependencies.ico" />
+    <None Include="Resources\Saint-Helena-Flag.ico" />
+    <None Include="Resources\Saint-Kitts-and-Nevis.ico" />
+    <None Include="Resources\Saint-Lucia-Flag.ico" />
+    <None Include="Resources\Saint-Martin.ico" />
+    <None Include="Resources\Saint-Martin-Flag.ico" />
+    <None Include="Resources\Samoa-Flag.ico" />
+    <None Include="Resources\San-Marino-Flag.ico" />
+    <None Include="Resources\Sao-Tome-and-Principe.ico" />
+    <None Include="Resources\Saudi-Arabia-Flag.ico" />
+    <None Include="Resources\Scotland.ico" />
+    <None Include="Resources\Senegal-Flag.ico" />
+    <None Include="Resources\Serbia-Flag.ico" />
+    <None Include="Resources\Seychelles-Flag.ico" />
+    <None Include="Resources\Sierra-Leone-Flag.ico" />
+    <None Include="Resources\Singapore-Flag.ico" />
+    <None Include="Resources\Slovakia-Flag.ico" />
+    <None Include="Resources\Slovenia-Flag.ico" />
+    <None Include="Resources\SMOM.ico" />
+    <None Include="Resources\Solomon-Islands-Flag.ico" />
+    <None Include="Resources\Somalia-Flag.ico" />
+    <None Include="Resources\South-Africa-Flag.ico" />
+    <None Include="Resources\South-Georgia-Flag.ico" />
+    <None Include="Resources\Spain-Flag.ico" />
+    <None Include="Resources\SPM.ico" />
+    <None Include="Resources\Sri-Lanka-Flag.ico" />
+    <None Include="Resources\Sudan-Flag.ico" />
+    <None Include="Resources\Suriname-Flag.ico" />
+    <None Include="Resources\Svalbard-Flag.ico" />
+    <None Include="Resources\SVG.ico" />
+    <None Include="Resources\Swaziland-Flag.ico" />
+    <None Include="Resources\Sweden-Flag.ico" />
+    <None Include="Resources\Switzerland-Flag.ico" />
+    <None Include="Resources\Syria-Flag.ico" />
+    <None Include="Resources\Taiwan-Flag.ico" />
+    <None Include="Resources\Tajikistan-Flag.ico" />
+    <None Include="Resources\Tanzania-Flag.ico" />
+    <None Include="Resources\Thailand-Flag.ico" />
+    <None Include="Resources\Timor-Leste-Flag.ico" />
+    <None Include="Resources\Togo-Flag.ico" />
+    <None Include="Resources\Tokelau-Flag.ico" />
+    <None Include="Resources\Tonga-Flag.ico" />
+    <None Include="Resources\Trinidad-and-Tobago.ico" />
+    <None Include="Resources\Tunisia-Flag.ico" />
+    <None Include="Resources\Turkey-Flag.ico" />
+    <None Include="Resources\Turkmenistan-Flag.ico" />
+    <None Include="Resources\Turks-and-Caicos-Islands.ico" />
+    <None Include="Resources\Tuvalu-Flag.ico" />
+    <None Include="Resources\Uganda-Flag.ico" />
+    <None Include="Resources\Ukraine-Flag.ico" />
+    <None Include="Resources\United-Arab-Emirates.ico" />
+    <None Include="Resources\United-Kingdom-flag.ico" />
+    <None Include="Resources\United-States-Flag.ico" />
+    <None Include="Resources\Uruguay-Flag.ico" />
+    <None Include="Resources\Uzbekistan-Flag.ico" />
+    <None Include="Resources\Vanuatu-Flag.ico" />
+    <None Include="Resources\Vatican-City.ico" />
+    <None Include="Resources\Venezuela-Flag.ico" />
+    <None Include="Resources\Vietnam-Flag.ico" />
+    <None Include="Resources\Virgin-Islands-Flag.ico" />
+    <None Include="Resources\Wales.ico" />
+    <None Include="Resources\Wallis-and-Futuna-Flag.ico" />
+    <None Include="Resources\Western-Sahara.ico" />
+    <None Include="Resources\Yemen-Flag.ico" />
+    <None Include="Resources\Zambia-Flag.ico" />
+    <None Include="Resources\Zimbabwe-Flag.ico" />
+    <Content Include="Vlam.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Translations\Country flags\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KAM.Infra\KAM.Infra.vbproj">
+      <Project>{cb9c2c96-4e0d-4c6b-8f07-30b620c23423}</Project>
+      <Name>KAM.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.info\KAM.INSPECTOR.info.vbproj">
+      <Project>{e8520601-0d14-4f5e-8d73-13a02a852936}</Project>
+      <Name>KAM.INSPECTOR.info</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kam.INSPECTOR.Infra\KAM.INSPECTOR.Infra.vbproj">
+      <Project>{d952f51d-fc43-49b9-81b4-60cc3f4399d3}</Project>
+      <Name>KAM.INSPECTOR.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.IP\KAM.INSPECTOR.IP.vbproj">
+      <Project>{e8db4a31-296d-4498-b84f-a7c0234756bb}</Project>
+      <Name>KAM.INSPECTOR.IP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.PLEXOR\KAM.INSPECTOR.PLEXOR.vbproj">
+      <Project>{d20c00a7-bdef-4dbc-a864-2f0706389f53}</Project>
+      <Name>KAM.INSPECTOR.PLEXOR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.PRS\KAM.INSPECTOR.PRS.vbproj">
+      <Project>{721407b3-2017-4c5f-958e-c6c0f5c0c37a}</Project>
+      <Name>KAM.INSPECTOR.PRS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.ResultsGridView\KAM.INSPECTOR.ResultsGridView.vbproj">
+      <Project>{64a34b77-f1f8-4b42-97d3-57947e359f87}</Project>
+      <Name>KAM.INSPECTOR.ResultsGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.INSPECTOR.Results\KAM.INSPECTOR.Results.vbproj">
+      <Project>{3258d146-dc57-493c-9362-75ba9dc8bb4e}</Project>
+      <Name>KAM.INSPECTOR.Results</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LicenceTool\KAM.LicenceTool.vbproj">
+      <Project>{71840666-2417-4dd6-a5ab-811b53a5ed1d}</Project>
+      <Name>KAM.LicenceTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.BusinessLogic.Data.Configuration.Interfaces\Inspector.BusinessLogic.Data.Configuration.Interfaces.csproj">
+      <Project>{08a21a32-3a89-4bfa-8985-033915feef64}</Project>
+      <Name>Inspector.BusinessLogic.Data.Configuration.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.BusinessLogic.Data.Configuration\Inspector.BusinessLogic.Data.Configuration.csproj">
+      <Project>{a8a45524-1b2d-4981-9848-707e47a01272}</Project>
+      <Name>Inspector.BusinessLogic.Data.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.BusinessLogic.Data.Reporting.Interfaces\Inspector.BusinessLogic.Data.Reporting.Interfaces.csproj">
+      <Project>{70356526-7ee1-4a45-8085-35036368d9b2}</Project>
+      <Name>Inspector.BusinessLogic.Data.Reporting.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.BusinessLogic.Data.Reporting\Inspector.BusinessLogic.Data.Reporting.csproj">
+      <Project>{6476ef36-a46c-44be-960c-a621024db5a0}</Project>
+      <Name>Inspector.BusinessLogic.Data.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.BusinessLogic.Interfaces\Inspector.BusinessLogic.Interfaces.csproj">
+      <Project>{6117e9c5-247c-446d-b23f-208d1e12679a}</Project>
+      <Name>Inspector.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.BusinessLogic\Inspector.BusinessLogic.csproj">
+      <Project>{75a4ae98-2523-47ea-b5d3-416a245832e5}</Project>
+      <Name>Inspector.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Connection.Manager.Interfaces\Inspector.Connection.Manager.Interfaces.csproj">
+      <Project>{f3c1d70f-45a9-48f3-a2d1-4fd05b07ead9}</Project>
+      <Name>Inspector.Connection.Manager.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Connection.Manager\Inspector.Connection.Manager.csproj">
+      <Project>{e94088c7-5d5f-4f9a-9dbb-45753be421a3}</Project>
+      <Name>Inspector.Connection.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Connection.StateMachine\Inspector.Connection.StateMachine.csproj">
+      <Project>{90f591fd-3035-4260-8681-574b6ead8692}</Project>
+      <Name>Inspector.Connection.StateMachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Hal.Infra\Inspector.Hal.Infra.csproj">
+      <Project>{226dc060-8ef0-499b-9c7e-60b386236935}</Project>
+      <Name>Inspector.Hal.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Hal.Interfaces\Inspector.Hal.Interfaces.csproj">
+      <Project>{b4c8ffba-c1bf-45d2-a00a-77fbe163e0b3}</Project>
+      <Name>Inspector.Hal.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Hal\Inspector.Hal.csproj">
+      <Project>{10567e50-aa7e-4550-b2a3-3f41a42815f2}</Project>
+      <Name>Inspector.Hal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Infra\Inspector.Infra.csproj">
+      <Project>{8eee6131-81a4-4e7b-abdd-7e23f4f8bd47}</Project>
+      <Name>Inspector.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIOUX Source\Inspector.Model\Inspector.Model.csproj">
+      <Project>{47fb9408-c730-403b-919a-461709493dd8}</Project>
+      <Name>Inspector.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

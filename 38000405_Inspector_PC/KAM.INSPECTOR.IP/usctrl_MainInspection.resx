@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rButStart.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rButStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="rButStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 3</value>
+  </data>
+  <data name="rButStart.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStart.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStart.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rButStart.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rButStart.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rButStart.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rButStart.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStart.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rButStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 35</value>
+  </data>
+  <data name="rButStart.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="rButStart.Text" xml:space="preserve">
+    <value>!Start inspection</value>
+  </data>
+  <data name="&gt;&gt;rButStart.Name" xml:space="preserve">
+    <value>rButStart</value>
+  </data>
+  <data name="&gt;&gt;rButStart.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rButStart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rButStart.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rlblGCLName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="rlblGCLName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 21</value>
+  </data>
+  <data name="rlblGCLName.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rlblGCLName.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rlblGCLName.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rlblGCLName.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rlblGCLName.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rlblGCLName.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rlblGCLName.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rlblGCLName.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rlblGCLName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 22</value>
+  </data>
+  <data name="rlblGCLName.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="rlblGCLName.Text" xml:space="preserve">
+    <value>------ GCL Name</value>
+  </data>
+  <data name="&gt;&gt;rlblGCLName.Name" xml:space="preserve">
+    <value>rlblGCLName</value>
+  </data>
+  <data name="&gt;&gt;rlblGCLName.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rlblGCLName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rlblGCLName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rlblPRSName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="rlblPRSName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 3</value>
+  </data>
+  <data name="rlblPRSName.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rlblPRSName.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rlblPRSName.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rlblPRSName.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rlblPRSName.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rlblPRSName.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rlblPRSName.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rlblPRSName.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rlblPRSName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 22</value>
+  </data>
+  <data name="rlblPRSName.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="rlblPRSName.Text" xml:space="preserve">
+    <value>PRS Name</value>
+  </data>
+  <data name="&gt;&gt;rlblPRSName.Name" xml:space="preserve">
+    <value>rlblPRSName</value>
+  </data>
+  <data name="&gt;&gt;rlblPRSName.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rlblPRSName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rlblPRSName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rdPanelInspection.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="rdPanelInspection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 44</value>
+  </data>
+  <data name="rdPanelInspection.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdPanelInspection.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdPanelInspection.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdPanelInspection.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdPanelInspection.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdPanelInspection.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdPanelInspection.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdPanelInspection.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdPanelInspection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>652, 364</value>
+  </data>
+  <data name="rdPanelInspection.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdPanelInspection.Name" xml:space="preserve">
+    <value>rdPanelInspection</value>
+  </data>
+  <data name="&gt;&gt;rdPanelInspection.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdPanelInspection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rdPanelInspection.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="RadPrintDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="rButStop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rButStop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="rButStop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 3</value>
+  </data>
+  <data name="rButStop.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStop.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStop.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rButStop.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rButStop.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rButStop.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rButStop.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStop.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rButStop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 35</value>
+  </data>
+  <data name="rButStop.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="rButStop.Text" xml:space="preserve">
+    <value>!Stop inspection</value>
+  </data>
+  <data name="&gt;&gt;rButStop.Name" xml:space="preserve">
+    <value>rButStop</value>
+  </data>
+  <data name="&gt;&gt;rButStop.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rButStop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rButStop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rButStopBoundInspect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rButStopBoundInspect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="rButStopBoundInspect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 3</value>
+  </data>
+  <data name="rButStopBoundInspect.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStopBoundInspect.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStopBoundInspect.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rButStopBoundInspect.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rButStopBoundInspect.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rButStopBoundInspect.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rButStopBoundInspect.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStopBoundInspect.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rButStopBoundInspect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 35</value>
+  </data>
+  <data name="rButStopBoundInspect.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="rButStopBoundInspect.Text" xml:space="preserve">
+    <value>!Stop reinspect</value>
+  </data>
+  <data name="&gt;&gt;rButStopBoundInspect.Name" xml:space="preserve">
+    <value>rButStopBoundInspect</value>
+  </data>
+  <data name="&gt;&gt;rButStopBoundInspect.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rButStopBoundInspect.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rButStopBoundInspect.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rButStartBoundInspect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rButStartBoundInspect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="rButStartBoundInspect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 3</value>
+  </data>
+  <data name="rButStartBoundInspect.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStartBoundInspect.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStartBoundInspect.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rButStartBoundInspect.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rButStartBoundInspect.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rButStartBoundInspect.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rButStartBoundInspect.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rButStartBoundInspect.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rButStartBoundInspect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 35</value>
+  </data>
+  <data name="rButStartBoundInspect.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="rButStartBoundInspect.Text" xml:space="preserve">
+    <value>!Start reinspect</value>
+  </data>
+  <data name="&gt;&gt;rButStartBoundInspect.Name" xml:space="preserve">
+    <value>rButStartBoundInspect</value>
+  </data>
+  <data name="&gt;&gt;rButStartBoundInspect.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rButStartBoundInspect.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rButStartBoundInspect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>652, 411</value>
+  </data>
+  <data name="&gt;&gt;RadPrintDocument1.Name" xml:space="preserve">
+    <value>RadPrintDocument1</value>
+  </data>
+  <data name="&gt;&gt;RadPrintDocument1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPrintDocument, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>usctrl_MainInspection</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

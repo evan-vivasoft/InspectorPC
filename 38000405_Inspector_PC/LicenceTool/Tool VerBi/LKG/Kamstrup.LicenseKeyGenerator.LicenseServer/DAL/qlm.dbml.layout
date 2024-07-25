@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="qlm">
+  <DataContextMoniker Name="/QLMDataContext" />
+  <nestedChildShapes>
+    <classShape Id="903b72db-9e5d-48c2-8ad1-26815771ae3c" absoluteBounds="0.5, 0.5, 2, 5.3691837565104157">
+      <DataClassMoniker Name="/QLMDataContext/LicenseKey" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1199d72e-268d-45ee-8b9f-21f06070b136" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 4.8091837565104161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf05f059-2bb5-4ba8-a357-1ac6781ffe3f" absoluteBounds="2.625, 0.5, 2, 2.24658447265625">
+      <DataClassMoniker Name="/QLMDataContext/Log4LKG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33a14a24-141c-4565-b2eb-204baeed2bc1" absoluteBounds="2.64, 0.96, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

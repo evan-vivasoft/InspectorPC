@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="str_Please_sent_the_mail_to" xml:space="preserve">
+    <value>!Please sent the mail to registration@ww-gas.com</value>
+  </data>
+  <data name="str_Kamstrup_PRS_component" xml:space="preserve">
+    <value>!Kamstrup PRS component: </value>
+  </data>
+  <data name="str_An_evaluation_version_is" xml:space="preserve">
+    <value>!An evaluation version is created.</value>
+  </data>
+  <data name="str_Kamstrup_PLEXOR_component" xml:space="preserve">
+    <value>!Kamstrup PLEXOR component: </value>
+  </data>
+  <data name="str_INSPECTOR_PC" xml:space="preserve">
+    <value>INSPECTOR PC</value>
+  </data>
+  <data name="str_License_to" xml:space="preserve">
+    <value>!License to:</value>
+  </data>
+  <data name="str_Kamstrup_Infra_component" xml:space="preserve">
+    <value>!Kamstrup Infra component: </value>
+  </data>
+  <data name="str_Kamstrup_inspectieprocedure" xml:space="preserve">
+    <value>!Kamstrup inspectieprocedure component: </value>
+  </data>
+  <data name="str_BusinessLogic_component" xml:space="preserve">
+    <value>!Kamstrup Business logic component:</value>
+  </data>
+  <data name="str_demo_version_days_left" xml:space="preserve">
+    <value>!Demo version. Amount of days left:</value>
+  </data>
+  <data name="str_license_expired" xml:space="preserve">
+    <value>!The license is Expired</value>
+  </data>
+  <data name="str_Restart_application" xml:space="preserve">
+    <value>!Changes are applied after restarting the program. Do you wish to restart the program?</value>
+  </data>
+  <data name="str_Deutsch" xml:space="preserve">
+    <value>!Deutsch</value>
+  </data>
+  <data name="str_English" xml:space="preserve">
+    <value>!English</value>
+  </data>
+  <data name="str_Nederlands" xml:space="preserve">
+    <value>!Nederlands</value>
+  </data>
+  <data name="str_FileNotExists1" xml:space="preserve">
+    <value>!The file</value>
+  </data>
+  <data name="str_fileNotExists2" xml:space="preserve">
+    <value>!does not exists</value>
+  </data>
+  <data name="str_GraphBackColorBlack" xml:space="preserve">
+    <value>!Black</value>
+  </data>
+  <data name="str_GraphBackColorWhite" xml:space="preserve">
+    <value>!White</value>
+  </data>
+  <data name="str_legend_Alignment_Center" xml:space="preserve">
+    <value>!Center</value>
+  </data>
+  <data name="str_legend_Alignment_Far" xml:space="preserve">
+    <value>!Far</value>
+  </data>
+  <data name="str_legend_Alignment_Near" xml:space="preserve">
+    <value>!Near</value>
+  </data>
+  <data name="str_legend_DockinChart_False" xml:space="preserve">
+    <value>!False</value>
+  </data>
+  <data name="str_legend_DockinChart_True" xml:space="preserve">
+    <value>!True</value>
+  </data>
+  <data name="str_legend_Docking_Bottom" xml:space="preserve">
+    <value>!Bottom</value>
+  </data>
+  <data name="str_legend_Docking_Left" xml:space="preserve">
+    <value>!Left</value>
+  </data>
+  <data name="str_legend_Docking_Right" xml:space="preserve">
+    <value>!Right</value>
+  </data>
+  <data name="str_legend_Docking_Top" xml:space="preserve">
+    <value>!Top</value>
+  </data>
+  <data name="str_legend_Style_Column" xml:space="preserve">
+    <value>!Column</value>
+  </data>
+  <data name="str_legend_Style_Row" xml:space="preserve">
+    <value>!Row</value>
+  </data>
+  <data name="str_legend_Style_Table" xml:space="preserve">
+    <value>!Table</value>
+  </data>
+  <data name="str_NoAdministratorAccessToRegister" xml:space="preserve">
+    <value>!The user has no administrator rights to save license information!</value>
+  </data>
+  <data name="str_Russia" xml:space="preserve">
+    <value>!Russisch</value>
+  </data>
+  <data name="str_China" xml:space="preserve">
+    <value>!China</value>
+  </data>
+  <data name="str_Poland" xml:space="preserve">
+    <value>!Poliski</value>
+  </data>
+  <data name="str_TranslationNotExists" xml:space="preserve">
+    <value>!The selected translation does not exists!</value>
+  </data>
+  <data name="str_FileMergeError" xml:space="preserve">
+    <value>!File merge error, application cannot continue:</value>
+  </data>
+</root>

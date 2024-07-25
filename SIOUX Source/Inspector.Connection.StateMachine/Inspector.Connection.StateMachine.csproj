@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{237307D0-3C5D-412B-9E12-0DA189BCA4DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspector.Connection.StateMachine</RootNamespace>
+    <AssemblyName>Inspector.Connection.StateMachine</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\Tools\SiouxCodingRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\Tools\SiouxCodingRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionGlobals\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Base\State.cs" />
+    <Compile Include="Base\StateMachine.cs" />
+    <Compile Include="ConnectionStateMachine.Context.cs" />
+    <Compile Include="ConnectionStateMachine.cs" />
+    <Compile Include="EventTranslation\EventArgs\ConnectedEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\ConnectFailedEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\ConnectingEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\DeviceUnPairedEventArgs.cs" />
+    <Compile Include="EventTranslation\EventArgs\MeasurementEventArgs.cs" />
+    <Compile Include="EventTranslation\EventArgs\RecoveredFromErrorEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\DisconnectedEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\DisconnectingEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\ErrorEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\MessageReceivedEventArgs .cs" />
+    <Compile Include="EventTranslation\EventArgs\SendCommandEventArgs .cs" />
+    <Compile Include="EventTranslation\EventToCallConnectionStateMachine.cs" />
+    <Compile Include="EventTranslation\EventToCallConnectionStateMachineImplementation.cs" />
+    <Compile Include="Exceptions\StateMachineException.cs" />
+    <Compile Include="Interfaces\IConnectionStateMachine.cs" />
+    <Compile Include="Interfaces\IConnectionStateMachineContext.cs" />
+    <Compile Include="Interfaces\IConnectionStateMachineCustom.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateBase\StateConnectedBase.cs" />
+    <Compile Include="StateBase\StateConnectingBase.cs" />
+    <Compile Include="StateBase\StateContinuousMeasureBase.cs" />
+    <Compile Include="StateBase\StateDisconnectedBase.cs" />
+    <Compile Include="StateBase\StateDisconnectingBase.cs" />
+    <Compile Include="StateBase\StateErrorBase.cs" />
+    <Compile Include="StateBase\StateSendingCommandBase.cs" />
+    <Compile Include="States\StateConnected.cs" />
+    <Compile Include="States\StateConnecting.cs" />
+    <Compile Include="States\StateContinuousMeasure.cs" />
+    <Compile Include="States\StateDisconnected.cs" />
+    <Compile Include="States\StateDisconnecting.cs" />
+    <Compile Include="States\StateError.cs" />
+    <Compile Include="States\StateSendingCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inspector.Hal.Interfaces\Inspector.Hal.Interfaces.csproj">
+      <Project>{8122832D-B86F-49E2-A03A-F15FE8AA777B}</Project>
+      <Name>Inspector.Hal.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Hal.Stub\Inspector.Hal.Stub.csproj">
+      <Project>{1570CAFA-6D59-49EC-A985-6CB96C369E16}</Project>
+      <Name>Inspector.Hal.Stub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Hal\Inspector.Hal.csproj">
+      <Project>{1D8F0076-6285-48F1-B2DD-16FF62267A0B}</Project>
+      <Name>Inspector.Hal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Infra\Inspector.Infra.csproj">
+      <Project>{E1DDB8BC-A377-4AE7-A304-E2FEFEB07643}</Project>
+      <Name>Inspector.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Model\Inspector.Model.csproj">
+      <Project>{40C1CCC9-4D77-4F23-BFEE-92319C6B80F2}</Project>
+      <Name>Inspector.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExceptionHandling.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

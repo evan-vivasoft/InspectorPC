@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConfigurationFile>
+   <Settings Section="APPLICATION">
+    <Setting name="XsdFilesPath" Value="XSD\"/> <!-- Defines the path where the XSD files can be found. Default: XSD\-->
+    <Setting name="XmlFilesPath" Value="data\XML\"/> <!-- Defines the path where the XML files can be found. Default: XML\-->
+    <Setting name="TemporaryFilesPath" Value="data\TEMP\"/> <!-- Defines the path where the Temporary files are stored. Default: TEMP\-->
+    <Setting name="MeasurementFilesPath" Value="data\Measurements\" /> <!-- Defines the path where the measurements are stored. Default: Measurements\ -->
+    <Setting name="MeasurementFileWriteEnabled" Value="true" /> <!-- Defines if writing to a measurement file is enabled. Default: true -->
+    <Setting name="MeasurementFileWriteInterval" Value="5000" /> <!-- Defines the interval the measurements are written to the measurement file in ms. Default: 5000 ms -->
+    <Setting name="MeasurementFileExtenstion" Value="fpr" /> <!-- Defines the file extension for the measurement file. Default: fpr -->
+    <Setting name="MeasurementCommandDelay" Value="750" /> <!-- Defines the delay that is added to a timed measurement for compensation on the command delay on the manometers. Default (and minimum): 750 ms-->
+  </Settings>
+  <Settings Section="PLEXOR">
+    <Setting name="DTR" Value="Low"/> <!-- Low => TH1 = 0 and TH2 = 1; High => TH1 = 1 and TH2 = 0 -->
+    <Setting name="InitializationLedAddress" Value="626"/> <!-- The address of the Initialization Led. -->
+    <Setting name="BluetoothApi" Value="baBlueSoleil" /> <!-- The following API's are supported baBlueSoleil, baMicrosoft, baToshiba, baWidComm-->
+    <Setting name="BluetoothDestinationAddress" Value="(00:80:98:FA:C5:9D)" /> <!-- Format: (xx:xx:xx:xx:xx:xx) -->
+    <Setting name="ConnectTimeout" Value="10000" /> <!-- The connect timeout in ms. Default 15000 ms -->
+    <Setting name="ConnectRetries" Value="2" /> <!-- The number of retries allowed for connect. Default 2 -->
+    <Setting name="FlushManometerCacheTimeout" Value="1000" /> <!-- The Flush manometer Cache timeout in ms. Default 2000 ms -->
+    <Setting name="FlushManometerCacheRetries" Value="2" /> <!-- The number of retries allowed for flush manometer cache. Default 2 -->
+    <Setting name="ManometerCommandTimeout" Value="1500" /> <!-- The manometer command timeout in ms. Default 3000 ms -->
+    <Setting name="ManometerCommandRetries" Value="3" /> <!-- The Manometer command retries. Default 3 -->
+    <Setting name="MeasurementTimeout" Value="1500" /> <!-- The timeout for a measurement in ms. Default 3000 ms -->
+    <Setting name="MeasurementInterval" Value="500" /> <!-- The interval the measurements are gathered and sent in ms. Default 1000ms -->
+    <Setting name="MeasurementRetries" Value="2" />  <!-- The number of retries allowed for a continuous measurement. Default 3 -->
+    <Setting name="WakeUpInterval" Value="60000"/> <!-- The interval in ms for which wake up calls are performed. Default 60000ms -->
+    <Setting name="CommandInterval" Value="100"/><!-- The interval in ms between any two consecutive commands to the Plexor -->
+    <Setting name="BluetoothDongleAddress" Value="(CC:52:AF:74:44:DD)" />
+    <Setting name="UseChecksum" Value="true" />  <!-- Whether we use a checksum to check received data -->
+    <Setting name="UseDtr" Value="true" />
+  </Settings>
+  <Settings Section="MANOMETER_TH1">
+    <Setting name="BatteryLimit" Value="30"/> <!-- Battery limit, as integer -->
+  </Settings>
+  <Settings Section="MANOMETER_TH2">
+    <Setting name="BatteryLimit" Value="80"/> <!-- Battery limit, as integer -->
+  </Settings>
+  <Settings Section="Culture">
+    <Setting name="CultureName" Value="de-DE" /> <!-- Localization settings of application -->
+  </Settings>
+  <Settings Section="Localization">
+    <Setting name="ThemeName" Value="Office2010Black" /> <!-- Theme settings-->
+  </Settings>
+  <Settings Section="Functions">
+    <Setting name="DocumentSynchronize" Value="False" /> <!-- NOT USED Functions settings-->
+</Settings>
+<Settings Section="Chart">
+  <Setting name="BackColor" Value="Black" /> <!-- Chart back color-->
+    <Setting name="AxisXMinimum" Value="10000" /> <!-- x-as time value before current value-->
+    <Setting name="AxisXMaximum" Value="1000" /> <!-- x-as time value after current value-->
+    <Setting name="SeriesLineSize" Value="2" /> <!-- Line size -->
+  </Settings>
+  <Settings Section="Text">
+    <Setting name="Size" Value="16" /> <!-- Size of instruction field -->
+  </Settings>
+  <Settings Section="GUI">
+    <Setting name="ShowBtnRestartLeakage" Value="False"/>   <!-- Show the restart button at a leakage measurement -->
+    <Setting name="ShowDropDownSelectInspection" Value="False"/>   <!-- Show the dropdown for selecting the inspection procedure -->
+  </Settings>
+  <Settings Section="UNITS">
+    <Setting Value="psi" name="UnitLowPressure" />
+    <Setting Value="psi" name="UnitHighPressure" />
+    <Setting Value="0.001" name="FactorLowHighPressure" />
+    <Setting Value="1" name="FactorMeasuredChangeRateToMbarMin" />
+    <Setting Value="1" name="FactorMbarMinToUnitChangeRate" />
+    <Setting Value="mbar/min" name="UnitChangeRate" />
+    <Setting Value="dm3/h" name="UnitQVSLeakage" />
+    <Setting Value="1" name="FactorQVS" />
+  </Settings>
+
+</ConfigurationFile>

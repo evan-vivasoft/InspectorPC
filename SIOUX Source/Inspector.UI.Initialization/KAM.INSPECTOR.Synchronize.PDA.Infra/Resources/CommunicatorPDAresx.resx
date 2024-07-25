@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="str_BatteryLifeTime" xml:space="preserve">
+    <value>!BatteryLifeTime</value>
+  </data>
+  <data name="str_Amount_of_data" xml:space="preserve">
+    <value> !Amount of data: </value>
+  </data>
+  <data name="str_InspectorInfoStepMainIDText" xml:space="preserve">
+    <value>!InspectorInfoStepMainIDText</value>
+  </data>
+  <data name="str_Copy_file" xml:space="preserve">
+    <value>!Copy file: </value>
+  </data>
+  <data name="str_Completed" xml:space="preserve">
+    <value>!% Completed</value>
+  </data>
+  <data name="str_INSPECTORVersion" xml:space="preserve">
+    <value>!INSPECTORVersion</value>
+  </data>
+  <data name="str_BatteryLifePercent" xml:space="preserve">
+    <value>!BatteryLifePercent</value>
+  </data>
+  <data name="str_Synchronization_is_completed" xml:space="preserve">
+    <value>!Synchronization is completed</value>
+  </data>
+  <data name="str_Device_free_storage" xml:space="preserve">
+    <value>!Device free storage</value>
+  </data>
+  <data name="str_Battery" xml:space="preserve">
+    <value>!Battery</value>
+  </data>
+  <data name="str_INSPECTORSubVersion" xml:space="preserve">
+    <value>!INSPECTORSubVersion</value>
+  </data>
+  <data name="str_hours" xml:space="preserve">
+    <value>!hours</value>
+  </data>
+  <data name="str_INSPECTOR" xml:space="preserve">
+    <value>!INSPECTOR</value>
+  </data>
+  <data name="str_connection" xml:space="preserve">
+    <value> connection</value>
+  </data>
+  <data name="str_SyncStatusStepID" xml:space="preserve">
+    <value>!SyncStatusStepID</value>
+  </data>
+  <data name="str_minutes" xml:space="preserve">
+    <value>!minutes</value>
+  </data>
+  <data name="str_SyncStatusStepMessage" xml:space="preserve">
+    <value>!SyncStatusStepMessage</value>
+  </data>
+  <data name="str_ProcessorType" xml:space="preserve">
+    <value>!ProcessorType</value>
+  </data>
+  <data name="str_SyncStatusStatusText" xml:space="preserve">
+    <value>!SyncStatusStatusText</value>
+  </data>
+  <data name="str_Storage" xml:space="preserve">
+    <value>!Storage</value>
+  </data>
+  <data name="str_SyncStatusStatusIcon" xml:space="preserve">
+    <value>!SyncStatusStatusIcon</value>
+  </data>
+  <data name="str_InspectorInfoStepMainID" xml:space="preserve">
+    <value>!InspectorInfoStepMainID</value>
+  </data>
+  <data name="str_InspectorInfoStepIDText" xml:space="preserve">
+    <value>!InspectorInfoStepIDText</value>
+  </data>
+  <data name="str_InspectorInfoMessage" xml:space="preserve">
+    <value>!InspectorInfoMessage</value>
+  </data>
+  <data name="str_Processor" xml:space="preserve">
+    <value>!Processor</value>
+  </data>
+  <data name="str_INSPECTORSerialNumber" xml:space="preserve">
+    <value>!INSPECTORSerialNumber</value>
+  </data>
+  <data name="str_SyncStatusDateTime" xml:space="preserve">
+    <value>!SyncStatusDateTime</value>
+  </data>
+  <data name="str_Disconnection" xml:space="preserve">
+    <value> Disconnection</value>
+  </data>
+  <data name="str_SavingFile" xml:space="preserve">
+    <value>!SavingFile</value>
+  </data>
+  <data name="str_CommunicatorDbNotFound" xml:space="preserve">
+    <value>!The file 'COMMUNICATORData.mdb' can not be found on the pc</value>
+  </data>
+  <data name="str_FilePath" xml:space="preserve">
+    <value>!File path:</value>
+  </data>
+  <data name="str_SyncNotStartedNoInspectorPC" xml:space="preserve">
+    <value>!It is not possible to start synchronisation; No inspector PC installed</value>
+  </data>
+  <data name="str_SyncNotStartedPdaConnect" xml:space="preserve">
+    <value>!It is not possible to start synchronisation; PDA connected</value>
+  </data>
+  <data name="str_ClickButtonToStartSyncInspectorPC" xml:space="preserve">
+    <value>!Click button to start synchronisation INSEPCTOR PC</value>
+  </data>
+  <data name="str_ErrorWriteFile" xml:space="preserve">
+    <value>!Unable to write file</value>
+  </data>
+  <data name="str_DataDirPCNotFound" xml:space="preserve">
+    <value>!The directory for the results file is not found. Do you wish to continue?</value>
+  </data>
+  <data name="str_FileNotExists" xml:space="preserve">
+    <value>!The file does not exists</value>
+    <comment>Expired</comment>
+  </data>
+  <data name="str_MainDirArchive" xml:space="preserve">
+    <value>!Main directory Archive</value>
+  </data>
+  <data name="str_MainDirInspectionProcedure" xml:space="preserve">
+    <value>!Main directory Inspection procedure</value>
+  </data>
+  <data name="str_MainDirMeasurementData" xml:space="preserve">
+    <value>!Main directory Measurementdata</value>
+  </data>
+  <data name="str_MainDirPlexor" xml:space="preserve">
+    <value>!Main directory PLEXOR</value>
+  </data>
+  <data name="str_MainDirPRS" xml:space="preserve">
+    <value>!Main directory PRS</value>
+  </data>
+  <data name="str_MainDirResult" xml:space="preserve">
+    <value>!Main directory Result</value>
+  </data>
+  <data name="str_ErrorXsdValidation" xml:space="preserve">
+    <value>!The xml file is not valid (XSD error)</value>
+  </data>
+</root>

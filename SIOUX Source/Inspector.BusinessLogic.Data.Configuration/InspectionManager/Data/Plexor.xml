@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Kamstrup b.v.-->
+<PLEXORS xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <PLEXOR>
+    <Name>Plexor Bluetooth IrDA</Name>
+    <SerialNumber>1234567890</SerialNumber>
+    <BTAddress>00:80:98:C4:21:13</BTAddress>
+    <PN>0..16 bar</PN>
+    <CalibrationDate>2008-04-04</CalibrationDate>
+  </PLEXOR>
+  <PLEXOR>
+    <Name>Plexor Bluetooth WIS</Name>
+    <SerialNumber>1234567890</SerialNumber>
+    <BTAddress>00:16:A4:0F:C3:D3</BTAddress>
+    <PN>0..16 bar</PN>
+    <CalibrationDate>2008-04-04</CalibrationDate>
+  </PLEXOR>
+  <PLEXOR>
+    <Name>Laird Plexor</Name>
+    <SerialNumber>54321</SerialNumber>
+    <BTAddress>00:16:A4:09:48:25</BTAddress>
+    <PN>0..16 bar</PN>
+    <CalibrationDate>2008-04-04</CalibrationDate>
+  </PLEXOR>
+  <PLEXOR>
+    <Name>Laird Plexor</Name>
+    <SerialNumber>54321</SerialNumber>
+    <BTAddress>00:16:A4:09:47:80</BTAddress>
+    <PN>0..16 bar</PN>
+    <CalibrationDate>2008-04-04</CalibrationDate>
+  </PLEXOR>
+  <PLEXOR>
+    <Name>Michel Plexor</Name>
+    <SerialNumber>54321</SerialNumber>
+    <BTAddress>00:80:98:FA:C5:9D</BTAddress>
+    <PN>0..16 bar</PN>
+    <CalibrationDate>2008-04-04</CalibrationDate>
+  </PLEXOR>
+  <PLEXOR>
+    <Name>Michel Plexor2</Name>
+    <SerialNumber>54321</SerialNumber>
+    <BTAddress>00:16:A4:0F:C3:F0</BTAddress>
+    <PN>0..16 bar</PN>
+    <CalibrationDate>2008-04-04</CalibrationDate>
+  </PLEXOR>
+</PLEXORS>

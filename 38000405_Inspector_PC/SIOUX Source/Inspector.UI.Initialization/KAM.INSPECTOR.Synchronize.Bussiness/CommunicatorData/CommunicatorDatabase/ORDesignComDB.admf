@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Provider="ALinq.Access.AccessDbProvider" Class="ORDesignComDBDataContext" Name="COMMUNICATORData" Framework="ALinq" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\COMMUNICATORData.mdb" Provider="System.Data.OleDb" />
+  <Table Name="tblPDA" Member="tblPDAs">
+    <Type Name="tblPDA">
+      <Column AutoSync="Never" CanBeNull="false" DbType="Integer" IsPrimaryKey="true" Member="Id" Name="ID" Type="System.Int32" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="Pdasnr" Name="PDASNR" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="INSPECTORVersion" Name="INSPECTORVersion" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="Bit" Member="INSPECTORUpdate" Name="INSPECTORUpdate" Type="System.Boolean" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="DateTime" Member="INSPECTORUpdateDate" Name="INSPECTORUpdateDate" Type="System.DateTime" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="DateTime" Member="INSPECTORLastSyncDate" Name="INSPECTORLastSyncDate" Type="System.DateTime" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataPRSLoad" Name="DirDataPRSLoad" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataInspProc" Name="DirDataInspProc" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataPLEXOR" Name="DirDataPLEXOR" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataFPR" Name="DirDataFPR" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataPRSSave" Name="DirDataPRSSave" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataResult" Name="DirDataResult" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataTemp" Name="DirDataTemp" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="DirDataArchive" Name="DirDataArchive" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="StorageCardINSPECTOR" Name="StorageCardINSPECTOR" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="SystemIntegration" Name="SystemIntegration" Type="System.String" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="tblRevision" Member="tblRevisions">
+    <Type Name="tblRevision">
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="RevStatus" Name="[Rev status]" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="DateTime" Member="Date" Name="[Date]" Type="System.DateTime" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="Comments" Name="Comments" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="DatabaseNumber" Name="[Database number]" Type="System.String" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

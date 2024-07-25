@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 17.625" name="OrDesignResultMdb">
+  <DataContextMoniker Name="/OrDesignResultMdbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e8c4194a-4616-4815-a662-5feadc595ce5" absoluteBounds="0.625, 0.5, 1.5, 16.861053646802905">
+      <DataClassMoniker Name="/OrDesignResultMdbDataContext/tblResultGCL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8874e4fb-3f1b-4c4c-8527-28011d7824bc" absoluteBounds="0.64000000000000012, 0.86, 1.4700000000000002, 16.155629836022854" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="c8144c03-6b72-4edf-8a16-f81cc0062a27" absoluteBounds="0.64000000000000012, 17.025629836022855, 1.4700000000000002, 0.23542381078004837" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b353eea-d99a-4ef8-9798-338741a6964b" absoluteBounds="2.75, 0.5, 1.5, 15.946099277536074">
+      <DataClassMoniker Name="/OrDesignResultMdbDataContext/tblResultPR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="555365ea-13e6-47ac-aaab-0175fb1d47d2" absoluteBounds="2.765, 0.86, 1.4700000000000002, 15.240675466756025" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0dbc95e4-9cec-4838-aa11-bea9fe15b03e" absoluteBounds="2.765, 16.110675466756025, 1.4700000000000002, 0.23542381078004837" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</Diagram>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="qlm" Class="QLMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.252.158\TESTSERVER1;Initial Catalog=qlm;User ID=qlm" SettingsObjectName="Kamstrup.LicenseKeyGenerator.LicenseServer.Properties.Settings" SettingsPropertyName="qlmConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LicenseKeys" Member="LicenseKeys">
+    <Type Name="LicenseKey">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ActivationKey" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ComputerKey" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ComputerID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MajorVersion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MinorVersion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ActivationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastAccessedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ActivationCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrderID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MaintenanceRenewalDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MaintenancePlanNotification" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GenericLicense" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ReleaseCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReleaseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NumLicenses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AvailableLicenses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ComputerName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientVersion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Disabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UserData1" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="AffiliateID" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="ReceiptID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OrderStatus" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Log4LKG" Member="Log4LKGs">
+    <Type Name="Log4LKG">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Action" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Key]" Member="Key" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OrderNo" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UserDomainName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 rel. 3 sp1 (http://www.altova.com) by Michel De Clercq (Kamstrup b.v.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="InspectionProcedureFile">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="InspectionProcedure" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Name" type="xsd:string"/>
+							<xsd:element name="Version" type="xsd:string"/>
+							<xsd:element name="InspectionSequence">
+								<xsd:annotation>
+									<xsd:documentation>A measure point contains several ID's. The ObjectID and MeasurePoint are linked to the ObjectID and MeasurepointID in the station data or gas control line data. In the inspection result these ID's and the MeasurePointID are saved. It is only possible to select only Scriptcommand_4 or Scriptcommand_41 or Scriptcommand_42 or Scriptcommand_43 or one Scriptcommand_51 </xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:choice maxOccurs="unbounded">
+											<xsd:element name="Scriptcommand_1" minOccurs="0" maxOccurs="unbounded">
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="Text" type="xsd:string"/>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_2" minOccurs="0" maxOccurs="unbounded">
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="Section" type="xsd:string"/>
+														<xsd:element name="SubSection" type="xsd:string"/>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_3" minOccurs="0" maxOccurs="unbounded">
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="Text" type="xsd:string"/>
+														<xsd:element name="Duration" type="xsd:positiveInteger"/>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_70" minOccurs="0" maxOccurs="unbounded">
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="Mode" type="xsd:boolean"/>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_4" minOccurs="0" maxOccurs="unbounded">
+												<xsd:annotation>
+													<xsd:documentation>Question to the inspector. The selected or inputted data is saved in the inspection result</xsd:documentation>
+												</xsd:annotation>
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="ObjectName" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="MeasurePoint" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="FieldNo" type="xsd:integer" minOccurs="0"/>
+														<xsd:element name="Question" type="xsd:string"/>
+														<xsd:element name="TypeQuestion">
+															<xsd:simpleType>
+																<xsd:restriction base="xsd:string">
+																	<xsd:enumeration value="0; Input multi lines"/>
+																	<xsd:enumeration value="1; Input single line"/>
+																	<xsd:enumeration value="2; 2 options"/>
+																	<xsd:enumeration value="3; 3 options"/>
+																</xsd:restriction>
+															</xsd:simpleType>
+														</xsd:element>
+														<xsd:element name="TextOptions" type="xsd:string" minOccurs="0" maxOccurs="3"/>
+														<xsd:element name="Required" type="xsd:boolean"/>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_41" minOccurs="0" maxOccurs="unbounded">
+												<xsd:annotation>
+													<xsd:documentation>Option (one or more selections per list) and check lists. Displaying maximum 5 lists with 12 options per list</xsd:documentation>
+												</xsd:annotation>
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="ObjectName" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="MeasurePoint" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="FieldNo" type="xsd:integer" minOccurs="0"/>
+														<xsd:element name="ShowNextListImmediately" type="xsd:boolean">
+															<xsd:annotation>
+																<xsd:documentation>In case of a checklist; when selecting a condition code the next list will be displayed immediatialy</xsd:documentation>
+															</xsd:annotation>
+														</xsd:element>
+														<xsd:element name="List" maxOccurs="5">
+															<xsd:complexType>
+																<xsd:sequence>
+																	<xsd:element name="SequenceNumberList" type="xsd:long"/>
+																	<xsd:element name="ListType">
+																		<xsd:simpleType>
+																			<xsd:restriction base="xsd:string">
+																				<xsd:enumeration value="0;OptionList"/>
+																				<xsd:enumeration value="1;CheckList"/>
+																			</xsd:restriction>
+																		</xsd:simpleType>
+																	</xsd:element>
+																	<xsd:element name="SelectionRequired" type="xsd:boolean" minOccurs="0"/>
+																	<xsd:element name="ListQuestion" type="xsd:string"/>
+																	<xsd:element name="OneSelectionAllowed" type="xsd:boolean">
+																		<xsd:annotation>
+																			<xsd:documentation>Only one condition code can be selected in a list</xsd:documentation>
+																		</xsd:annotation>
+																	</xsd:element>
+																	<xsd:element name="CheckListResult" type="xsd:boolean">
+																		<xsd:annotation>
+																			<xsd:documentation>False; In case of a checklist; the value ;0 (Not Ok) or ;1 (OK) will not be stored in the inspection results( </xsd:documentation>
+																		</xsd:annotation>
+																	</xsd:element>
+																	<xsd:element name="ListConditionCode" maxOccurs="12">
+																		<xsd:complexType>
+																			<xsd:sequence>
+																				<xsd:element name="ConditionCode" type="xsd:string"/>
+																				<xsd:element name="ConditionCodeDescription" type="xsd:string"/>
+																				<xsd:element name="DisplayNextList" type="xsd:boolean"/>
+																			</xsd:sequence>
+																		</xsd:complexType>
+																	</xsd:element>
+																</xsd:sequence>
+															</xsd:complexType>
+														</xsd:element>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_42" minOccurs="0" maxOccurs="unbounded">
+												<xsd:annotation>
+													<xsd:documentation>Saving input of the inspector in the remark window of INSPECTOR in the inspection results</xsd:documentation>
+												</xsd:annotation>
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="ObjectName" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="MeasurePoint" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="FieldNo" type="xsd:integer" minOccurs="0"/>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_43" minOccurs="0" maxOccurs="unbounded">
+												<xsd:annotation>
+													<xsd:documentation>List of maximum 20 choices from which the inspector can select. Selection required</xsd:documentation>
+												</xsd:annotation>
+												<xsd:complexType>
+													<xsd:sequence>
+														<xsd:element name="SequenceNumber" type="xsd:long"/>
+														<xsd:element name="ObjectName" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="MeasurePoint" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="FieldNo" type="xsd:integer" minOccurs="0"/>
+														<xsd:element name="Instruction" type="xsd:string"/>
+														<xsd:element name="ListItem" type="xsd:string" minOccurs="2" maxOccurs="20"/>
+														<xsd:element name="Required" type="xsd:boolean"/>
+													</xsd:sequence>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Scriptcommand_5x" type="TypeScriptcommand5x" minOccurs="0" maxOccurs="unbounded"/>
+										</xsd:choice>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="TypeScriptcommand5x">
+		<xsd:annotation>
+			<xsd:documentation>The different scriptcommands 5x. Reading the pressure from the digital manometer.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="SequenceNumber" type="xsd:long"/>
+			<xsd:element name="ObjectName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="MeasurePoint" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="FieldNo" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="Scriptcommand">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="51"/>
+						<xsd:enumeration value="52"/>
+						<xsd:enumeration value="53"/>
+						<xsd:enumeration value="54"/>
+						<xsd:enumeration value="55"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="Instruction" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="DigitalManometer" type="TypeDigitalManometer"/>
+			<xsd:element name="MeasurementFrequency" type="TypeMeasurementFrequency"/>
+			<xsd:element name="MeasurementPeriod" type="xsd:nonNegativeInteger"/>
+			<xsd:element name="ExtraMeasurementPeriod" type="xsd:nonNegativeInteger"/>
+			<xsd:element name="Leakage" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Select the type of leakage. More information in the manual of CONNEXION </xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="V1"/>
+						<xsd:enumeration value="V2"/>
+						<xsd:enumeration value="Membrane"/>
+						<xsd:enumeration value="-"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="TypeDigitalManometer">
+		<xsd:restriction base="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>Select the digital manometer to communicate with. "TH1" left placed digital manometer; "TH2" right placed digital manometer</xsd:documentation>
+			</xsd:annotation>
+			<xsd:enumeration value="TH1"/>
+			<xsd:enumeration value="TH2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TypeMeasurementFrequency">
+		<xsd:restriction base="xsd:integer">
+			<xsd:annotation>
+				<xsd:documentation>Select the measurement frequency of the digital manometer. Default 10, set 25 only for fingerprint use only. </xsd:documentation>
+			</xsd:annotation>
+			<xsd:enumeration value="10"/>
+			<xsd:enumeration value="25"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

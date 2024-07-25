@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="stationInformation" EntityNamespace="PRSsql.DataAccess" ContextNamespace="PRSsql.DataAccess" Class="StationInformation" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="GasControlLine" Member="GasControlLines">
+    <Type Name="GasControlLine">
+      <Column Name="GasControlLine_Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRSLinkID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GasControlLineName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PeMin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PeMax" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VolumeVA" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VolumeVAK" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PaRangeDM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PeRangeDM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GCLIdentification" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="InspectionProcedure" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FSDStart" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="GCLCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StatusGCL" Type="System.Int32" DbType="INT" CanBeNull="false" />
+      <Association Name="GasControlLine_GCLObject" Member="GCLObjects" ThisKey="GasControlLine_Id" OtherKey="GCLLinkID" Type="GCLObject" />
+      <Association Name="PRS_GasControlLine" Member="PRS" ThisKey="PRSLinkID" OtherKey="PRS_Id" Type="PRS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="GCLObjects">
+    <Type Name="GCLObject">
+      <Column Name="GCLObjects_Id" Type="System.Int32" DbType="Int" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GCLLinkID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ObjectName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ObjectID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MeasurePoint" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MeasurePointID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FieldNo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Percentage" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ValueMin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ValueMax" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="UOV" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="GasControlLine_GCLObject" Member="GasControlLine" ThisKey="GCLLinkID" OtherKey="GasControlLine_Id" Type="GasControlLine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="PRS">
+    <Type Name="PRS">
+      <Column Name="PRS_Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRSCode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PRSName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PRSIdentification" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Route" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Information" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="InspectionProcedure" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="StatusPRS" Type="System.Int32" DbType="INT" CanBeNull="false" />
+      <Column Name="StatusGCL" Type="System.Int32" DbType="INT" CanBeNull="false" />
+      <Association Name="PRS_GasControlLine" Member="GasControlLines" ThisKey="PRS_Id" OtherKey="PRSLinkID" Type="GasControlLine" />
+      <Association Name="PRS_PRSObject" Member="PRSObjects" ThisKey="PRS_Id" OtherKey="PRSLinkID" Type="PRSObject" />
+    </Type>
+  </Table>
+  <Table Name="PRSObjects">
+    <Type Name="PRSObject">
+      <Column Name="PRSObjects_Id" Type="System.Int32" DbType="Int" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRSLinkID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ObjectName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ObjectID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MeasurePoint" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MeasurePointID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FieldNo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Association Name="PRS_PRSObject" Member="PRS" ThisKey="PRSLinkID" OtherKey="PRS_Id" Type="PRS" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

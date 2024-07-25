@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rdLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 15</value>
+  </data>
+  <data name="rdLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 18</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rdLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rdLbl.Text" xml:space="preserve">
+    <value>!Theme selection</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.Name" xml:space="preserve">
+    <value>rdLbl</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="AquaTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="BreezeTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 17</value>
+  </metadata>
+  <metadata name="DesertTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>273, 17</value>
+  </metadata>
+  <metadata name="VisualStudio2012LightTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>404, 17</value>
+  </metadata>
+  <metadata name="HighContrastBlackTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>621, 17</value>
+  </metadata>
+  <metadata name="Office2007BlackTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>817, 17</value>
+  </metadata>
+  <metadata name="Office2007SilverTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>999, 17</value>
+  </metadata>
+  <metadata name="Office2010BlackTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="Office2010BlueTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>199, 56</value>
+  </metadata>
+  <metadata name="Office2010SilverTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>529, 56</value>
+  </metadata>
+  <metadata name="TelerikMetroTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>712, 56</value>
+  </metadata>
+  <metadata name="TelerikMetroBlueTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>876, 56</value>
+  </metadata>
+  <metadata name="TelerikMetroTouchTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="Windows7Theme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>377, 56</value>
+  </metadata>
+  <data name="rDropDownThemesSelection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 15</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rDropDownThemesSelection.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rDropDownThemesSelection.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rDropDownThemesSelection.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rDropDownThemesSelection.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rDropDownThemesSelection.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rDropDownThemesSelection.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rDropDownThemesSelection.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rDropDownThemesSelection.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rDropDownThemesSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="rDropDownThemesSelection.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;rDropDownThemesSelection.Name" xml:space="preserve">
+    <value>rDropDownThemesSelection</value>
+  </data>
+  <data name="&gt;&gt;rDropDownThemesSelection.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rDropDownThemesSelection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rDropDownThemesSelection.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdBrowsCommunicatorPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdBrowsCommunicatorPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 50</value>
+  </data>
+  <data name="rdBrowsCommunicatorPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 20</value>
+  </data>
+  <data name="rdBrowsCommunicatorPath.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="rdBrowsCommunicatorPath.Text" xml:space="preserve">
+    <value>RadBrowseEditor1</value>
+  </data>
+  <data name="&gt;&gt;rdBrowsCommunicatorPath.Name" xml:space="preserve">
+    <value>rdBrowsCommunicatorPath</value>
+  </data>
+  <data name="&gt;&gt;rdBrowsCommunicatorPath.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadBrowseEditor, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdBrowsCommunicatorPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rdBrowsCommunicatorPath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdlblPathCommunicator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 50</value>
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdlblPathCommunicator.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdlblPathCommunicator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 18</value>
+  </data>
+  <data name="rdlblPathCommunicator.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="rdlblPathCommunicator.Text" xml:space="preserve">
+    <value>!Communicator path</value>
+  </data>
+  <data name="&gt;&gt;rdlblPathCommunicator.Name" xml:space="preserve">
+    <value>rdlblPathCommunicator</value>
+  </data>
+  <data name="&gt;&gt;rdlblPathCommunicator.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdlblPathCommunicator.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rdlblPathCommunicator.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdchkInspectorPda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 55</value>
+  </data>
+  <data name="rdchkInspectorPda.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdchkInspectorPda.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdchkInspectorPda.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdchkInspectorPda.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdchkInspectorPda.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdchkInspectorPda.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdchkInspectorPda.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdchkInspectorPda.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdchkInspectorPda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 18</value>
+  </data>
+  <data name="rdchkInspectorPda.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="rdchkInspectorPda.Text" xml:space="preserve">
+    <value>!Inspector Pda available</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPda.Name" xml:space="preserve">
+    <value>rdchkInspectorPda</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPda.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPda.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPda.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdchkInspectorPc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="rdchkInspectorPc.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdchkInspectorPc.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdchkInspectorPc.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdchkInspectorPc.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdchkInspectorPc.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdchkInspectorPc.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdchkInspectorPc.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdchkInspectorPc.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdchkInspectorPc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="rdchkInspectorPc.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="rdchkInspectorPc.Text" xml:space="preserve">
+    <value>!Inspector PC available</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPc.Name" xml:space="preserve">
+    <value>rdchkInspectorPc</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPc.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPc.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;rdchkInspectorPc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadGroupBox1.HeaderText" xml:space="preserve">
+    <value>!Inspector available</value>
+  </data>
+  <data name="RadGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 91</value>
+  </data>
+  <data name="RadGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>454, 83</value>
+  </data>
+  <data name="RadGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="RadGroupBox1.Text" xml:space="preserve">
+    <value>!Inspector available</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.Name" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 415</value>
+  </data>
+  <data name="&gt;&gt;AquaTheme1.Name" xml:space="preserve">
+    <value>AquaTheme1</value>
+  </data>
+  <data name="&gt;&gt;AquaTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.AquaTheme, Telerik.WinControls.Themes.Aqua, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;BreezeTheme1.Name" xml:space="preserve">
+    <value>BreezeTheme1</value>
+  </data>
+  <data name="&gt;&gt;BreezeTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.BreezeTheme, Telerik.WinControls.Themes.Breeze, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;DesertTheme1.Name" xml:space="preserve">
+    <value>DesertTheme1</value>
+  </data>
+  <data name="&gt;&gt;DesertTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.DesertTheme, Telerik.WinControls.Themes.Desert, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;VisualStudio2012LightTheme1.Name" xml:space="preserve">
+    <value>VisualStudio2012LightTheme1</value>
+  </data>
+  <data name="&gt;&gt;VisualStudio2012LightTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.VisualStudio2012LightTheme, Telerik.WinControls.Themes.VisualStudio2012Light, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;HighContrastBlackTheme1.Name" xml:space="preserve">
+    <value>HighContrastBlackTheme1</value>
+  </data>
+  <data name="&gt;&gt;HighContrastBlackTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.HighContrastBlackTheme, Telerik.WinControls.Themes.HighContrastBlack, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;Office2007BlackTheme1.Name" xml:space="preserve">
+    <value>Office2007BlackTheme1</value>
+  </data>
+  <data name="&gt;&gt;Office2007BlackTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Office2007BlackTheme, Telerik.WinControls.Themes.Office2007Black, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;Office2007SilverTheme1.Name" xml:space="preserve">
+    <value>Office2007SilverTheme1</value>
+  </data>
+  <data name="&gt;&gt;Office2007SilverTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Office2007SilverTheme, Telerik.WinControls.Themes.Office2007Silver, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;Office2010BlackTheme1.Name" xml:space="preserve">
+    <value>Office2010BlackTheme1</value>
+  </data>
+  <data name="&gt;&gt;Office2010BlackTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Office2010BlackTheme, Telerik.WinControls.Themes.Office2010Black, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;Office2010BlueTheme1.Name" xml:space="preserve">
+    <value>Office2010BlueTheme1</value>
+  </data>
+  <data name="&gt;&gt;Office2010BlueTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Office2010BlueTheme, Telerik.WinControls.Themes.Office2010Blue, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;Office2010SilverTheme1.Name" xml:space="preserve">
+    <value>Office2010SilverTheme1</value>
+  </data>
+  <data name="&gt;&gt;Office2010SilverTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Office2010SilverTheme, Telerik.WinControls.Themes.Office2010Silver, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;TelerikMetroTheme1.Name" xml:space="preserve">
+    <value>TelerikMetroTheme1</value>
+  </data>
+  <data name="&gt;&gt;TelerikMetroTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.TelerikMetroTheme, Telerik.WinControls.Themes.TelerikMetro, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;TelerikMetroBlueTheme1.Name" xml:space="preserve">
+    <value>TelerikMetroBlueTheme1</value>
+  </data>
+  <data name="&gt;&gt;TelerikMetroBlueTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.TelerikMetroBlueTheme, Telerik.WinControls.Themes.TelerikMetroBlue, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;TelerikMetroTouchTheme1.Name" xml:space="preserve">
+    <value>TelerikMetroTouchTheme1</value>
+  </data>
+  <data name="&gt;&gt;TelerikMetroTouchTheme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.TelerikMetroTouchTheme, Telerik.WinControls.Themes.TelerikMetroTouch, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;Windows7Theme1.Name" xml:space="preserve">
+    <value>Windows7Theme1</value>
+  </data>
+  <data name="&gt;&gt;Windows7Theme1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.Themes.Windows7Theme, Telerik.WinControls.Themes.Windows7, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>usctrl_GeneralUI</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

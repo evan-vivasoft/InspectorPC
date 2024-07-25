@@ -1,0 +1,8 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<LICENSES>
+  <PRODUCTS>
+    <PRODUCT Name="UNITOOL" ID="8" Major="1" Minor="0" Key="757784-G69000000" GUID="{38977C96-D8A0-4420-9340-7D99E509A460}" ReleaseDate="2008-10-31" Features="0:1:UNIGAS300;0:2:UNILOG-GPRS;" LatestVersion="1.0                                               " LatestVersionUrl="                                                                                                                                                                                                                                                               " LatestVersionNotes="            " />
+    <PRODUCT Name="INSPECTOR PC" ID="9" Major="1" Minor="0" Key="" GUID="{B41F701E-5F89-47E8-8F2C-F4F88682B488}" ReleaseDate="2008-10-31" Features="" LatestVersion="1.0                                               " LatestVersionUrl="                                                                                                                                                                                                                                                               " LatestVersionNotes="            " />
+    <PRODUCT Name="DIAGNOSTICS" ID="10" Major="1" Minor="0" Key="" GUID="{7ABE788D-2F56-450A-8774-ECF5FA8B1D78}" ReleaseDate="2008-10-31" Features="" LatestVersion="1.0                                               " LatestVersionUrl="                                                                                                                                                                                                                                                               " LatestVersionNotes="            " />
+  </PRODUCTS>
+</LICENSES>

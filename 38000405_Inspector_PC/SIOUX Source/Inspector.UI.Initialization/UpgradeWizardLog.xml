@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\KAM.LicenceTool.vbproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\app.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="KamLicenseResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\Resources\KamLicenseResx.resx" />
+  <event action="Analyze" type="Success" name="uscrtl_LicenseRequest.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\uctrl License\uscrtl_LicenseRequest.resx" />
+  <event action="Analyze" type="Success" name="usctrl_Licensed.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\uctrl License\usctrl_Licensed.resx" />
+  <event action="Analyze" type="Success" name="KAM.LicenceTool" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\LicenceTool\KAM.LicenceTool.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\KAM.COMMUNICATOR.Synchronize.Bussiness.vbproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\app.config" />
+  <event action="Analyze" type="Success" name="Binary References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\bin\" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="SqlMetal.exe.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="SqlMetal.exe.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  <event action="Analyze" type="Success" name="KAM.COMMUNICATOR.Synchronize.Bussiness" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.Bussiness\KAM.COMMUNICATOR.Synchronize.Bussiness.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\KAM.COMMUNICATOR.Synchronize.Infra.vbproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\app.config" />
+  <event action="Analyze" type="Success" name="Binary References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\bin\" />
+  <event action="Analyze" type="Success" name="Images.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\Images\Images.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="CommunicatorPDAresx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\Resources\CommunicatorPDAresx.resx" />
+  <event action="Analyze" type="Success" name="SyncStepErrorMessage.resx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\Resources\SyncStepErrorMessage.resx.resx" />
+  <event action="Analyze" type="Success" name="SyncStepStatusResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\Resources\SyncStepStatusResx.resx" />
+  <event action="Analyze" type="Success" name="usctrl_Synchr.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\usctrl_Synchr.resx" />
+  <event action="Analyze" type="Success" name="KAM.COMMUNICATOR.Synchronize.Infra" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize.PDA.Infra\KAM.COMMUNICATOR.Synchronize.Infra.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\KAM.Communicator.UI.Test.vbproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\app.config" />
+  <event action="Analyze" type="Success" name="FormTest.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\FormTest.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="KAM.Communicator.UI.Test" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.COMMUNICATOR.UI.Test\KAM.Communicator.UI.Test.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.Communicator.Infra\KAM.COMMUNICATOR.Infra.vbproj" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.Communicator.Infra\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="KAM.COMMUNICATOR.Infra" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.Communicator.Infra\KAM.COMMUNICATOR.Infra.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\KAM.COMMUNICATOR.Main.vbproj" />
+  <event action="Analyze" type="Success" name="AboutLicenseForm.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\AboutLicenseForm.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\app.config" />
+  <event action="Analyze" type="Success" name="usctrl_GeneralUI.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\GUI\usctrl_GeneralUI.resx" />
+  <event action="Analyze" type="Success" name="usctrl_SyncOptions.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\GUI\usctrl_SyncOptions.resx" />
+  <event action="Analyze" type="Success" name="MainForm.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\MainForm.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="COMMUNICATORMainResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\Resources\COMMUNICATORMainResx.resx" />
+  <event action="Analyze" type="Success" name="TelerikGridResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\Resources\TelerikGridResx.resx" />
+  <event action="Analyze" type="Success" name="SettingsForm.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\SettingsForm.resx" />
+  <event action="Analyze" type="Success" name="SplashScreen.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\SplashScreen.resx" />
+  <event action="Analyze" type="Success" name="countryFlags.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\Translations\countryFlags.resx" />
+  <event action="Analyze" type="Success" name="usctrl_TranslationSelection.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\Translations\usctrl_TranslationSelection.resx" />
+  <event action="Analyze" type="Success" name="usctrl_About.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\User Control forms\usctrl_About.resx" />
+  <event action="Analyze" type="Success" name="KAM.COMMUNICATOR.Main" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Synchronize\KAM.COMMUNICATOR.Main.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\KAM.INSPECTOR.Main.vbproj" />
+  <event action="Analyze" type="Success" name="AboutLicenseForm.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\AboutLicenseForm.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\App.config" />
+  <event action="Analyze" type="Success" name="MainForm.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\MainForm.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="INSPECTORMainResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\Resources\INSPECTORMainResx.resx" />
+  <event action="Analyze" type="Success" name="TelerikGridResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\Resources\TelerikGridResx.resx" />
+  <event action="Analyze" type="Success" name="SettingsForm.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\SettingsForm.resx" />
+  <event action="Analyze" type="Success" name="SplashScreen.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\SplashScreen.resx" />
+  <event action="Analyze" type="Success" name="countryFlags.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\Translations\countryFlags.resx" />
+  <event action="Analyze" type="Success" name="usctrl_TranslationSelection.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\Translations\usctrl_TranslationSelection.resx" />
+  <event action="Analyze" type="Success" name="uscrtl_ChartSettings.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\User controls forms\uscrtl_ChartSettings.resx" />
+  <event action="Analyze" type="Success" name="usctrl_About.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\User controls forms\usctrl_About.resx" />
+  <event action="Analyze" type="Success" name="usctrl_GeneralUI.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\User controls forms\usctrl_GeneralUI.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.Main" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Main\KAM.INSPECTOR.Main.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\KAM.INSPECTOR.IP.vbproj" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="InspectionProcedureResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\Resources\InspectionProcedureResx.resx" />
+  <event action="Analyze" type="Success" name="SoundsResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\Resources\SoundsResx.resx" />
+  <event action="Analyze" type="Success" name="usctrl_ChartResults.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_ChartResults.resx" />
+  <event action="Analyze" type="Success" name="usctrl_InspectionInformation.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_InspectionInformation.resx" />
+  <event action="Analyze" type="Success" name="usctrl_MainInspection.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_MainInspection.resx" />
+  <event action="Analyze" type="Success" name="usctrl_MainInspectionStep.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_MainInspectionStep.resx" />
+  <event action="Analyze" type="Success" name="usctrl_ScriptCommand1.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_ScriptCommand1.resx" />
+  <event action="Analyze" type="Success" name="usctrl_ScriptCommand3.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_ScriptCommand3.resx" />
+  <event action="Analyze" type="Success" name="usctrl_ScriptCommand4.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_ScriptCommand4.resx" />
+  <event action="Analyze" type="Success" name="usctrl_Scriptcommand41.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_Scriptcommand41.resx" />
+  <event action="Analyze" type="Success" name="usctrl_ScriptCommand41_ControlList.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_ScriptCommand41_ControlList.resx" />
+  <event action="Analyze" type="Success" name="usctrl_Scriptcommand42.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_Scriptcommand42.resx" />
+  <event action="Analyze" type="Success" name="usctrl_ScriptCommand43.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_ScriptCommand43.resx" />
+  <event action="Analyze" type="Success" name="usctrl_ScriptCommand5x.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\usctrl_ScriptCommand5x.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.IP" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.IP\KAM.INSPECTOR.IP.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PRS\KAM.INSPECTOR.PRS.vbproj" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PRS\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="INSPECTORPRSResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PRS\Resources\INSPECTORPRSResx.resx" />
+  <event action="Analyze" type="Success" name="StatusImageResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PRS\Resources\StatusImageResx.resx" />
+  <event action="Analyze" type="Success" name="usctrl_FormPRS.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PRS\usctrl_FormPRS.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.PRS" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PRS\KAM.INSPECTOR.PRS.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.INSPECTOR.Infra\KAM.INSPECTOR.Infra.vbproj" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.INSPECTOR.Infra\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="DeviceCommandResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.INSPECTOR.Infra\Resources\DeviceCommandResx.resx" />
+  <event action="Analyze" type="Success" name="InitializationErrorCodesResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.INSPECTOR.Infra\Resources\InitializationErrorCodesResx.resx" />
+  <event action="Analyze" type="Success" name="KamInfraresx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.INSPECTOR.Infra\Resources\KamInfraresx.resx" />
+  <event action="Analyze" type="Success" name="MeasurementDataFileResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.INSPECTOR.Infra\Resources\MeasurementDataFileResx.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.Infra" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\Kam.INSPECTOR.Infra\KAM.INSPECTOR.Infra.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\KAM.INSPECTOR.Results.vbproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\app.config" />
+  <event action="Analyze" type="Success" name="DisplayResults.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\DisplayResults.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="INSPECTORResultResx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\Resources\INSPECTORResultResx.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.Results" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.Results\KAM.INSPECTOR.Results.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.info\KAM.INSPECTOR.info.vbproj" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.info\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.info" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.info\KAM.INSPECTOR.info.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.Infra\KAM.Infra.vbproj" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.Infra\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="KAM.Infra" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.Infra\KAM.Infra.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\KAM.INSPECTOR.PLEXOR.vbproj" />
+  <event action="Analyze" type="Success" name="Images.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\Images\Images.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="KamPLEXORresx.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\Resources\KamPLEXORresx.resx" />
+  <event action="Analyze" type="Success" name="usctrl_BluetoothDongle.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\usctrl_BluetoothDongle.resx" />
+  <event action="Analyze" type="Success" name="usctrl_FormPlexor.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\usctrl_FormPlexor.resx" />
+  <event action="Analyze" type="Success" name="usctrl_Initialization.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\usctrl_Initialization.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.PLEXOR" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.PLEXOR\KAM.INSPECTOR.PLEXOR.vbproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.ResultsGridView\KAM.INSPECTOR.ResultsGridView.vbproj" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.ResultsGridView\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="usctrl_FormDisplayResults.resx" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.ResultsGridView\usctrl_FormDisplayResults.resx" />
+  <event action="Analyze" type="Success" name="KAM.INSPECTOR.ResultsGridView" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.ResultsGridView\KAM.INSPECTOR.ResultsGridView.vbproj" />
+  <event action="Analyze" type="Success" name="INSPECTOR.PC" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\INSPECTOR.PC.sln" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.ResultsGridView\KAM.INSPECTOR.ResultsGridView.vbproj" />
+  <event action="Upgrade" type="Success" name="KAM.INSPECTOR.ResultsGridView" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\KAM.INSPECTOR.ResultsGridView\KAM.INSPECTOR.ResultsGridView.vbproj" />
+  <event action="Upgrade" type="Success" name="INSPECTOR.PC" path="T:\Source code\INSPECTOR.PC\38000405_48 Source code\INSPECTOR.PC.sln" />
+</log>

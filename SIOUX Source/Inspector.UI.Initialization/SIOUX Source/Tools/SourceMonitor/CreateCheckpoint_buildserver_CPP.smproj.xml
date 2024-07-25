@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ 
+
+<!-- =======================================================================
+
+Examples of typical SourceMonitor command line script commands.
+
+======================================================================== -->
+
+ 
+
+<sourcemonitor_commands>
+
+ 
+
+   <!-- ===================================================================
+
+    The write_log element value is used for execution of commands in this
+
+    file, not the log errors flag set in SourceMonitor's options dialog.
+
+    If this element is missing, command progress and errors will be written
+
+    to the SourceMonitor log file.
+
+    =================================================================== -->
+
+ 
+
+   <write_log>true</write_log>
+   <log_all_to_console/>
+ 
+
+
+   <!-- ===============================================================
+
+    This command is typical for the case where a project exists and you
+
+    want to create a new checkpoint and export its metrics.
+
+   ================================================================ -->
+
+ 
+
+   <command>
+		<checkpoint_name>CheckPoint - %CCNetLabel%</checkpoint_name>
+ 
+ 		<checkpoint_name>CheckPoint - %CCNetLabel%</checkpoint_name>
+		<parse_utf8_files>true</parse_utf8_files>
+		<project_file>.\buildserver_CPP.smproj</project_file>
+		<modified_complexity>true</modified_complexity>
+		<ignore_headers_footers>true</ignore_headers_footers>
+		<source_directory>..\..\</source_directory>
+		<!-- software dir -->
+		
+        <source_subdirectory_list>
+            <exclude_subdirectories>true</exclude_subdirectories>		
+			<source_subtree>Import\</source_subtree>
+            <source_subtree>Release\</source_subtree>		
+			<source_subtree>Tools\</source_subtree>
+        </source_subdirectory_list>		
+		
+		<include_subdirectories>true</include_subdirectories>
+
+ 
+
+       <!-- ===============================================================
+
+        If you do not specify a checkpoint name, a name will be created for
+
+        you in the form "CheckpointN" where N is the next higher number not
+
+        already present in an auto-generated checkpoint name in this
+
+        project.
+
+       ================================================================ -->
+
+ 
+
+       <export>
+         <export_file>.\temp\sm_dump_buildserver_CPP.smproj.xml</export_file>
+         <export_kiviat_file>.\temp\sm_kiviat_buildserver_CPP.smproj.bmp</export_kiviat_file>
+         <export_type>2 (checkpoint details as XML)</export_type>
+		 <export_option>3 (method metrics)</export_option>
+       </export>
+	</command>
+	
+
+
+       <!-- ===============================================================
+
+        When the </command> tag is encountered, the checkpoint is created,
+
+        the metrics for all files in the new checkpoint are exported as
+
+        XML, and then the new checkpoint is deleted from the project.
+
+        However, if any errors occur in the command's specification, an
+
+        error message will be logged (if logging is enabled) and the
+
+        execution of the command will be aborted.
+
+       ================================================================ -->
+
+ 
+
+   </command>
+
+
+ 
+
+ 
+
+
+</sourcemonitor_commands>
+
+ 
+ 

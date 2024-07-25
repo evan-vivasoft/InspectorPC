@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Status xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="T:\SOURCE~1\INSPECTOR.PC\SOURCE~1\KAM.COMMUNICATOR.UI.Test\bin\Debug\TESTFI~1\InspectionStatus.xsd">
+	<InspectionStatus>
+		<PRSIdentification>697</PRSIdentification>
+		<PRSName>G00002</PRSName>
+		<PRSCode>G00002</PRSCode>
+		<StatusID>2</StatusID>
+	</InspectionStatus>
+	<InspectionStatus>
+		<PRSIdentification>5 007 230.1</PRSIdentification>
+		<PRSName>G00002</PRSName>
+		<PRSCode>G00002</PRSCode>
+		<GCLIdentification>23.05.2012 5 007 230.1.1</GCLIdentification>
+		<GasControlLineName>5 007 230.1.1 OS LS</GasControlLineName>
+		<GCLCode/>
+		<StatusID>2</StatusID>
+	</InspectionStatus>
+	<InspectionStatus>
+		<PRSIdentification>5 007 230.1</PRSIdentification>
+		<PRSName>G00004</PRSName>
+		<PRSCode>G00004</PRSCode>
+		<StatusID>3</StatusID>
+	</InspectionStatus>
+</Status>

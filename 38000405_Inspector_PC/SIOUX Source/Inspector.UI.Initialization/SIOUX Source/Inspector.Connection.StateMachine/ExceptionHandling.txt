@@ -1,0 +1,2 @@
+﻿The statemachine throws only a single exception type 'StateMachineException' which occurs when an transition is attempted in the wrong state.
+All other non-state related errors are 'thrown' via the event system (e.g. OnMessageReceivedError).

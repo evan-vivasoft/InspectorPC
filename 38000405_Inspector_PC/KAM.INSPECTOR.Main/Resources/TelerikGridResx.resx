@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ColumnChooserFormCaption" xml:space="preserve">
+    <value>!ColumnChooserFormCaption</value>
+  </data>
+  <data name="str_AddNewRowString" xml:space="preserve">
+    <value>!AddNewRowString</value>
+  </data>
+  <data name="str_BestFitMenuItem" xml:space="preserve">
+    <value>!BestFitMenuItem</value>
+  </data>
+  <data name="str_ClearSortingMenuItem" xml:space="preserve">
+    <value>!ClearSortingMenuItem</value>
+  </data>
+  <data name="str_ColumnChooserFormMessage" xml:space="preserve">
+    <value>!ColumnChooserFormMessage</value>
+  </data>
+  <data name="str_ColumnChooserMenuItem" xml:space="preserve">
+    <value>!ColumnChooserMenuItem</value>
+  </data>
+  <data name="str_ConditionalFormattingBtnAdd" xml:space="preserve">
+    <value>!ConditionalFormattingBtnAdd</value>
+  </data>
+  <data name="str_ConditionalFormattingBtnApply" xml:space="preserve">
+    <value>!ConditionalFormattingBtnApply</value>
+  </data>
+  <data name="str_ConditionalFormattingBtnCancel" xml:space="preserve">
+    <value>!ConditionalFormattingBtnCancel</value>
+  </data>
+  <data name="str_ConditionalFormattingBtnOK" xml:space="preserve">
+    <value>!ConditionalFormattingBtnOK</value>
+  </data>
+  <data name="str_ConditionalFormattingBtnRemove" xml:space="preserve">
+    <value>!ConditionalFormattingBtnRemove</value>
+  </data>
+  <data name="str_ConditionalFormattingCaption" xml:space="preserve">
+    <value>!ConditionalFormattingCaption</value>
+  </data>
+  <data name="str_ConditionalFormattingLblColumn" xml:space="preserve">
+    <value>!ConditionalFormattingLblColumn</value>
+  </data>
+  <data name="str_ConditionalFormattingLblName" xml:space="preserve">
+    <value>!ConditionalFormattingLblName</value>
+  </data>
+  <data name="str_ConditionalFormattingLblType" xml:space="preserve">
+    <value>!ConditionalFormattingLblType</value>
+  </data>
+  <data name="str_ConditionalFormattingLblValue" xml:space="preserve">
+    <value>!ConditionalFormattingLblValue1</value>
+  </data>
+  <data name="str_ConditionalFormattingLblValue1" xml:space="preserve">
+    <value>!ConditionalFormattingLblValue2</value>
+  </data>
+  <data name="str_ConditionalFormattingMenuItem" xml:space="preserve">
+    <value>!ConditionalFormattingMenuItem</value>
+  </data>
+  <data name="str_ConditionalGrpConditions" xml:space="preserve">
+    <value>!ConditionalFormattingGrpConditions</value>
+  </data>
+  <data name="str_ConditionalGrpProperties" xml:space="preserve">
+    <value>!ConditionalFormattingGrpProperties</value>
+  </data>
+  <data name="str_ConditionalRuleAppliesOn" xml:space="preserve">
+    <value>!ConditionalFormattingRuleAppliesOn</value>
+  </data>
+  <data name="str_Conditional_ApplyToRow" xml:space="preserve">
+    <value>!ConditionalFormattingChkApplyToRow</value>
+  </data>
+  <data name="str_CopyMenuItem" xml:space="preserve">
+    <value>!CopyMenuItem</value>
+  </data>
+  <data name="str_CustomFilterDialogBtnCancel" xml:space="preserve">
+    <value>!CustomFilterDialogBtnCancel</value>
+  </data>
+  <data name="str_CustomFilterDialogBtnOk" xml:space="preserve">
+    <value>!CustomFilterDialogBtnOk</value>
+  </data>
+  <data name="str_CustomFilterDialogCaption" xml:space="preserve">
+    <value>!CustomFilterDialogCaption</value>
+  </data>
+  <data name="str_CustomFilterDialogCheckBoxNot" xml:space="preserve">
+    <value>!CustomFilterDialogCheckBoxNot</value>
+  </data>
+  <data name="str_CustomFilterDialogLabel" xml:space="preserve">
+    <value>!CustomFilterDialogLabel</value>
+  </data>
+  <data name="str_CustomFilterDialogRbAnd" xml:space="preserve">
+    <value>!CustomFilterDialogRbAnd</value>
+  </data>
+  <data name="str_CustomFilterDialogRbOr" xml:space="preserve">
+    <value>!CustomFilterDialogRbOr</value>
+  </data>
+  <data name="str_CustomFilterMenuItem" xml:space="preserve">
+    <value>!CustomFilterMenuItem</value>
+  </data>
+  <data name="str_DeleteRowMenuItem" xml:space="preserve">
+    <value>!DeleteRowMenuItem</value>
+  </data>
+  <data name="str_EditMenuItem" xml:space="preserve">
+    <value>!EditMenuItem</value>
+  </data>
+  <data name="str_FilterFunctionBetween" xml:space="preserve">
+    <value>!FilterFunctionBetween</value>
+  </data>
+  <data name="str_FilterFunctionContains" xml:space="preserve">
+    <value>!FilterFunctionContains</value>
+  </data>
+  <data name="str_FilterFunctionCustom" xml:space="preserve">
+    <value>!FilterFunctionCustom</value>
+  </data>
+  <data name="str_FilterFunctionDoesNotContain" xml:space="preserve">
+    <value>!FilterFunctionDoesNotContain</value>
+  </data>
+  <data name="str_FilterFunctionEndsWith" xml:space="preserve">
+    <value>!FilterFunctionEndsWith</value>
+  </data>
+  <data name="str_FilterFunctionEqualTo" xml:space="preserve">
+    <value>!FilterFunctionEqualTo</value>
+  </data>
+  <data name="str_FilterFunctionGreaterThan" xml:space="preserve">
+    <value>!FilterFunctionGreaterThan</value>
+  </data>
+  <data name="str_FilterFunctionGreatorEqual" xml:space="preserve">
+    <value>!FilterFunctionGreaterThanOrEqualTo</value>
+  </data>
+  <data name="str_FilterFunctionIsEmpty" xml:space="preserve">
+    <value>!FilterFunctionIsEmpty</value>
+  </data>
+  <data name="str_FilterFunctionIsNull" xml:space="preserve">
+    <value>!FilterFunctionIsNull</value>
+  </data>
+  <data name="str_FilterFunctionLessThan" xml:space="preserve">
+    <value>!FilterFunctionLessThan</value>
+  </data>
+  <data name="str_FilterFunctionLessThanOrEqualTo" xml:space="preserve">
+    <value>!FilterFunctionLessThanOrEqualTo</value>
+  </data>
+  <data name="str_FilterFunctionNoFilter" xml:space="preserve">
+    <value>!FilterFunctionNoFilter</value>
+  </data>
+  <data name="str_FilterFunctionNotBetween" xml:space="preserve">
+    <value>!FilterFunctionNotBetween</value>
+  </data>
+  <data name="str_FilterFunctionNotEqualTo" xml:space="preserve">
+    <value>!FilterFunctionNotEqualTo</value>
+  </data>
+  <data name="str_FilterFunctionNotIsEmpty" xml:space="preserve">
+    <value>!FilterFunctionNotIsEmpty</value>
+  </data>
+  <data name="str_FilterFunctionNotIsNull" xml:space="preserve">
+    <value>!FilterFunctionNotIsNull</value>
+  </data>
+  <data name="str_FilterFunctionStartsWith" xml:space="preserve">
+    <value>!FilterFunctionStartsWith</value>
+  </data>
+  <data name="str_FilterOperatorBetween" xml:space="preserve">
+    <value>!FilterOperatorBetween</value>
+  </data>
+  <data name="str_FilterOperatorContains" xml:space="preserve">
+    <value>!FilterOperatorContains</value>
+  </data>
+  <data name="str_FilterOperatorCustom" xml:space="preserve">
+    <value>!FilterOperatorCustom</value>
+  </data>
+  <data name="str_FilterOperatorDoesNotContain" xml:space="preserve">
+    <value>!FilterOperatorDoesNotContain</value>
+  </data>
+  <data name="str_FilterOperatorEndsWith" xml:space="preserve">
+    <value>!FilterOperatorEndsWith</value>
+  </data>
+  <data name="str_FilterOperatorEqualTo" xml:space="preserve">
+    <value>!FilterOperatorEqualTo</value>
+  </data>
+  <data name="str_FilterOperatorGreaterThan" xml:space="preserve">
+    <value>!FilterOperatorGreaterThan</value>
+  </data>
+  <data name="str_FilterOperatorGreatorEqual" xml:space="preserve">
+    <value>!FilterOperatorGreaterThanOrEqualTo</value>
+  </data>
+  <data name="str_FilterOperatorIsContainedIn" xml:space="preserve">
+    <value>!FilterOperatorIsContainedIn</value>
+  </data>
+  <data name="str_FilterOperatorIsEmpty" xml:space="preserve">
+    <value>!FilterOperatorIsEmpty</value>
+  </data>
+  <data name="str_FilterOperatorIsLike" xml:space="preserve">
+    <value>!FilterOperatorIsLike</value>
+  </data>
+  <data name="str_FilterOperatorIsNull" xml:space="preserve">
+    <value>!FilterOperatorIsNull</value>
+  </data>
+  <data name="str_FilterOperatorLessThan" xml:space="preserve">
+    <value>!FilterOperatorLessThan</value>
+  </data>
+  <data name="str_FilterOperatorLessThanOrEqualTo" xml:space="preserve">
+    <value>!FilterOperatorLessThanOrEqualTo</value>
+  </data>
+  <data name="str_FilterOperatorNoFilter" xml:space="preserve">
+    <value>!FilterOperatorNoFilter</value>
+  </data>
+  <data name="str_FilterOperatorNotBetween" xml:space="preserve">
+    <value>!FilterOperatorNotBetween</value>
+  </data>
+  <data name="str_FilterOperatorNotEqualTo" xml:space="preserve">
+    <value>!FilterOperatorNotEqualTo</value>
+  </data>
+  <data name="str_FilterOperatorNotIsContainedIn" xml:space="preserve">
+    <value>!FilterOperatorNotIsContainedIn</value>
+  </data>
+  <data name="str_FilterOperatorNotIsEmpty" xml:space="preserve">
+    <value>!FilterOperatorNotIsEmpty</value>
+  </data>
+  <data name="str_FilterOperatorNotIsLike" xml:space="preserve">
+    <value>!FilterOperatorNotIsLike</value>
+  </data>
+  <data name="str_FilterOperatorNotIsNull" xml:space="preserve">
+    <value>!FilterOperatorNotIsNull</value>
+  </data>
+  <data name="str_FilterOperatorStartsWith" xml:space="preserve">
+    <value>!FilterOperatorStartsWith</value>
+  </data>
+  <data name="str_GroupByThisColumnMenuItem" xml:space="preserve">
+    <value>!GroupByThisColumnMenuItem</value>
+  </data>
+  <data name="str_HideMenuItem" xml:space="preserve">
+    <value>!HideMenuItem</value>
+  </data>
+  <data name="str_PasteMenuItem" xml:space="preserve">
+    <value>!PasteMenuItem</value>
+  </data>
+  <data name="str_PinAtLeftMenuItem" xml:space="preserve">
+    <value>!PinAtLeftMenuItem</value>
+  </data>
+  <data name="str_PinAtRightMenuItem" xml:space="preserve">
+    <value>!PinAtRightMenuItem</value>
+  </data>
+  <data name="str_PinMenuItem" xml:space="preserve">
+    <value>!PinMenuItem</value>
+  </data>
+  <data name="str_SortAscendingMenuItem" xml:space="preserve">
+    <value>!SortAscendingMenuItem</value>
+  </data>
+  <data name="str_SortDescendingMenuItem" xml:space="preserve">
+    <value>!SortDescendingMenuItem</value>
+  </data>
+  <data name="str_StatusImage" xml:space="preserve">
+    <value>!StatusImage</value>
+  </data>
+  <data name="str_UngroupThisColumn" xml:space="preserve">
+    <value>!UngroupThisColumn</value>
+  </data>
+  <data name="str_UnpinMenuItem" xml:space="preserve">
+    <value>!UnpinMenuItem</value>
+  </data>
+</root>

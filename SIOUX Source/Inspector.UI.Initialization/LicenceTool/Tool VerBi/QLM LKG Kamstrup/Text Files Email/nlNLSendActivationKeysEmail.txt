@@ -1,0 +1,8 @@
+﻿Thank you for your order. Please use the following activation key(s) to activate your license for product @PRODUCT with order number @ORDERNUMBER.
+Activation keys: 
+@ACTIVATIONKEYS
+
+Best regards,
+Kamstrup support 
+
+

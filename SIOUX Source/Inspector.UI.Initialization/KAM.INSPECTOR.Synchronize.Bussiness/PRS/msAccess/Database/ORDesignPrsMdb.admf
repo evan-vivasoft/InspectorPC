@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Provider="ALinq.Access.AccessDbProvider" Class="ORDesignPrsMdbDataContext" Name="PRS" Framework="ALinq" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\PRS\msAccess\Database\PRS.mdb" Provider="System.Data.OleDb" />
+  <Table Name="tblDBVersion" Member="tblDBVersions">
+    <Type Name="tblDBVersion">
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="VersionMajor" Name="VersionMajor" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="VersionMinor" Name="VersionMinor" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="DateTime" Member="RevisionDate" Name="RevisionDate" Type="System.DateTime" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="Integer" IsPrimaryKey="true" Member="DbId" Name="db_ID" Type="System.Int32" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="tblGCLdata" Member="tblGCLdatas">
+    <Type Name="tblGCLdata">
+      <Column AutoSync="Never" CanBeNull="true" DbType="Integer" Member="PRSLinkID" Name="PRSLinkID" Type="System.Int32" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="GCLName" Name="GCLName" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="PeMin" Name="PeMin" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="PeMax" Name="PeMax" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="VolumeVA" Name="VolumeVA" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="VolumeVAK" Name="VolumeVAK" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="PdRangeDM" Name="PdRangeDM" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(50)" Member="PuRangeDM" Name="PuRangeDM" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="GCLIdentification" Name="GCLIdentification" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="InspectionProcedure" Name="InspectionProcedure" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="SmallInt" Member="FSDStartPosition" Name="FSDStartPosition" Type="System.Int16" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="Integer" IsPrimaryKey="true" Member="GclId" Name="GCL_ID" Type="System.Int32" UpdateCheck="Never" />
+      <Association Name="tblPRSdata_tblGCLdata" Member="tblPRSdata" Type="tblPRSdata" IsForeignKey="true" ThisKey="PrsId" OtherKey="PRSLinkID" />
+      <Association Name="tblGCLdata_tblGCLObject" Member="tblGCLObjects" Type="tblGCLdata" OtherKey="GclId" ThisKey="GCLLinkID" />
+    </Type>
+  </Table>
+  <Table Name="tblGCLObjects" Member="tblGCLObjects">
+    <Type Name="tblGCLObject">
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="ObjectName" Name="ObjectName" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="ObjectID" Name="ObjectID" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="MeasurePoint" Name="MeasurePoint" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="MeasurePointID" Name="MeasurePointID" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="Numeric" Member="FieldNo" Name="FieldNo" Type="System.Decimal" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="Value" Name="[Value]" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="Percentage" Name="Percentage" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="ValueMin" Name="ValueMin" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="ValueMax" Name="ValueMax" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="Uov" Name="UOV" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="Integer" Member="GCLLinkID" Name="GCLLinkID" Type="System.Int32" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="Integer" IsPrimaryKey="true" Member="GclobjectId" Name="GCLObject_ID" Type="System.Int32" UpdateCheck="Never" />
+      <Association Name="tblGCLdata_tblGCLObject" Member="tblGCLdata" Type="tblGCLdata" IsForeignKey="true" ThisKey="GclId" OtherKey="GCLLinkID" />
+    </Type>
+  </Table>
+  <Table Name="tblPRSdata" Member="tblPRSdatas">
+    <Type Name="tblPRSdata">
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="PRSCode" Name="PRSCode" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="PRSName" Name="PRSName" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="PRSIdentification" Name="PRSIdentification" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="Route" Name="Route" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="Information" Name="Information" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="InspectionProcedure" Name="InspectionProcedure" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="Integer" IsPrimaryKey="true" Member="PrsId" Name="PRS_ID" Type="System.Int32" UpdateCheck="Never" />
+      <Association Name="tblPRSdata_tblGCLdata" Member="tblGCLdatas" Type="tblPRSdata" OtherKey="PrsId" ThisKey="PRSLinkID" />
+      <Association Name="tblPRSdata_tblPRSObject" Member="tblPRSObjects" Type="tblPRSdata" OtherKey="PrsId" ThisKey="PRSLinkID" />
+    </Type>
+  </Table>
+  <Table Name="tblPRSObjects" Member="tblPRSObjects">
+    <Type Name="tblPRSObject">
+      <Column AutoSync="Never" CanBeNull="true" DbType="Integer" Member="PRSLinkID" Name="PRSLinkID" Type="System.Int32" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="ObjectName" Name="ObjectName" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="ObjectID" Name="ObjectID" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="MeasurePoint" Name="MeasurePoint" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="VarChar(255)" Member="MeasurePointID" Name="MeasurePointID" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="false" DbType="Numeric" Member="FieldNo" Name="FieldNo" Type="System.Decimal" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="Integer" IsPrimaryKey="true" Member="PrsobjectId" Name="PRSObject_ID" Type="System.Int32" UpdateCheck="Never" />
+      <Association Name="tblPRSdata_tblPRSObject" Member="tblPRSdata" Type="tblPRSdata" IsForeignKey="true" ThisKey="PrsId" OtherKey="PRSLinkID" />
+    </Type>
+  </Table>
+  <Table Name="tlbIdentificationCode" Member="tlbIdentificationCodes">
+    <Type Name="tlbIdentificationCode">
+      <Column AutoSync="Never" CanBeNull="true" DbType="Integer" Member="PRSIdentificationNumber" Name="PRSIdentificationNumber" Type="System.Int32" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="PRSIdentificationSub" Name="PRSIdentificationSub" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="Integer" Member="GCLIdentificationNumber" Name="GCLIdentificationNumber" Type="System.Int32" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="VarChar(255)" Member="GLCIdentificationSub" Name="GLCIdentificationSub" Type="System.String" UpdateCheck="Never" />
+      <Column AutoSync="Never" CanBeNull="true" DbType="Integer" IsPrimaryKey="true" Member="IcId" Name="IC_ID" Type="System.Int32" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

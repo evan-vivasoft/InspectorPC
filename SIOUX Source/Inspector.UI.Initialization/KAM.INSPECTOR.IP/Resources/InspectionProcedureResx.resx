@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="str_ValueActual" xml:space="preserve">
+    <value>!Actual</value>
+  </data>
+  <data name="str_Completed" xml:space="preserve">
+    <value>!Completed</value>
+  </data>
+  <data name="str_Errorcode" xml:space="preserve">
+    <value>!Errorcode</value>
+  </data>
+  <data name="str_Extra_measurement_Period" xml:space="preserve">
+    <value>!Extra measurement Period</value>
+  </data>
+  <data name="str_It_is_not_allowed_to_run" xml:space="preserve">
+    <value>!It is not allowed to run multiple inspections at the same time</value>
+  </data>
+  <data name="str_List" xml:space="preserve">
+    <value>!List</value>
+  </data>
+  <data name="str_No_option" xml:space="preserve">
+    <value>!No option</value>
+  </data>
+  <data name="str_seconds_remaining" xml:space="preserve">
+    <value>!seconds remaining</value>
+  </data>
+  <data name="str_Step" xml:space="preserve">
+    <value>!Step </value>
+  </data>
+  <data name="str_ValueAverage" xml:space="preserve">
+    <value>!ValueAverage</value>
+  </data>
+  <data name="str_ValuebndMax" xml:space="preserve">
+    <value>!ValuebndMax</value>
+  </data>
+  <data name="str_ValuebndMin" xml:space="preserve">
+    <value>!ValuebndMin</value>
+  </data>
+  <data name="str_ValueCurrent" xml:space="preserve">
+    <value>!ValueCurrent</value>
+  </data>
+  <data name="str_ValueLeakage" xml:space="preserve">
+    <value>!ValueLeakage</value>
+  </data>
+  <data name="str_ValueMaximum" xml:space="preserve">
+    <value>!ValueMaximum</value>
+  </data>
+  <data name="str_ValueMimimum" xml:space="preserve">
+    <value>!ValueMimimum</value>
+  </data>
+  <data name="str_Communication_error" xml:space="preserve">
+    <value>!Communication error</value>
+  </data>
+  <data name="str_Do_you_wich_to_restart_the" xml:space="preserve">
+    <value>!Do you wich to restart the initialization?</value>
+  </data>
+  <data name="str_Inspection_procedure_name_does" xml:space="preserve">
+    <value>!Inspection procedure name does not exists</value>
+  </data>
+  <data name="str_Unit_mbar_min" xml:space="preserve">
+    <value>!mbar/min</value>
+  </data>
+  <data name="str_Section" xml:space="preserve">
+    <value>!Section</value>
+  </data>
+  <data name="str_Select" xml:space="preserve">
+    <value>!Select</value>
+  </data>
+  <data name="str_Sequence" xml:space="preserve">
+    <value>!Sequence</value>
+  </data>
+  <data name="str_SubSection" xml:space="preserve">
+    <value>!SubSection</value>
+  </data>
+  <data name="str_DefaultNoValue" xml:space="preserve">
+    <value>!-</value>
+  </data>
+  <data name="str_InspectionFinished" xml:space="preserve">
+    <value>!The inspection is finished</value>
+  </data>
+  <data name="str_InspectionFinishedByUser" xml:space="preserve">
+    <value>!Inspection finished by user</value>
+  </data>
+  <data name="str_LinePRStoGCL" xml:space="preserve">
+    <value>!--------</value>
+  </data>
+  <data name="str_OutSideBoundaries" xml:space="preserve">
+    <value>!The measurements is outside the rejection boundaries</value>
+  </data>
+  <data name="str_Unit_bar" xml:space="preserve">
+    <value>!bar</value>
+  </data>
+  <data name="str_Unit_dm3h" xml:space="preserve">
+    <value>!dm3/h</value>
+  </data>
+  <data name="str_Unit_mbar" xml:space="preserve">
+    <value>!mbar</value>
+  </data>
+  <data name="str_yAxisText" xml:space="preserve">
+    <value>!Time</value>
+  </data>
+  <data name="str_DoYouWishStopInspectionByUser" xml:space="preserve">
+    <value>!Do you wish to stop the inspection?</value>
+  </data>
+  <data name="str_NoSectionSelected" xml:space="preserve">
+    <value>!Can not start inspection because no sections selected</value>
+  </data>
+  <data name="str_RestartBoundariesInspection" xml:space="preserve">
+    <value>!The inspection was outside boundaries. Do you wish to restart?</value>
+  </data>
+  <data name="str_ValuePrevious" xml:space="preserve">
+    <value>!Previous value</value>
+  </data>
+  <data name="str_WaitingForMeasurementToStart" xml:space="preserve">
+    <value>!Starting measurement</value>
+  </data>
+  <data name="str_SC41_separator" xml:space="preserve">
+    <value>!~</value>
+  </data>
+  <data name="str_SC41List_column_CheckListNo" xml:space="preserve">
+    <value>!Check No</value>
+  </data>
+  <data name="str_SC41List_column_CheckListYes" xml:space="preserve">
+    <value>!Check Yes</value>
+  </data>
+  <data name="str_SC41List_column_ConditionCode" xml:space="preserve">
+    <value>!Condition Code</value>
+  </data>
+  <data name="str_SC41List_column_ConditionCodeDescription" xml:space="preserve">
+    <value>!Condition Code description</value>
+  </data>
+  <data name="str_SC41List_column_OptionList" xml:space="preserve">
+    <value>!OptionList</value>
+  </data>
+  <data name="str_SC41List_column_DoNotDisplayNextList" xml:space="preserve">
+    <value>!Next list is not displayed</value>
+  </data>
+  <data name="str_InitializationUiRequest" xml:space="preserve">
+    <value>!Do you wish to continue without sensor [Ignore],  or retry Sensor initialisation [Retry]?</value>
+  </data>
+  <data name="str_SAV_Setting" xml:space="preserve">
+    <value>!SSV tripped</value>
+  </data>
+  <data name="str_SAV_trapValue" xml:space="preserve">
+    <value>!SSV trip pressure</value>
+  </data>
+</root>

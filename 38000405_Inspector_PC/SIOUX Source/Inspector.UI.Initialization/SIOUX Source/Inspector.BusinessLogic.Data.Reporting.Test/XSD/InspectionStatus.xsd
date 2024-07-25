@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 rel. 3 sp1 (http://www.altova.com) by Michel De Clercq (Kamstrup b.v.) -->
+<!-- Made by Michel de Clercq (Kamstrup b.v.) Version 2.0 Date 19-12-2006 -->
+<!-- The inspection status of the gas control line and the pressure regulator station are save in this file. If no status is present, the inspection did not started-->
+<!--Version 2.1 Add GCLCode to node InspectionStatus Date 23-10-2008-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Status">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="InspectionStatus" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PRSIdentification" type="xs:string"/>
+							<xs:element name="PRSName" type="xs:string"/>
+							<xs:element name="PRSCode" type="xs:string"/>
+							<xs:element name="GCLIdentification" type="xs:string" minOccurs="0"/>
+							<xs:element name="GasControlLineName" type="xs:string" minOccurs="0"/>
+							<xs:element name="GCLCode" type="xs:string" minOccurs="0"/>
+							<xs:element name="StatusID" type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

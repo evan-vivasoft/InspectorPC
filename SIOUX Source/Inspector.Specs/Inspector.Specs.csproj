@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EE84A1C-6AAC-4036-A8AF-46399EC0065C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspector.Specs</RootNamespace>
+    <AssemblyName>Inspector.Specs</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KAM.INSPECTOR.Infra">
+      <HintPath>..\Import\KAM.INSPECTOR.Infra.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net40\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=1.9.0.77, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SpecFlow.2.2.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersionGlobals\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\Inspector.BusinessLogic.Data.Configuration\InspectionManager\Data\StationInformation.Designer.cs">
+      <Link>XSD\StationInformation.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StationInformation.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="..\inspector.businesslogic.data.reporting\InspectionResultsData.Designer.cs">
+      <Link>XSD\InspectionResultsData.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InspectionResultsData.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Calculations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Calculations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationsSteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XSD\StationInformation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\inspector.businesslogic.data.configuration\inspectionmanager\data\InspectionProcedure.xsd">
+      <Link>XSD\InspectionProcedure.xsd</Link>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Inspector.BusinessLogic.Data.Configuration\InspectionManager\Data\PLEXOR.xsd">
+      <Link>XSD\PLEXOR.xsd</Link>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="INSPECTORSettings - Original.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML\StationInformation - Original.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML\StationInformation.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="..\Inspector.BusinessLogic.Data.Configuration\InspectionManager\Data\StationInformation.xsd">
+      <Link>XSD\StationInformation.xsd</Link>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StationInformation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\inspector.businesslogic.data.reporting\InspectionResultsData.xsd">
+      <Link>XSD\InspectionResultsData.xsd</Link>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InspectionResultsData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Calculations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Calculations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="XSD\InspectionResultsData.xsc" />
+    <None Include="XSD\InspectionResultsData.xss" />
+    <None Include="XSD\StationInformation.xsc">
+      <DependentUpon>StationInformation.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="XSD\StationInformation.xss">
+      <DependentUpon>StationInformation.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Configuration.Interfaces\Inspector.BusinessLogic.Data.Configuration.Interfaces.csproj">
+      <Project>{ecf2c1be-46b2-4b1e-820e-cfaa8a08cf65}</Project>
+      <Name>Inspector.BusinessLogic.Data.Configuration.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Configuration\Inspector.BusinessLogic.Data.Configuration.csproj">
+      <Project>{c0afb243-e7a8-4ffa-aae2-2ddfb38a356a}</Project>
+      <Name>Inspector.BusinessLogic.Data.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Reporting.Interfaces\Inspector.BusinessLogic.Data.Reporting.Interfaces.csproj">
+      <Project>{c0e6768b-663e-430b-8829-460cc63d2934}</Project>
+      <Name>Inspector.BusinessLogic.Data.Reporting.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Data.Reporting\Inspector.BusinessLogic.Data.Reporting.csproj">
+      <Project>{27a32818-c724-474a-bed3-264fecf9fc9e}</Project>
+      <Name>Inspector.BusinessLogic.Data.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic.Interfaces\Inspector.BusinessLogic.Interfaces.csproj">
+      <Project>{B6A8F018-65B9-4FD4-9E83-68114AA85F79}</Project>
+      <Name>Inspector.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.BusinessLogic\Inspector.BusinessLogic.csproj">
+      <Project>{eec254f5-3712-4e2e-bf75-2f7a157dbe52}</Project>
+      <Name>Inspector.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Connection.Manager.Interfaces\Inspector.Connection.Manager.Interfaces.csproj">
+      <Project>{8a17df56-0db2-43f4-a495-5015c728b570}</Project>
+      <Name>Inspector.Connection.Manager.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Connection.Manager\Inspector.Connection.Manager.csproj">
+      <Project>{d98fb01a-ff07-4429-89e5-65bf01cb12c3}</Project>
+      <Name>Inspector.Connection.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Connection.StateMachine\Inspector.Connection.StateMachine.csproj">
+      <Project>{237307d0-3c5d-412b-9e12-0da189bca4dc}</Project>
+      <Name>Inspector.Connection.StateMachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Hal.Infra\Inspector.Hal.Infra.csproj">
+      <Project>{415a48f8-d4f2-493d-909b-f78bc46e971c}</Project>
+      <Name>Inspector.Hal.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Hal.Interfaces\Inspector.Hal.Interfaces.csproj">
+      <Project>{8122832D-B86F-49E2-A03A-F15FE8AA777B}</Project>
+      <Name>Inspector.Hal.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Hal.Stub\Inspector.Hal.Stub.csproj">
+      <Project>{1570CAFA-6D59-49EC-A985-6CB96C369E16}</Project>
+      <Name>Inspector.Hal.Stub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Hal\Inspector.Hal.csproj">
+      <Project>{1d8f0076-6285-48f1-b2dd-16ff62267a0b}</Project>
+      <Name>Inspector.Hal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Infra\Inspector.Infra.csproj">
+      <Project>{E1DDB8BC-A377-4AE7-A304-E2FEFEB07643}</Project>
+      <Name>Inspector.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspector.Model\Inspector.Model.csproj">
+      <Project>{40c1ccc9-4d77-4f23-bfee-92319c6b80f2}</Project>
+      <Name>Inspector.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\inspector.businesslogic.data.configuration\inspectionmanager\data\InspectionProcedure.xml">
+      <Link>XML\InspectionProcedure.xml</Link>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\inspector.businesslogic.data.configuration\inspectionmanager\data\InspectionStatus.xml">
+      <Link>XML\InspectionStatus.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\inspector.businesslogic.data.configuration\inspectionmanager\data\Plexor.xml">
+      <Link>XML\Plexor.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="INSPECTORSettings.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ConfigFileSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <path />
+  <licenseServerUrl>http://quicklicensemanager.com/kamstrup/qlm/qlmservice.asmx</licenseServerUrl>
+  <licenseServerDatabase>Data Source=swtestserver38\TESTSERVER1;Initial Catalog=qlm;User ID={0};Password={1}</licenseServerDatabase>
+  <networkPath>\\kamstrup_bv\Data\KAMSTRUP\Licenses\LKGenerator</networkPath>
+  <fileNameCatalogItems>CatalogItems_NL.xml</fileNameCatalogItems>
+  <fileNameProducts>products_NL.xml</fileNameProducts>
+</ConfigFileSettings>

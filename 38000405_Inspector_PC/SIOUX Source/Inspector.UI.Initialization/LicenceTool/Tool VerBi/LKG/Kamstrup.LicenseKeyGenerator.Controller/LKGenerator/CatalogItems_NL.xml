@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ArrayOfCatalogItemLookupObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>10</ProductId>
+      <ProductDescription>Diagnostics</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>-1</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>9</ProductId>
+      <ProductDescription>Inspector Pc</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>-1</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>8</ProductId>
+      <ProductDescription>Unitool</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>-1</string>
+      </CatalogNumbers>
+      <FeatureId>0</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>8</ProductId>
+      <ProductDescription>Unitool</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>UNIGAS300</ProductDescription>
+      <CatalogNumbers>
+        <string>-1</string>
+      </CatalogNumbers>
+      <FeatureId>1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>8</ProductId>
+      <ProductDescription>Unitool</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>UNILOG-GPRS</ProductDescription>
+      <CatalogNumbers>
+        <string>-1</string>
+      </CatalogNumbers>
+      <FeatureId>2</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>8</ProductId>
+      <ProductDescription>Unitool</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>UNIGAS300 and UNILOG-GPRS</ProductDescription>
+      <CatalogNumbers>
+        <string>-1</string>
+      </CatalogNumbers>
+      <FeatureId>3</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+</ArrayOfCatalogItemLookupObject>

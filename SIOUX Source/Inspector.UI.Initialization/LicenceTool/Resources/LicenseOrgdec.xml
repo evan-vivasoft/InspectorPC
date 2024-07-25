@@ -1,0 +1,6 @@
+﻿<ConfigurationFile>
+  <Settings Section="Customer">
+    <Setting name="Company" Value="" />
+    <Setting name="Name" Value="" />
+  </Settings>
+</ConfigurationFile>

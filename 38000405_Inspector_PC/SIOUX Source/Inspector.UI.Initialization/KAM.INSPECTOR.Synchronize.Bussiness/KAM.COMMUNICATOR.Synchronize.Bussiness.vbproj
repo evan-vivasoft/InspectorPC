@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{33E326C6-D7A3-438E-A251-67619A160F0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KAM.COMMUNICATOR.Synchronize.Bussiness</RootNamespace>
+    <AssemblyName>KAM.COMMUNICATOR.Synchronize.Bussiness</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KAM.COMMUNICATOR.Synchronize.Bussiness.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KAM.COMMUNICATOR.Synchronize.Bussiness.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug COM|AnyCPU'">
+    <OutputPath>bin\Debug COM\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release COMMUNICATOR|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release COMMUNICATOR\</OutputPath>
+    <DocumentationFile>KAM.COMMUNICATOR.Synchronize.Bussiness.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>KAM.COMMUNICATOR.Synchronize.Bussiness.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>KAM.COMMUNICATOR.Synchronize.Bussiness.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug COM|x86'">
+    <OutputPath>bin\x86\Debug COM\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release COMMUNICATOR|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release COMMUNICATOR\</OutputPath>
+    <DocumentationFile>KAM.COMMUNICATOR.Synchronize.Bussiness.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ALinq, Version=2.6.2.0, Culture=neutral, PublicKeyToken=2b23f34316d38f3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ALinq\bin\ALinq.dll</HintPath>
+    </Reference>
+    <Reference Include="ALinq.Access, Version=1.9.2.0, Culture=neutral, PublicKeyToken=2b23f34316d38f3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ALinq\bin\ALinq.Access.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicCondition">
+      <HintPath>.\DynamicCondition.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.Model">
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Inspector.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCastingHelpersXML.vb" />
+    <Compile Include="clsDbGeneral.vb" />
+    <Compile Include="clsGeneral.vb" />
+    <Compile Include="CommunicatorData\ComDBEntities.Connection.vb" />
+    <Compile Include="CommunicatorData\ComDBEntities.tblPDA.vb" />
+    <Compile Include="CommunicatorData\ComDBEntities.tblRevision.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PLEXORUnits\ModPLEXORUnits.vb" />
+    <Compile Include="PRS\SQLCE\StationInformation.vb">
+      <DependentUpon>StationInformation.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="PRS\XML\clsLinqXMLtoSDF.vb" />
+    <Compile Include="Result\msAccess\modMsAccessHelpers.vb" />
+    <Compile Include="PRS\XML\Entities\GCLSyncEntity.vb" />
+    <Compile Include="PRS\XML\Entities\PrsConstants.vb" />
+    <Compile Include="PRS\XML\Entities\PRSDataEntity.vb" />
+    <Compile Include="PRS\XML\Entities\PRSsyncEntity.vb" />
+    <Compile Include="PRS\msAccess\clsLinqMsAccessToSdf.vb" />
+    <Compile Include="PRS\msAccess\clsLinqMsAccessToXml.vb" />
+    <Compile Include="PRS\msAccess\Database\ORDesignPrsMdb.admf.vb">
+      <DependentUpon>ORDesignPrsMdb.admf</DependentUpon>
+    </Compile>
+    <Compile Include="PRS\msAccess\Database\PrsMdbEntities.Connection.vb" />
+    <Compile Include="PRS\msAccess\Database\PrsMdbEntities.tblPRSObject.vb" />
+    <Compile Include="PRS\msAccess\Database\PrsMdbEntities.tblDBversion.vb" />
+    <Compile Include="PRS\msAccess\Database\PrsMdbEntities.tblGCLData.vb" />
+    <Compile Include="PRS\msAccess\Database\PrsMdbEntities.tblGCLObject.vb" />
+    <Compile Include="PRS\msAccess\Database\PrsMdbEntities.tblIdentificationCode.vb" />
+    <Compile Include="PRS\msAccess\Database\PrsMdbEntities.tblPRSdata.vb" />
+    <Compile Include="PRS\XML\clsLinqXMLtoEntity.vb" />
+    <Compile Include="PRS\XML\XmlXsltTransformation.vb" />
+    <Compile Include="PRS\SQLCE\clsLinqXMLToSDF.vb" />
+    <Compile Include="PRS\SQLCE\StationInformation.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StationInformation.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Result\msAccess\clsLinqMsAccessToXML.vb" />
+    <Compile Include="Result\SQLCE\modSdfHelpers.vb" />
+    <Compile Include="Result\SQLCE\Results.designer.vb">
+      <DependentUpon>Results.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Result\SQLCE\Results.vb">
+      <DependentUpon>Results.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Result\XML\clsLinqXMLToMsAccess.vb" />
+    <Compile Include="Result\XML\Entities\DateTimeStampvb.vb" />
+    <Compile Include="Result\msAccess\clsLinqMsAccessToSdf.vb" />
+    <Compile Include="Result\msAccess\Database\ResultMdbEntities.Connection.vb" />
+    <Compile Include="Result\msAccess\Database\ResultMdbEntities.tblResultGCL.vb" />
+    <Compile Include="Result\msAccess\Database\ResultMdbEntities.tblResultPRS.vb" />
+    <Compile Include="Result\SQLCE\clsLinqSdfToMsAccess.vb" />
+    <Compile Include="Result\SQLCE\clsLinqSdfToXmlEntity.vb" />
+    <Compile Include="Result\XML\clsLinqXmlToSDF.vb" />
+    <Compile Include="Result\XML\clsLinqXmlToXml.vb" />
+    <Compile Include="Result\XML\Entities\XMLStructureSyncEntity.vb" />
+    <Compile Include="Result\XML\modXMLHelpers.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alinq\ALinq.lic" />
+    <None Include="Result\SQLCE\Results.dbml.layout">
+      <DependentUpon>Results.dbml</DependentUpon>
+    </None>
+    <None Include="CommunicatorData\CommunicatorDatabase\ORDesignComDB.admf" />
+    <None Include="CommunicatorData\CommunicatorDatabase\ORDesignComDB.admf.diagram">
+      <DependentUpon>ORDesignComDB.admf</DependentUpon>
+    </None>
+    <None Include="CommunicatorData\CommunicatorDatabase\ORDesignComDB.designer.view">
+      <DependentUpon>ORDesignComDB.admf</DependentUpon>
+    </None>
+    <None Include="PRS\msAccess\Database\ORDesignPrsMdb.admf" />
+    <None Include="PRS\msAccess\Database\ORDesignPrsMdb.admf.diagram">
+      <DependentUpon>ORDesignPrsMdb.admf</DependentUpon>
+    </None>
+    <None Include="PRS\msAccess\Database\ORDesignPrsMdb.designer.view">
+      <DependentUpon>ORDesignPrsMdb.admf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PRS\SQLCE\SQLMetal\sqlMetal.bat" />
+    <None Include="PRS\SQLCE\SQLMetal\SqlMetal.exe.config" />
+    <None Include="PRS\SQLCE\StationInformation.dbml.layout">
+      <DependentUpon>StationInformation.dbml</DependentUpon>
+    </None>
+    <None Include="Result\msAccess\Database\OrDesignResultMdb.admf" />
+    <None Include="Result\msAccess\Database\OrDesignResultMdb.admf.diagram">
+      <DependentUpon>OrDesignResultMdb.admf</DependentUpon>
+    </None>
+    <None Include="Result\msAccess\Database\OrDesignResultMdb.designer.view">
+      <DependentUpon>OrDesignResultMdb.admf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Result\SQLCE\Results.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Results.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Result\SQLCE\SQLMetal\sqlMetal.bat" />
+    <None Include="Result\SQLCE\SQLMetal\SqlMetal.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PRS\SQLCE\StationInformation.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>StationInformation.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="PRS\XML\XMLTransformation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PRS\msAccess\Database\PRS.mdb" />
+    <Content Include="PRS\SQLCE\SQLMetal\SqlMetal.exe" />
+    <Content Include="Result\msAccess\Database\Result.mdb" />
+    <Content Include="Result\SQLCE\SQLMetal\results.SDF" />
+    <Content Include="Result\SQLCE\SQLMetal\SqlMetal.exe" />
+    <EmbeddedResource Include="PRS\SQLCE\SQLMetal\StationInformation.sdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kam.Communicator.Infra\KAM.COMMUNICATOR.Infra.vbproj">
+      <Project>{C780B5D8-A006-4C25-A2B3-7E05CC73DAAC}</Project>
+      <Name>KAM.COMMUNICATOR.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KAM.Infra\KAM.Infra.vbproj">
+      <Project>{CB9C2C96-4E0D-4C6B-8F07-30B620C23423}</Project>
+      <Name>KAM.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kam.INSPECTOR.Infra\KAM.INSPECTOR.Infra.vbproj">
+      <Project>{D952F51D-FC43-49B9-81B4-60CC3F4399D3}</Project>
+      <Name>KAM.INSPECTOR.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

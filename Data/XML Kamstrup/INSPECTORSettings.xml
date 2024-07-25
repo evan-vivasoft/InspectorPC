@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConfigurationFile>
+  <Settings Section ="PLEXOR 1">
+    <Setting name ="Test 1" Value="Eerste Waarde"/>
+    <Setting name ="Test 2" Value="Tweede Waarde"/>
+  </Settings>
+  <Settings Section ="PLEXOR">
+    <Setting name ="Test 1" Value="Derde Waarde"/>
+    <Setting name ="Test 2" Value="Vierde Waarde"/>
+  </Settings>
+</ConfigurationFile>  

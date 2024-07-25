@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<sourcemonitor_metrics>
+  <project version="3.2">
+    <project_name>SLS (CPP)</project_name>
+    <project_directory>C:\Work\Source</project_directory>
+    <project_language>C++</project_language>
+    <ignore_headers_footers>true</ignore_headers_footers>
+    <metric_names name_count="15">
+      <metric_name id="M0" type="number">Lines</metric_name>
+      <metric_name id="M1" type="number">Statements</metric_name>
+      <metric_name id="M2" type="percent" divisor="M1">Percent Branch Statements</metric_name>
+      <metric_name id="M3" type="percent" divisor="M0">Percent Lines with Comments</metric_name>
+      <metric_name id="M4" type="number">Classes Defined</metric_name>
+      <metric_name id="M5" type="ratio" divisor="M4">Methods Implemented per Class</metric_name>
+      <metric_name id="M6" type="ratio" divisor="M5">Average Statements per Method</metric_name>
+      <metric_name id="M7" type="string">Line Number of Most Complex Method</metric_name>
+      <metric_name id="M8" type="string">Name of Most Complex Method</metric_name>
+      <metric_name id="M9" type="maximum">Maximum Complexity</metric_name>
+      <metric_name id="M10" type="string">Line Number of Deepest Block</metric_name>
+      <metric_name id="M11" type="maximum">Maximum Block Depth</metric_name>
+      <metric_name id="M12" type="average" values="block_depths">Average Block Depth</metric_name>
+      <metric_name id="M13" type="average">Average Complexity</metric_name>
+      <metric_name id="M14" type="string">Functions</metric_name>
+    </metric_names>
+    <checkpoints checkpoint_count="1">
+      <checkpoint checkpoint_name="CheckPoint - 0.0.0.213.1" modified_complexity="true" checkpoint_date="2012-02-09">
+        <files file_count="8">
+          <file file_name="SampleCppApp\SampleCppApp.cpp">
+            <metrics metric_count="15">
+              <metric id="M0">10</metric>
+              <metric id="M1">3</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">20.0</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.00</metric>
+              <metric id="M6">0.0</metric>
+              <metric id="M7">7</metric>
+              <metric id="M8">()</metric>
+              <metric id="M9">1</metric>
+              <metric id="M10">9</metric>
+              <metric id="M11">1</metric>
+              <metric id="M12">0.33</metric>
+              <metric id="M13">1.00</metric>
+              <metric id="M14">1</metric>
+            </metrics>
+            <method_metrics method_count="1">
+              <method name="_tmain()" line="7">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </method>
+            </method_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">2</block_depth>
+              <block_depth level="1">1</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="SampleCppApp\stdafx.cpp">
+            <metrics metric_count="15">
+              <metric id="M0">8</metric>
+              <metric id="M1">1</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">62.5</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.00</metric>
+              <metric id="M6">0.0</metric>
+              <metric id="M7"></metric>
+              <metric id="M8"></metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">5</metric>
+              <metric id="M11">0</metric>
+              <metric id="M12">0.00</metric>
+              <metric id="M13">0.00</metric>
+              <metric id="M14">0</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">1</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="SampleCppApp\stdafx.h">
+            <metrics metric_count="15">
+              <metric id="M0">15</metric>
+              <metric id="M1">3</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">33.3</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.00</metric>
+              <metric id="M6">0.0</metric>
+              <metric id="M7"></metric>
+              <metric id="M8"></metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">8</metric>
+              <metric id="M11">0</metric>
+              <metric id="M12">0.00</metric>
+              <metric id="M13">0.00</metric>
+              <metric id="M14">0</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">3</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="SampleCppApp\targetver.h">
+            <metrics metric_count="15">
+              <metric id="M0">8</metric>
+              <metric id="M1">1</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">37.5</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.00</metric>
+              <metric id="M6">0.0</metric>
+              <metric id="M7"></metric>
+              <metric id="M8"></metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">8</metric>
+              <metric id="M11">0</metric>
+              <metric id="M12">0.00</metric>
+              <metric id="M13">0.00</metric>
+              <metric id="M14">0</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">1</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="SampleCppTest\SampleCppTest.cpp">
+            <metrics metric_count="15">
+              <metric id="M0">70</metric>
+              <metric id="M1">19</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">25.7</metric>
+              <metric id="M4">2</metric>
+              <metric id="M5">2.50</metric>
+              <metric id="M6">0.2</metric>
+              <metric id="M7">19</metric>
+              <metric id="M8">FooTest::()</metric>
+              <metric id="M9">1</metric>
+              <metric id="M10">48</metric>
+              <metric id="M11">3</metric>
+              <metric id="M12">1.21</metric>
+              <metric id="M13">1.00</metric>
+              <metric id="M14">3</metric>
+            </metrics>
+            <method_metrics method_count="8">
+              <method name="Foo::Bar()" line="46">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>3</maximum_depth>
+                <calls>0</calls>
+              </method>
+              <method name="FooTest::FooTest()" line="19">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </method>
+              <method name="FooTest::SetUp()" line="30">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </method>
+              <method name="FooTest::TearDown()" line="35">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </method>
+              <method name="FooTest::~FooTest()" line="23">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </method>
+              <method name="main()" line="67">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>3</calls>
+              </method>
+              <method name="TEST_F()" line="60">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </method>
+              <method name="TEST_F()" line="53">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>3</calls>
+              </method>
+            </method_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">5</block_depth>
+              <block_depth level="1">6</block_depth>
+              <block_depth level="2">7</block_depth>
+              <block_depth level="3">1</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="SampleCppTest\stdafx.cpp">
+            <metrics metric_count="15">
+              <metric id="M0">8</metric>
+              <metric id="M1">1</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">62.5</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.00</metric>
+              <metric id="M6">0.0</metric>
+              <metric id="M7"></metric>
+              <metric id="M8"></metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">5</metric>
+              <metric id="M11">0</metric>
+              <metric id="M12">0.00</metric>
+              <metric id="M13">0.00</metric>
+              <metric id="M14">0</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">1</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="SampleCppTest\stdafx.h">
+            <metrics metric_count="15">
+              <metric id="M0">15</metric>
+              <metric id="M1">3</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">33.3</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.00</metric>
+              <metric id="M6">0.0</metric>
+              <metric id="M7"></metric>
+              <metric id="M8"></metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">8</metric>
+              <metric id="M11">0</metric>
+              <metric id="M12">0.00</metric>
+              <metric id="M13">0.00</metric>
+              <metric id="M14">0</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">3</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="SampleCppTest\targetver.h">
+            <metrics metric_count="15">
+              <metric id="M0">8</metric>
+              <metric id="M1">1</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">37.5</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.00</metric>
+              <metric id="M6">0.0</metric>
+              <metric id="M7"></metric>
+              <metric id="M8"></metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">8</metric>
+              <metric id="M11">0</metric>
+              <metric id="M12">0.00</metric>
+              <metric id="M13">0.00</metric>
+              <metric id="M14">0</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">1</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+        </files>
+      </checkpoint>
+    </checkpoints>
+  </project>
+</sourcemonitor_metrics>

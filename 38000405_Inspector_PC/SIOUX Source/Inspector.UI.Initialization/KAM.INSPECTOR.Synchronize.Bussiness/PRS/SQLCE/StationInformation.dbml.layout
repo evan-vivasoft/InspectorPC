@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="StationInformation">
+  <DataContextMoniker Name="/StationInformation" />
+  <nestedChildShapes>
+    <classShape Id="76a4dfef-baef-46e6-8b0c-b622c84f1506" absoluteBounds="3, 3, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/StationInformation/GasControlLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e411c4b-3a44-49c7-beeb-2ef129456f55" absoluteBounds="3.015, 3.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1881f99c-5eb1-452f-a986-699c4c12af4c" absoluteBounds="5.75, 3, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/StationInformation/GCLObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29c6edb1-cd8d-4d7e-93cb-8f7ee74598f3" absoluteBounds="5.765, 3.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b6390da-3def-4132-b24c-da17d950a1a7" absoluteBounds="0.5, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/StationInformation/PRS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01185daa-1448-479a-b312-4672786a40d4" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f306a9af-6690-4b06-9302-4e49bfd0eb3e" absoluteBounds="3, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/StationInformation/PRSObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d5137e5-d91e-4a9a-8181-7d101ae8d5cc" absoluteBounds="3.015, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.57774983723958); (3 : 1.57774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/StationInformation/PRS/PRS_PRSObject" />
+      <nodes>
+        <classShapeMoniker Id="8b6390da-3def-4132-b24c-da17d950a1a7" />
+        <classShapeMoniker Id="f306a9af-6690-4b06-9302-4e49bfd0eb3e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 3.0401025390625); (1.5 : 4.75080485026042); (3 : 4.75080485026042)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/StationInformation/PRS/PRS_GasControlLine" />
+      <nodes>
+        <classShapeMoniker Id="8b6390da-3def-4132-b24c-da17d950a1a7" />
+        <classShapeMoniker Id="76a4dfef-baef-46e6-8b0c-b622c84f1506" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5 : 4.55850341796875); (5.75 : 4.55850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/StationInformation/GasControlLine/GasControlLine_GCLObject" />
+      <nodes>
+        <classShapeMoniker Id="76a4dfef-baef-46e6-8b0c-b622c84f1506" />
+        <classShapeMoniker Id="1881f99c-5eb1-452f-a986-699c4c12af4c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

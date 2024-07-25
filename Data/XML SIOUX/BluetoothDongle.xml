@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<BluetoothDongles>
+	<BluetoothDongle>
+		<BluetoothAddress>00:15:83:4D:00:1E</BluetoothAddress>
+	</BluetoothDongle>
+	<BluetoothDongle>
+		<BluetoothAddress>00:15:83:4D:00:1F</BluetoothAddress>
+	</BluetoothDongle>
+</BluetoothDongles>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Made by Michel de Clercq (Kamstrup b.v.) Version 1.0 Date 19-12-2006 -->
+<!-- This XSD is used to link the Objects and measurement point between managamentsystem and the Kamstrup Inspection System. The managementsystem (e.q. SAP) will drop the measurementpoints and objects to the XML file. In CONNEXION MANAGER the objects and measurementpoint are linked to the different inspection parts of the inspection procedure. -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="Objects">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ObjectInformation" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ObjectName" type="xsd:string"/>
+							<xsd:element name="MeasurePoint" type="xsd:string"/>
+							<xsd:element name="FieldNo" type="xsd:string" minOccurs="0"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

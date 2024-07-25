@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 rel. 3 sp1 (http://www.altova.com) by Michel De Clercq (Kamstrup b.v.) -->
+<!-- Made by Michel de Clercq (Kamstrup b.v.) Version 1.0 Date 19-12-2006 -->
+<!-- XSD for the PLEXOR devices; Used in CONNEXION; INSPECTOR. The list of devices are presentated in INSPECTOR, the inspector can selected on of the PLEXOR-testequipment to perform the inspection-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PLEXORS">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="PLEXOR" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="SerialNumber" type="xs:string"/>
+							<xs:element name="BTAddress" type="xs:string"/>
+							<xs:element name="PN" type="xs:string"/>
+							<xs:element name="CalibrationDate" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

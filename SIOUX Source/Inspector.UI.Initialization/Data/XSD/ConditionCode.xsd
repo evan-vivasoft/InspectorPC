@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Made by Michel de Clercq (Kamstrup b.v.) Version 1.0 Date 19-12-2006 -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="ConditionCodeXML">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ObjectCC" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ConditionCode" type="xsd:string"/>
+							<xsd:element name="Description" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

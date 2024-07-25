@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Kamstrup b.v.-->
+<InspectionProcedureFile xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="T:\SOURCE~1\INSPECTOR.PC\KAM.INSPECTOR.Main\bin\Debug\InspectionProcedure.xsd">
+	<InspectionProcedure>
+		<Name>Visual Inspection Test</Name>
+		<Version>1.1</Version>
+		<InspectionSequence>
+			<Scriptcommand_2>
+				<SequenceNumber>1</SequenceNumber>
+				<Section>Script command 1; Section; Sequence 1</Section>
+				<SubSection>Script Command 1; Sub Section </SubSection>
+			</Scriptcommand_2>
+			<Scriptcommand_1>
+				<SequenceNumber>2</SequenceNumber>
+				<Text>Instruction to th user; SequenceNumber 2</Text>
+			</Scriptcommand_1>			
+			<Scriptcommand_2>
+				<SequenceNumber>3</SequenceNumber>
+				<Section>Script command 3; Section; Sequence 3</Section>
+				<SubSection>Script Command 3; Sub Section </SubSection>
+			</Scriptcommand_2>
+			<Scriptcommand_3>
+				<SequenceNumber>4</SequenceNumber>
+				<Text>Pause; Duration 10 seconds; Sequence 4</Text>
+				<Duration>10</Duration>
+			</Scriptcommand_3>
+			<Scriptcommand_2>
+				<SequenceNumber>5</SequenceNumber>
+				<Section>Script command 4; Section; Sequence 5</Section>
+				<SubSection>Script Command 4; Sub Section </SubSection>
+			</Scriptcommand_2>
+			<Scriptcommand_4>
+				<SequenceNumber>6</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>33</FieldNo>
+				<Question>Multi lines; Input required; Sequence 6</Question>
+				<TypeQuestion>0; Input multi lines</TypeQuestion>
+				<Required>true</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_4>
+				<SequenceNumber>7</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>1</FieldNo>
+				<Question>Multi lines; No input required; Sequence 7</Question>
+				<TypeQuestion>0; Input multi lines</TypeQuestion>
+				<Required>false</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_4>
+				<SequenceNumber>8</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>2</FieldNo>
+				<Question>Single line; Input required; Sequence 8</Question>
+				<TypeQuestion>1; Input single line</TypeQuestion>
+				<Required>true</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_4>
+				<SequenceNumber>9</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>3</FieldNo>
+				<Question>Single line; No input required; Sequence 9</Question>
+				<TypeQuestion>1; Input single line</TypeQuestion>
+				<Required>false</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_4>
+				<SequenceNumber>10</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>4</FieldNo>
+				<Question>2 Option; Input required; Sequence 10</Question>
+				<TypeQuestion>2; 2 options</TypeQuestion>
+				<TextOptions>Optie 1</TextOptions>
+				<TextOptions>Optie 2</TextOptions>
+				<Required>true</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_4>
+				<SequenceNumber>11</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>5</FieldNo>
+				<Question>2 Option; no input required; Sequence 11</Question>
+				<TypeQuestion>2; 2 options</TypeQuestion>
+				<TextOptions>Optie 1</TextOptions>
+				<TextOptions>Optie 2</TextOptions>
+				<Required>false</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_4>
+				<SequenceNumber>12</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>6</FieldNo>
+				<Question>3 Option; Input required; Sequence 12</Question>
+				<TypeQuestion>3; 3 options</TypeQuestion>
+				<TextOptions>Optie 1</TextOptions>
+				<TextOptions>Optie 2</TextOptions>
+				<TextOptions>Optie 3</TextOptions>
+				<Required>true</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_4>
+				<SequenceNumber>13</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>7</FieldNo>
+				<Question>3 Option; No input required; Sequence 13</Question>
+				<TypeQuestion>3; 3 options</TypeQuestion>
+				<TextOptions>Optie 1</TextOptions>
+				<TextOptions>Optie 2</TextOptions>
+				<TextOptions>Optie 3</TextOptions>
+				<Required>false</Required>
+			</Scriptcommand_4>
+			<Scriptcommand_2>
+				<SequenceNumber>14</SequenceNumber>
+				<Section>Script command 43; Section; Sequence 14</Section>
+				<SubSection>Script Command 43; Sub Section </SubSection>
+			</Scriptcommand_2>
+			<Scriptcommand_43>
+				<SequenceNumber>15</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>8</FieldNo>
+				<Instruction>List required; 4 list items; Sequence 15</Instruction>
+				<ListItem>ListItem 1</ListItem>
+				<ListItem>ListItem 2</ListItem>
+				<ListItem>ListItem 3</ListItem>
+				<ListItem>ListItem 4</ListItem>
+				<Required>true</Required>
+			</Scriptcommand_43>
+			<Scriptcommand_43>
+				<SequenceNumber>16</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00205</MeasurePoint>
+				<FieldNo>9</FieldNo>
+				<Instruction>List not required; 20 list items; Sequence 16</Instruction>
+				<ListItem>ListItem 1</ListItem>
+				<ListItem>ListItem 2</ListItem>
+				<ListItem>ListItem 3</ListItem>
+				<ListItem>ListItem 4</ListItem>
+				<ListItem>ListItem 5</ListItem>
+				<ListItem>ListItem 6</ListItem>
+				<ListItem>ListItem 7</ListItem>
+				<ListItem>ListItem 8</ListItem>
+				<ListItem>ListItem 9</ListItem>
+				<ListItem>ListItem 10</ListItem>
+				<ListItem>ListItem 11</ListItem>
+				<ListItem>ListItem 12</ListItem>
+				<ListItem>ListItem 13</ListItem>
+				<ListItem>ListItem 14</ListItem>
+				<ListItem>ListItem 15</ListItem>
+				<ListItem>ListItem 16</ListItem>
+				<ListItem>ListItem 17</ListItem>
+				<ListItem>ListItem 18</ListItem>
+				<ListItem>ListItem 19</ListItem>
+				<ListItem>ListItem 20</ListItem>
+				<Required>true</Required>
+			</Scriptcommand_43>
+			<Scriptcommand_2>
+				<SequenceNumber>17</SequenceNumber>
+				<Section>Script command 42; Section; Sequence 17</Section>
+				<SubSection>Script Command 42; Sub Section </SubSection>
+			</Scriptcommand_2>
+			<Scriptcommand_42>
+				<SequenceNumber>18</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00134</MeasurePoint>
+				<FieldNo>10</FieldNo>
+			</Scriptcommand_42>
+			<Scriptcommand_2>
+				<SequenceNumber>19</SequenceNumber>
+				<Section>Script command 41; Section; Sequence 19</Section>
+				<SubSection>Script Command 41; Sub Section </SubSection>
+			</Scriptcommand_2>
+			<Scriptcommand_41>
+				<SequenceNumber>20</SequenceNumber>
+				<ObjectName/>
+				<MeasurePoint>00210</MeasurePoint>
+				<FieldNo>11</FieldNo>
+				<ShowNextListImmediately>false</ShowNextListImmediately>
+				<List>
+					<SequenceNumberList>1</SequenceNumberList>
+					<ListType>0;OptionList</ListType>
+					<SelectionRequired>true</SelectionRequired>
+					<ListQuestion>Option List</ListQuestion>
+					<OneSelectionAllowed>true</OneSelectionAllowed>
+					<CheckListResult>true</CheckListResult>
+					<ListConditionCode>
+						<ConditionCode>01</ConditionCode>
+						<ConditionCodeDescription>01; Next list display</ConditionCodeDescription>
+						<DisplayNextList>true</DisplayNextList>
+					</ListConditionCode>
+					<ListConditionCode>
+						<ConditionCode>02</ConditionCode>
+						<ConditionCodeDescription>02; No list display</ConditionCodeDescription>
+						<DisplayNextList>false</DisplayNextList>
+					</ListConditionCode>
+					<ListConditionCode>
+						<ConditionCode>03</ConditionCode>
+						<ConditionCodeDescription>03; No list display</ConditionCodeDescription>
+						<DisplayNextList>false</DisplayNextList>
+					</ListConditionCode>
+				</List>
+				<List>
+					<SequenceNumberList>2</SequenceNumberList>
+					<ListType>0;OptionList</ListType>
+					<SelectionRequired>true</SelectionRequired>
+					<ListQuestion>Oorzaak</ListQuestion>
+					<OneSelectionAllowed>false</OneSelectionAllowed>
+					<CheckListResult>true</CheckListResult>
+					<ListConditionCode>
+						<ConditionCode>A - Defect hekwerk</ConditionCode>
+						<ConditionCodeDescription/>
+						<DisplayNextList>false</DisplayNextList>
+					</ListConditionCode>
+					<ListConditionCode>
+						<ConditionCode>B - Defecte afrastering</ConditionCode>
+						<ConditionCodeDescription/>
+						<DisplayNextList>false</DisplayNextList>
+					</ListConditionCode>
+				</List>
+				<List>
+					<SequenceNumberList>3</SequenceNumberList>
+					<ListType>0;OptionList</ListType>
+					<SelectionRequired>true</SelectionRequired>
+					<ListQuestion>Hersteld?</ListQuestion>
+					<OneSelectionAllowed>true</OneSelectionAllowed>
+					<CheckListResult>true</CheckListResult>
+					<ListConditionCode>
+						<ConditionCode>Ja</ConditionCode>
+						<ConditionCodeDescription/>
+						<DisplayNextList>false</DisplayNextList>
+					</ListConditionCode>
+					<ListConditionCode>
+						<ConditionCode>Nee</ConditionCode>
+						<ConditionCodeDescription/>
+						<DisplayNextList>false</DisplayNextList>
+					</ListConditionCode>
+				</List>
+			</Scriptcommand_41>
+		</InspectionSequence>
+	</InspectionProcedure>
+</InspectionProcedureFile>

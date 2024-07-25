@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Michel De Clercq (Kamstrup b.v.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="KamstrupApplicationStatus">
+		<xsd:annotation>
+			<xsd:documentation>This document is used a to give the status of the exectued applicationto another application. The filename = "yyyymmddhhmmss_KMS .xml"</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Modul">
+					<xsd:complexType>
+						<xsd:attribute name="name"/>
+						<xsd:attribute name="version"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Status" type="TypeStatus">
+					<xsd:annotation>
+						<xsd:documentation>The status of the executed application</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="DateTimeStamp">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Date" type="xsd:date"/>
+							<xsd:element name="StartTime" type="xsd:time"/>
+							<xsd:element name="EndTime" type="xsd:time"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Messages">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Message" maxOccurs="unbounded">
+								<xsd:annotation>
+									<xsd:documentation>The different messages from the executed application</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="text"/>
+									<xsd:attribute name="code"/>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="TypeStatus">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Error">
+				<xsd:annotation>
+					<xsd:documentation>An Error occurd during executing application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Running">
+				<xsd:annotation>
+					<xsd:documentation>No function</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Succeed">
+				<xsd:annotation>
+					<xsd:documentation>The program is completed with success</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Stop">
+				<xsd:annotation>
+					<xsd:documentation>No function</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

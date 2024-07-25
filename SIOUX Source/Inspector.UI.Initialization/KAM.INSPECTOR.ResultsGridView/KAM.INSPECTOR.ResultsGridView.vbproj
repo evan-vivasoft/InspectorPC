@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64A34B77-F1F8-4B42-97D3-57947E359F87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KAM.INSPECTOR.ResultsGridView</RootNamespace>
+    <AssemblyName>KAM.INSPECTOR.ResultsGridView</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.ResultsGridView.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.ResultsGridView.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.ResultsGridView.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>KAM.INSPECTOR.ResultsGridView.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DynamicCondition">
+      <HintPath>..\KAM.INSPECTOR.Synchronize.Bussiness\DynamicCondition.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Data.Configuration">
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Inspector.BusinessLogic.Data.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Data.Configuration.Interfaces, Version=5.0.0.874, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Inspector.BusinessLogic.Data.Configuration.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Data.Reporting">
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Inspector.BusinessLogic.Data.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.BusinessLogic.Data.Reporting.Interfaces">
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Inspector.BusinessLogic.Data.Reporting.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.Infra">
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Inspector.Infra.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspector.Model">
+      <HintPath>..\KAM.INSPECTOR.Main\External Components\Inspector.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R2 2019\Bin\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R2 2019\Bin\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R2 2019\Bin\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R2 2019\Bin\TelerikCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=12.2.18.1129, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=12.2.18.1129, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\ListResultsEntityStruct.vb" />
+    <Compile Include="Entities\ResultsEntityStruct.vb" />
+    <Compile Include="Reports\SubReportvb.Designer.vb">
+      <DependentUpon>SubReportvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SubReportvb.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\ResultsResx.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultsResx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\subReportInspectionResults.Designer.vb">
+      <DependentUpon>subReportInspectionResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\subReportInspectionResults.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportInspectionResults.Designer.vb">
+      <DependentUpon>ReportInspectionResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportInspectionResults.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SubReportPRSInspectionResults.Designer.vb">
+      <DependentUpon>SubReportPRSInspectionResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SubReportPRSInspectionResults.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usctrl_FormDisplayResults.Designer.vb">
+      <DependentUpon>usctrl_FormDisplayResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_FormDisplayResults.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\SubReportvb.resx">
+      <DependentUpon>SubReportvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResultsResx.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResultsResx.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\subReportInspectionResults.resx">
+      <DependentUpon>subReportInspectionResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportInspectionResults.resx">
+      <DependentUpon>ReportInspectionResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SubReportPRSInspectionResults.resx">
+      <DependentUpon>SubReportPRSInspectionResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_FormDisplayResults.resx">
+      <DependentUpon>usctrl_FormDisplayResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kam.INSPECTOR.Infra\KAM.INSPECTOR.Infra.vbproj">
+      <Project>{d952f51d-fc43-49b9-81b4-60cc3f4399d3}</Project>
+      <Name>KAM.INSPECTOR.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

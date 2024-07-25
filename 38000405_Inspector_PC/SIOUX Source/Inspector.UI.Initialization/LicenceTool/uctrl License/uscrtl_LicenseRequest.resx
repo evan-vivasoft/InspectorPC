@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 100</value>
+  </data>
+  <data name="RadLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 18</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RadLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="RadLabel8.Text" xml:space="preserve">
+    <value>!Days left:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.Name" xml:space="preserve">
+    <value>RadLabel8</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtBoxDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 100</value>
+  </data>
+  <data name="txtBoxDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="txtBoxDays.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;txtBoxDays.Name" xml:space="preserve">
+    <value>txtBoxDays</value>
+  </data>
+  <data name="&gt;&gt;txtBoxDays.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtBoxDays.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtBoxDays.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtBoxLicenseKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtBoxLicenseKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 70</value>
+  </data>
+  <data name="txtBoxLicenseKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 20</value>
+  </data>
+  <data name="txtBoxLicenseKey.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtBoxLicenseKey.Name" xml:space="preserve">
+    <value>txtBoxLicenseKey</value>
+  </data>
+  <data name="&gt;&gt;txtBoxLicenseKey.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtBoxLicenseKey.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtBoxLicenseKey.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="RadLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 126</value>
+  </data>
+  <data name="RadLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 18</value>
+  </data>
+  <data name="RadLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="RadLabel6.Text" xml:space="preserve">
+    <value>!1. If you want to use the software, click here to activate the application =&gt;</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.Name" xml:space="preserve">
+    <value>RadLabel6</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="RadLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 70</value>
+  </data>
+  <data name="RadLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 18</value>
+  </data>
+  <data name="RadLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="RadLabel7.Text" xml:space="preserve">
+    <value>!License key</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.Name" xml:space="preserve">
+    <value>RadLabel7</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmbLicense.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cmbLicense.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 126</value>
+  </data>
+  <data name="cmbLicense.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 21</value>
+  </data>
+  <data name="cmbLicense.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cmbLicense.Text" xml:space="preserve">
+    <value>!Activate</value>
+  </data>
+  <data name="&gt;&gt;cmbLicense.Name" xml:space="preserve">
+    <value>cmbLicense</value>
+  </data>
+  <data name="&gt;&gt;cmbLicense.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cmbLicense.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;cmbLicense.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="RadGroupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdTextActivationCode.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdTextActivationCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 90</value>
+  </data>
+  <data name="rdTextActivationCode.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdTextActivationCode.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdTextActivationCode.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdTextActivationCode.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdTextActivationCode.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdTextActivationCode.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdTextActivationCode.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdTextActivationCode.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdTextActivationCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 20</value>
+  </data>
+  <data name="rdTextActivationCode.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;rdTextActivationCode.Name" xml:space="preserve">
+    <value>rdTextActivationCode</value>
+  </data>
+  <data name="&gt;&gt;rdTextActivationCode.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdTextActivationCode.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;rdTextActivationCode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 90</value>
+  </data>
+  <data name="RadLabel10.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel10.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel10.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="RadLabel10.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RadLabel10.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel10.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadLabel10.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel10.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 18</value>
+  </data>
+  <data name="RadLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="RadLabel10.Text" xml:space="preserve">
+    <value>!Activation Code</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.Name" xml:space="preserve">
+    <value>RadLabel10</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 30</value>
+  </data>
+  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 18</value>
+  </data>
+  <data name="RadLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="RadLabel2.Text" xml:space="preserve">
+    <value>!Name:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Name" xml:space="preserve">
+    <value>RadLabel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtBoxComputerKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtBoxComputerKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 120</value>
+  </data>
+  <data name="txtBoxComputerKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 20</value>
+  </data>
+  <data name="txtBoxComputerKey.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;txtBoxComputerKey.Name" xml:space="preserve">
+    <value>txtBoxComputerKey</value>
+  </data>
+  <data name="&gt;&gt;txtBoxComputerKey.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtBoxComputerKey.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtBoxComputerKey.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtBoxCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 60</value>
+  </data>
+  <data name="txtBoxCustomer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 20</value>
+  </data>
+  <data name="txtBoxCustomer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtBoxCustomer.Name" xml:space="preserve">
+    <value>txtBoxCustomer</value>
+  </data>
+  <data name="&gt;&gt;txtBoxCustomer.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtBoxCustomer.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtBoxCustomer.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 120</value>
+  </data>
+  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 18</value>
+  </data>
+  <data name="RadLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="RadLabel4.Text" xml:space="preserve">
+    <value>!Computer key</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Name" xml:space="preserve">
+    <value>RadLabel4</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 60</value>
+  </data>
+  <data name="RadLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 18</value>
+  </data>
+  <data name="RadLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="RadLabel3.Text" xml:space="preserve">
+    <value>!Customer</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Name" xml:space="preserve">
+    <value>RadLabel3</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 30</value>
+  </data>
+  <data name="txtBoxName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 20</value>
+  </data>
+  <data name="txtBoxName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtBoxName.Name" xml:space="preserve">
+    <value>txtBoxName</value>
+  </data>
+  <data name="&gt;&gt;txtBoxName.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtBoxName.Parent" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtBoxName.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="RadGroupBox1.HeaderText" xml:space="preserve">
+    <value>!License information</value>
+  </data>
+  <data name="RadGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 3</value>
+  </data>
+  <data name="RadGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 149</value>
+  </data>
+  <data name="RadGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="RadGroupBox1.Text" xml:space="preserve">
+    <value>!License information</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.Name" xml:space="preserve">
+    <value>RadGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbRequest.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cmbRequest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 18</value>
+  </data>
+  <data name="cmbRequest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 21</value>
+  </data>
+  <data name="cmbRequest.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cmbRequest.Text" xml:space="preserve">
+    <value>!Request</value>
+  </data>
+  <data name="&gt;&gt;cmbRequest.Name" xml:space="preserve">
+    <value>cmbRequest</value>
+  </data>
+  <data name="&gt;&gt;cmbRequest.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cmbRequest.Parent" xml:space="preserve">
+    <value>RadGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;cmbRequest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 18</value>
+  </data>
+  <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 18</value>
+  </data>
+  <data name="RadLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="RadLabel5.Text" xml:space="preserve">
+    <value>!1. If you wich to request an license key =&gt;</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.Name" xml:space="preserve">
+    <value>RadLabel5</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.Parent" xml:space="preserve">
+    <value>RadGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="RadLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 21</value>
+  </data>
+  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 47</value>
+  </data>
+  <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="RadLabel1.Text" xml:space="preserve">
+    <value>!In order to unlock (activate) the ... (application name and version), please enter the information from the key-code e-mail message, thtat you have received, here:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
+    <value>RadLabel1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadGroupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdButOnlineActivation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rdButOnlineActivation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 159</value>
+  </data>
+  <data name="rdButOnlineActivation.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdButOnlineActivation.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdButOnlineActivation.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdButOnlineActivation.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdButOnlineActivation.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdButOnlineActivation.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdButOnlineActivation.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdButOnlineActivation.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdButOnlineActivation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 21</value>
+  </data>
+  <data name="rdButOnlineActivation.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="rdButOnlineActivation.Text" xml:space="preserve">
+    <value>!Online activation</value>
+  </data>
+  <data name="&gt;&gt;rdButOnlineActivation.Name" xml:space="preserve">
+    <value>rdButOnlineActivation</value>
+  </data>
+  <data name="&gt;&gt;rdButOnlineActivation.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdButOnlineActivation.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;rdButOnlineActivation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 159</value>
+  </data>
+  <data name="RadLabel9.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel9.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel9.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="RadLabel9.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RadLabel9.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel9.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadLabel9.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel9.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>505, 35</value>
+  </data>
+  <data name="RadLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="RadLabel9.Text" xml:space="preserve">
+    <value>!2. If you want to use the software, click here to online activate the application =&gt; 1231231231231231</value>
+  </data>
+  <data name="&gt;&gt;RadLabel9.Name" xml:space="preserve">
+    <value>RadLabel9</value>
+  </data>
+  <data name="&gt;&gt;RadLabel9.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel9.Parent" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadGroupBox2.HeaderText" xml:space="preserve">
+    <value>!Activate license</value>
+  </data>
+  <data name="RadGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 212</value>
+  </data>
+  <data name="RadGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 202</value>
+  </data>
+  <data name="RadGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="RadGroupBox2.Text" xml:space="preserve">
+    <value>!Activate license</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox2.Name" xml:space="preserve">
+    <value>RadGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadGroupBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="RadGroupBox3.HeaderText" xml:space="preserve">
+    <value>!Request license</value>
+  </data>
+  <data name="RadGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 158</value>
+  </data>
+  <data name="RadGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 50</value>
+  </data>
+  <data name="RadGroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="RadGroupBox3.Text" xml:space="preserve">
+    <value>!Request license</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox3.Name" xml:space="preserve">
+    <value>RadGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RadGroupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 447</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>uscrtl_LicenseRequest</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

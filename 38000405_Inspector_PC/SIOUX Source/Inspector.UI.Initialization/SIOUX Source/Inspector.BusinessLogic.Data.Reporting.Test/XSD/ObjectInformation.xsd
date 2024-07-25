@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Michel de Clercq (Kamstrup R&D) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="Objects">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ObjectInformation" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ObjectName" type="xsd:string"/>
+							<xsd:element name="MeasurePoint" type="xsd:string"/>
+							<xsd:element name="FieldNo" type="xsd:string" minOccurs="0"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ORDesignComDB">
+  <DataContextMoniker Name="/ORDesignComDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="58bd2ccc-3509-49a1-ac77-7d4314114a7e" absoluteBounds="2.875, 1.125, 1.5, 3.8687016032139452">
+      <DataClassMoniker Name="/ORDesignComDBDataContext/tblPDA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2681254e-b28d-436e-a8b0-feccf973c403" absoluteBounds="2.89, 1.4849999999999999, 1.4700000000000002, 3.1632777924338975" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="eeb718ad-935b-42a6-8779-76836153526d" absoluteBounds="2.89, 4.6582777924338972, 1.4700000000000002, 0.23542381078004837" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc187ab0-2a9f-46cf-922d-a30d6b041bba" absoluteBounds="6.75, 1.875, 1.5, 1.6728111169735591">
+      <DataClassMoniker Name="/ORDesignComDBDataContext/tblRevision" />
+      <nestedChildShapes>
+        <elementListCompartment Id="016981f6-483f-44b4-bd82-290c37d55c28" absoluteBounds="6.765, 2.235, 1.4700000000000002, 0.96738730619351065" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="08215b02-35fc-4d5f-8048-a475a94bd276" absoluteBounds="6.765, 3.2123873061935106, 1.4700000000000002, 0.23542381078004837" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</Diagram>

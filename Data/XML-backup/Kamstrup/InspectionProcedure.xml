@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Kamstrup b.v.-->
+<InspectionProcedureFile xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="T:\SOURCE~1\INSPECTOR.PC\Data\XSD\InspectionProcedure.xsd">
+	<InspectionProcedure>
+		<Name>Visual Inspection Test</Name>
+		<Version>1.1</Version>
+		<InspectionSequence >
+      <Scriptcommand_5x>
+        <SequenceNumber>1</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>20</MeasurementPeriod>
+        <ExtraMeasurementPeriod>10</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+      </InspectionSequence >
+	</InspectionProcedure>
+</InspectionProcedureFile>

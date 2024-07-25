@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65B8FF8B-7B69-4D15-B5EA-3389B20B5542}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kamstrup.LicenseKeyGenerator.Controller</RootNamespace>
+    <AssemblyName>Kamstrup.LicenseKeyGenerator.Controller</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugNL|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugNL\</OutputPath>
+    <DefineConstants>TRACE;DEBUGNL</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseNL|AnyCPU'">
+    <OutputPath>bin\ReleaseNL\</OutputPath>
+    <DefineConstants>TRACE;RELEASENL</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugMaintenance|AnyCPU'">
+    <OutputPath>bin\DebugMaintenance\</OutputPath>
+    <DefineConstants>DEBUGMAINTENANCE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseMaintenance|AnyCPU'">
+    <OutputPath>bin\ReleaseMaintenance\</OutputPath>
+    <DefineConstants>RELEASEMAINTENANCE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatalogItemController.cs" />
+    <Compile Include="MaintenanceController.cs" />
+    <Compile Include="ProductController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsController.cs" />
+    <Compile Include="Tools\XmlHandler.cs" />
+    <Compile Include="UITool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kamstrup.LicenseKeyGenerator.LicenseServer\Kamstrup.LicenseKeyGenerator.LicenseServer.csproj">
+      <Project>{84D419AB-330D-470F-88F4-08F40AC08E37}</Project>
+      <Name>Kamstrup.LicenseKeyGenerator.LicenseServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kamstrup.LicenseKeyGenerator.Model\Kamstrup.LicenseKeyGenerator.Model.csproj">
+      <Project>{39C6B912-35C3-4AF8-BC52-993A1FD57FA1}</Project>
+      <Name>Kamstrup.LicenseKeyGenerator.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LKGenerator\CatalogItems_DK.xml" />
+    <Content Include="LKGenerator\CatalogItems_NL.xml" />
+    <Content Include="LKGenerator\products_DK.xml" />
+    <Content Include="LKGenerator\products_NL.xml" />
+    <Content Include="LKGeneratorTest\CatalogItems_DK.xml" />
+    <Content Include="LKGeneratorTest\CatalogItems_NL.xml" />
+    <Content Include="LKGeneratorTest\products_DK.xml" />
+    <Content Include="LKGeneratorTest\products_NL.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

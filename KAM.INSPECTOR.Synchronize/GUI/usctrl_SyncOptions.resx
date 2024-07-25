@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rdCheckPrsMsAccessClearPrs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 55</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 18</value>
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="rdCheckPrsMsAccessClearPrs.Text" xml:space="preserve">
+    <value>!MsAccess Clear PRS data after sync</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessClearPrs.Name" xml:space="preserve">
+    <value>rdCheckPrsMsAccessClearPrs</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessClearPrs.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessClearPrs.Parent" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessClearPrs.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 90</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 18</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="rdCheckPrsMsAccessUsePRSSelectionPDASNR.Text" xml:space="preserve">
+    <value>!MsAccess Select PRS data on INSPECTOR serial number</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessUsePRSSelectionPDASNR.Name" xml:space="preserve">
+    <value>rdCheckPrsMsAccessUsePRSSelectionPDASNR</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessUsePRSSelectionPDASNR.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessUsePRSSelectionPDASNR.Parent" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;rdCheckPrsMsAccessUsePRSSelectionPDASNR.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 90</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 18</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.Text" xml:space="preserve">
+    <value>!XML Append results of completed inspection</value>
+  </data>
+  <data name="rdCheckResultXmlAppendResultsCompletedInspection.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXmlAppendResultsCompletedInspection.Name" xml:space="preserve">
+    <value>rdCheckResultXmlAppendResultsCompletedInspection</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXmlAppendResultsCompletedInspection.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXmlAppendResultsCompletedInspection.Parent" xml:space="preserve">
+    <value>rdGroupResult</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXmlAppendResultsCompletedInspection.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdDropDownPRSFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 18</value>
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdDropDownPRSFormat.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdDropDownPRSFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 20</value>
+  </data>
+  <data name="rdDropDownPRSFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;rdDropDownPRSFormat.Name" xml:space="preserve">
+    <value>rdDropDownPRSFormat</value>
+  </data>
+  <data name="&gt;&gt;rdDropDownPRSFormat.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdDropDownPRSFormat.Parent" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;rdDropDownPRSFormat.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rdDropResultFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 18</value>
+  </data>
+  <data name="rdDropResultFormat.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdDropResultFormat.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdDropResultFormat.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdDropResultFormat.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdDropResultFormat.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdDropResultFormat.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdDropResultFormat.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdDropResultFormat.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdDropResultFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 20</value>
+  </data>
+  <data name="rdDropResultFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;rdDropResultFormat.Name" xml:space="preserve">
+    <value>rdDropResultFormat</value>
+  </data>
+  <data name="&gt;&gt;rdDropResultFormat.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdDropResultFormat.Parent" xml:space="preserve">
+    <value>rdGroupResult</value>
+  </data>
+  <data name="&gt;&gt;rdDropResultFormat.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 20</value>
+  </data>
+  <data name="rdLbl.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdLbl.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdLbl.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdLbl.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdLbl.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdLbl.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdLbl.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdLbl.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 18</value>
+  </data>
+  <data name="rdLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="rdLbl.Text" xml:space="preserve">
+    <value>!PRS file format</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.Name" xml:space="preserve">
+    <value>rdLbl</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.Parent" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;rdLbl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 20</value>
+  </data>
+  <data name="RadLabel1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="RadLabel1.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RadLabel1.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadLabel1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 18</value>
+  </data>
+  <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="RadLabel1.Text" xml:space="preserve">
+    <value>!Result file format</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
+    <value>RadLabel1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
+    <value>rdGroupResult</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 55</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdCheckResultXMLCreateResults.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 18</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="rdCheckResultXMLCreateResults.Text" xml:space="preserve">
+    <value>!XML Create results file</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXMLCreateResults.Name" xml:space="preserve">
+    <value>rdCheckResultXMLCreateResults</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXMLCreateResults.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXMLCreateResults.Parent" xml:space="preserve">
+    <value>rdGroupResult</value>
+  </data>
+  <data name="&gt;&gt;rdCheckResultXMLCreateResults.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdGroupResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdGroupResult.HeaderText" xml:space="preserve">
+    <value>!ResultsSyncSettings</value>
+  </data>
+  <data name="rdGroupResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 314</value>
+  </data>
+  <data name="rdGroupResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>478, 131</value>
+  </data>
+  <data name="rdGroupResult.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="rdGroupResult.Text" xml:space="preserve">
+    <value>!ResultsSyncSettings</value>
+  </data>
+  <data name="&gt;&gt;rdGroupResult.Name" xml:space="preserve">
+    <value>rdGroupResult</value>
+  </data>
+  <data name="&gt;&gt;rdGroupResult.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdGroupResult.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rdGroupResult.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdGroupPrs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 130</value>
+  </data>
+  <data name="RadLabel2.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel2.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel2.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="RadLabel2.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RadLabel2.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel2.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadLabel2.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel2.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 18</value>
+  </data>
+  <data name="RadLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="RadLabel2.Text" xml:space="preserve">
+    <value>!Alternative PRS file Name</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Name" xml:space="preserve">
+    <value>RadLabel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdTextAltPrsFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 130</value>
+  </data>
+  <data name="rdTextAltPrsFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 20</value>
+  </data>
+  <data name="rdTextAltPrsFileName.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;rdTextAltPrsFileName.Name" xml:space="preserve">
+    <value>rdTextAltPrsFileName</value>
+  </data>
+  <data name="&gt;&gt;rdTextAltPrsFileName.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdTextAltPrsFileName.Parent" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;rdTextAltPrsFileName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdGroupXMLPrsStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 30</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 18</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector3.Text" xml:space="preserve">
+    <value>!XML Delete all PRS on INSPECTOR</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector3.Name" xml:space="preserve">
+    <value>rdRadioPRSXMLPRSInspector3</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadRadioButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector3.Parent" xml:space="preserve">
+    <value>rdGroupXMLPrsStatus</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 60</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 18</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector1.Text" xml:space="preserve">
+    <value>!XML Do not delete no inspection PRS on INSPECTOR</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector1.Name" xml:space="preserve">
+    <value>rdRadioPRSXMLPRSInspector1</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadRadioButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector1.Parent" xml:space="preserve">
+    <value>rdGroupXMLPrsStatus</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 88</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 18</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="rdRadioPRSXMLPRSInspector2.Text" xml:space="preserve">
+    <value>!XML Do not delete no inspected/not completed PRS on INSPECTOR</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector2.Name" xml:space="preserve">
+    <value>rdRadioPRSXMLPRSInspector2</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadRadioButton, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector2.Parent" xml:space="preserve">
+    <value>rdGroupXMLPrsStatus</value>
+  </data>
+  <data name="&gt;&gt;rdRadioPRSXMLPRSInspector2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdGroupXMLPrsStatus.HeaderText" xml:space="preserve">
+    <value>!PRS on INSPECTOR</value>
+  </data>
+  <data name="rdGroupXMLPrsStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 167</value>
+  </data>
+  <data name="rdGroupXMLPrsStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 133</value>
+  </data>
+  <data name="rdGroupXMLPrsStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="rdGroupXMLPrsStatus.Text" xml:space="preserve">
+    <value>!PRS on INSPECTOR</value>
+  </data>
+  <data name="&gt;&gt;rdGroupXMLPrsStatus.Name" xml:space="preserve">
+    <value>rdGroupXMLPrsStatus</value>
+  </data>
+  <data name="&gt;&gt;rdGroupXMLPrsStatus.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdGroupXMLPrsStatus.Parent" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;rdGroupXMLPrsStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdGroupPrs.HeaderText" xml:space="preserve">
+    <value>!PRSSyncSettings</value>
+  </data>
+  <data name="rdGroupPrs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="rdGroupPrs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>478, 305</value>
+  </data>
+  <data name="rdGroupPrs.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="rdGroupPrs.Text" xml:space="preserve">
+    <value>!PRSSyncSettings</value>
+  </data>
+  <data name="&gt;&gt;rdGroupPrs.Name" xml:space="preserve">
+    <value>rdGroupPrs</value>
+  </data>
+  <data name="&gt;&gt;rdGroupPrs.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rdGroupPrs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rdGroupPrs.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 448</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>usctrl_SyncOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

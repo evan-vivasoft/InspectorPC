@@ -1,0 +1,21 @@
+<ConfigurationFile>
+  <Settings Section="APPLICATION">
+    <Setting name="PathSyncData" Value="X:\Repositories\38000405_Inspector_PC\KAM.INSPECTOR.Synchronize\bin\x86\Debug\Test Files\CommunicatorData\" />
+  </Settings>
+  <Settings Section="PRS file">
+    <Setting name="DeletePRSfromMsAccess" Value="False" />
+    <Setting name="DeletePRSOnStatusINSPECTOR" Value="1" />
+    <Setting name="FilterOptionfromMsAccess" Value="" />
+    <Setting name="Format PC" Value="MsAccess" />
+  </Settings>
+  <Settings Section="Result file">
+    <Setting name="CreateFile" Value="True" />
+    <Setting name="Format PC" Value="MsAccess" />
+  </Settings>
+  <Settings Section="Culture">
+    <Setting name="CultureName" Value="nl-NL" />
+  </Settings>
+  <Settings Section="Localization">
+    <Setting name="ThemeName" Value="Office2010" />
+  </Settings>
+</ConfigurationFile>

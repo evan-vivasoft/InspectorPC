@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Kamstrup b.v.-->
+<InspectionProcedureFile xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <InspectionProcedure>
+    <Name>TestScriptCommand1</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_1>
+        <SequenceNumber>1</SequenceNumber>
+        <Text>Text1</Text>
+      </Scriptcommand_1>
+      <Scriptcommand_1>
+        <SequenceNumber>2</SequenceNumber>
+        <Text>Text2</Text>
+      </Scriptcommand_1>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand2</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_2>
+        <SequenceNumber>1</SequenceNumber>
+        <Section>Section1</Section>
+        <SubSection>SubSection1</SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_2>
+        <SequenceNumber>2</SequenceNumber>
+        <Section>Section1</Section>
+        <SubSection>SubSection2</SubSection>
+      </Scriptcommand_2>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand3</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_3>
+        <SequenceNumber>1</SequenceNumber>
+        <Text>Text1</Text>
+        <Duration>60</Duration>
+      </Scriptcommand_3>
+      <Scriptcommand_3>
+        <SequenceNumber>2</SequenceNumber>
+        <Text>Text2</Text>
+        <Duration>120</Duration>
+      </Scriptcommand_3>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand4</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_4>
+        <SequenceNumber>1</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>33</FieldNo>
+        <Question>Question1</Question>
+        <TypeQuestion>0; Input multi lines</TypeQuestion>
+        <TextOptions/>
+        <TextOptions/>
+        <TextOptions/>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>2</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>33</FieldNo>
+        <Question>Question2</Question>
+        <TypeQuestion>1; Input single line</TypeQuestion>
+        <TextOptions/>
+        <TextOptions/>
+        <TextOptions/>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>3</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>33</FieldNo>
+        <Question>Question3</Question>
+        <TypeQuestion>2; 2 options</TypeQuestion>
+        <TextOptions>Option2_1</TextOptions>
+        <TextOptions>Option2_2</TextOptions>
+        <TextOptions/>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>4</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>33</FieldNo>
+        <Question>Question4</Question>
+        <TypeQuestion>3; 3 options</TypeQuestion>
+        <TextOptions>Option3_1</TextOptions>
+        <TextOptions>Option3_2</TextOptions>
+        <TextOptions>Option3_3</TextOptions>
+        <Required>false</Required>
+      </Scriptcommand_4>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand41</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_41>
+        <SequenceNumber>1</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00210</MeasurePoint>
+        <FieldNo>40</FieldNo>
+        <ShowNextListImmediately>false</ShowNextListImmediately>
+        <List>
+          <SequenceNumberList>1</SequenceNumberList>
+          <ListType>0;OptionList</ListType>
+          <SelectionRequired>true</SelectionRequired>
+          <ListQuestion>Question1</ListQuestion>
+          <OneSelectionAllowed>true</OneSelectionAllowed>
+          <CheckListResult>true</CheckListResult>
+          <ListConditionCode>
+            <ConditionCode>Ja</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>true</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>Nee</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>nvt</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>true</DisplayNextList>
+          </ListConditionCode>
+        </List>
+        <List>
+          <SequenceNumberList>2</SequenceNumberList>
+          <ListType>0;OptionList</ListType>
+          <SelectionRequired>true</SelectionRequired>
+          <ListQuestion>Question2</ListQuestion>
+          <OneSelectionAllowed>false</OneSelectionAllowed>
+          <CheckListResult>true</CheckListResult>
+          <ListConditionCode>
+            <ConditionCode>Yes</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>No</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+        </List>
+      </Scriptcommand_41>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand42</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_42>
+        <SequenceNumber>1</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00134</MeasurePoint>
+        <FieldNo>49</FieldNo>
+      </Scriptcommand_42>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand43</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_43>
+        <SequenceNumber>1</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00179</MeasurePoint>
+        <FieldNo>2</FieldNo>
+        <Instruction>Instruction</Instruction>
+        <ListItem>A</ListItem>
+        <ListItem>B</ListItem>
+        <ListItem>C</ListItem>
+        <ListItem>D</ListItem>
+        <ListItem>E</ListItem>
+        <ListItem>F</ListItem>
+        <ListItem>G</ListItem>
+        <ListItem>H</ListItem>
+        <Required>true</Required>
+      </Scriptcommand_43>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommandAbort</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_43>
+        <SequenceNumber>1</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00179</MeasurePoint>
+        <FieldNo>2</FieldNo>
+        <Instruction>Instruction</Instruction>
+        <ListItem>A</ListItem>
+        <ListItem>B</ListItem>
+        <ListItem>C</ListItem>
+        <ListItem>D</ListItem>
+        <ListItem>E</ListItem>
+        <ListItem>F</ListItem>
+        <ListItem>G</ListItem>
+        <ListItem>H</ListItem>
+        <Required>true</Required>
+      </Scriptcommand_43>
+      <Scriptcommand_43>
+        <SequenceNumber>2</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00179</MeasurePoint>
+        <FieldNo>2</FieldNo>
+        <Instruction>Instruction</Instruction>
+        <ListItem>A</ListItem>
+        <ListItem>B</ListItem>
+        <ListItem>C</ListItem>
+        <ListItem>D</ListItem>
+        <ListItem>E</ListItem>
+        <ListItem>F</ListItem>
+        <ListItem>G</ListItem>
+        <ListItem>H</ListItem>
+        <Required>true</Required>
+      </Scriptcommand_43>
+
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptTotalAmountOfSteps</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_1>
+        <SequenceNumber>1</SequenceNumber>
+        <Text>Text1</Text>
+      </Scriptcommand_1>
+      <Scriptcommand_2>
+        <SequenceNumber>2</SequenceNumber>
+        <Section>Section1</Section>
+        <SubSection>SubSection1</SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_3>
+        <SequenceNumber>3</SequenceNumber>
+        <Text>Text1</Text>
+        <Duration>60</Duration>
+      </Scriptcommand_3>
+      <Scriptcommand_4>
+        <SequenceNumber>4</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>33</FieldNo>
+        <Question>Question1</Question>
+        <TypeQuestion>0; Input multi lines</TypeQuestion>
+        <TextOptions/>
+        <TextOptions/>
+        <TextOptions/>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_41>
+        <SequenceNumber>5</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00210</MeasurePoint>
+        <FieldNo>40</FieldNo>
+        <ShowNextListImmediately>false</ShowNextListImmediately>
+        <List>
+          <SequenceNumberList>1</SequenceNumberList>
+          <ListType>0;OptionList</ListType>
+          <SelectionRequired>true</SelectionRequired>
+          <ListQuestion>Question1</ListQuestion>
+          <OneSelectionAllowed>true</OneSelectionAllowed>
+          <CheckListResult>true</CheckListResult>
+          <ListConditionCode>
+            <ConditionCode>Ja</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>true</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>Nee</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>nvt</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>true</DisplayNextList>
+          </ListConditionCode>
+        </List>
+        <List>
+          <SequenceNumberList>6</SequenceNumberList>
+          <ListType>0;OptionList</ListType>
+          <SelectionRequired>true</SelectionRequired>
+          <ListQuestion>Question2</ListQuestion>
+          <OneSelectionAllowed>false</OneSelectionAllowed>
+          <CheckListResult>true</CheckListResult>
+          <ListConditionCode>
+            <ConditionCode>Yes</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>No</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+        </List>
+      </Scriptcommand_41>
+      <Scriptcommand_42>
+        <SequenceNumber>6</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00134</MeasurePoint>
+        <FieldNo>49</FieldNo>
+      </Scriptcommand_42>
+      <Scriptcommand_43>
+        <SequenceNumber>7</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00179</MeasurePoint>
+        <FieldNo>2</FieldNo>
+        <Instruction>Instruction</Instruction>
+        <ListItem>A</ListItem>
+        <ListItem>B</ListItem>
+        <ListItem>C</ListItem>
+        <ListItem>D</ListItem>
+        <ListItem>E</ListItem>
+        <ListItem>F</ListItem>
+        <ListItem>G</ListItem>
+        <ListItem>H</ListItem>
+        <Required>true</Required>
+      </Scriptcommand_43>
+      <Scriptcommand_5x>
+        <SequenceNumber>8</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>3</MeasurementPeriod>
+        <ExtraMeasurementPeriod>0</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+      <Scriptcommand_70>
+        <SequenceNumber>9</SequenceNumber>
+        <Mode>true</Mode>
+      </Scriptcommand_70>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptPartialInspection</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_2>
+        <SequenceNumber>1</SequenceNumber>
+        <Section>Section1</Section>
+        <SubSection>SubSection1</SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_1>
+        <SequenceNumber>2</SequenceNumber>
+        <Text>Text2</Text>
+      </Scriptcommand_1>
+      <Scriptcommand_3>
+        <SequenceNumber>3</SequenceNumber>
+        <Text>Text3</Text>
+        <Duration>60</Duration>
+      </Scriptcommand_3>
+      <Scriptcommand_2>
+        <SequenceNumber>4</SequenceNumber>
+        <Section>Section4</Section>
+        <SubSection>SubSection4</SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_1>
+        <SequenceNumber>5</SequenceNumber>
+        <Text>Text5</Text>
+      </Scriptcommand_1>
+      <Scriptcommand_3>
+        <SequenceNumber>6</SequenceNumber>
+        <Text>Text6</Text>
+        <Duration>60</Duration>
+      </Scriptcommand_3>
+      <Scriptcommand_2>
+        <SequenceNumber>7</SequenceNumber>
+        <Section>Section7</Section>
+        <SubSection>SubSection7</SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_1>
+        <SequenceNumber>8</SequenceNumber>
+        <Text>Text8</Text>
+      </Scriptcommand_1>
+      <Scriptcommand_3>
+        <SequenceNumber>9</SequenceNumber>
+        <Text>Text9</Text>
+        <Duration>60</Duration>
+      </Scriptcommand_3>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand5X</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_2>
+        <SequenceNumber>1</SequenceNumber>
+        <Section>Section1</Section>
+        <SubSection>SubSection2</SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_5x>
+        <SequenceNumber>2</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>3</MeasurementPeriod>
+        <ExtraMeasurementPeriod>2</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand5XZeroMeasurementAndExtraMeasumentTime</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_5x>
+        <SequenceNumber>49</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>0</MeasurementPeriod>
+        <ExtraMeasurementPeriod>3</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand5XZeroMeasurement</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_5x>
+        <SequenceNumber>49</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>0</MeasurementPeriod>
+        <ExtraMeasurementPeriod>0</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand5XValueOutOfBounds</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_2>
+        <SequenceNumber>1</SequenceNumber>
+        <Section>Section1</Section>
+        <SubSection>SubSection2</SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_5x>
+        <SequenceNumber>2</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>3</MeasurementPeriod>
+        <ExtraMeasurementPeriod>2</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand70And5x</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_70>
+        <SequenceNumber>7</SequenceNumber>
+        <Mode>true</Mode>
+      </Scriptcommand_70>
+      <Scriptcommand_5x>
+        <SequenceNumber>8</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint></MeasurePoint>
+        <FieldNo>1500000</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>3</MeasurementPeriod>
+        <ExtraMeasurementPeriod>2</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+      <Scriptcommand_70>
+        <SequenceNumber>9</SequenceNumber>
+        <Mode>false</Mode>
+      </Scriptcommand_70>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand56</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_5x>
+        <SequenceNumber>2</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>56</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>0</MeasurementPeriod>
+        <ExtraMeasurementPeriod>2</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand705656</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_70>
+        <SequenceNumber>1</SequenceNumber>
+        <Mode>true</Mode>
+      </Scriptcommand_70>
+      <Scriptcommand_5x>
+        <SequenceNumber>2</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>56</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>0</MeasurementPeriod>
+        <ExtraMeasurementPeriod>2</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+      <Scriptcommand_5x>
+        <SequenceNumber>3</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>56</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>0</MeasurementPeriod>
+        <ExtraMeasurementPeriod>0</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+      <Scriptcommand_70>
+        <SequenceNumber>1</SequenceNumber>
+        <Mode>false</Mode>
+      </Scriptcommand_70>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>TestScriptCommand56NoSingleMeasurement</Name>
+    <Version>1.0</Version>
+    <InspectionSequence>
+      <Scriptcommand_5x>
+        <SequenceNumber>8</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>55</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>3</MeasurementPeriod>
+        <ExtraMeasurementPeriod>0</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+      <Scriptcommand_5x>
+        <SequenceNumber>2</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00249</MeasurePoint>
+        <FieldNo>15</FieldNo>
+        <Scriptcommand>56</Scriptcommand>
+        <Instruction>Geregelde waarde (Netdruk)</Instruction>
+        <DigitalManometer>TH2</DigitalManometer>
+        <MeasurementFrequency>10</MeasurementFrequency>
+        <MeasurementPeriod>0</MeasurementPeriod>
+        <ExtraMeasurementPeriod>2</ExtraMeasurementPeriod>
+      </Scriptcommand_5x>
+    </InspectionSequence>
+  </InspectionProcedure>
+  <InspectionProcedure>
+    <Name>PRS Test</Name>
+    <Version>1.1</Version>
+    <InspectionSequence>
+      <Scriptcommand_2>
+        <SequenceNumber>1</SequenceNumber>
+        <Section>Script command 1; Section; Sequence 1</Section>
+        <SubSection>Script Command 1; Sub Section </SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_1>
+        <SequenceNumber>2</SequenceNumber>
+        <Text>Instruction to th user; SequenceNumber 2</Text>
+      </Scriptcommand_1>
+      <Scriptcommand_2>
+        <SequenceNumber>3</SequenceNumber>
+        <Section>Script command 3; Section; Sequence 3</Section>
+        <SubSection>Script Command 3; Sub Section </SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_3>
+        <SequenceNumber>4</SequenceNumber>
+        <Text>Pause; Duration 10 seconds; Sequence 4</Text>
+        <Duration>10</Duration>
+      </Scriptcommand_3>
+      <Scriptcommand_2>
+        <SequenceNumber>5</SequenceNumber>
+        <Section>Script command 4; Section; Sequence 5</Section>
+        <SubSection>Script Command 4; Sub Section </SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_4>
+        <SequenceNumber>6</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>33</FieldNo>
+        <Question>Multi lines; Input required; Sequence 6</Question>
+        <TypeQuestion>0; Input multi lines</TypeQuestion>
+        <Required>true</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>7</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>1</FieldNo>
+        <Question>Multi lines; No input required; Sequence 7</Question>
+        <TypeQuestion>0; Input multi lines</TypeQuestion>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>8</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>2</FieldNo>
+        <Question>Single line; Input required; Sequence 8</Question>
+        <TypeQuestion>1; Input single line</TypeQuestion>
+        <Required>true</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>9</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>3</FieldNo>
+        <Question>Single line; No input required; Sequence 9</Question>
+        <TypeQuestion>1; Input single line</TypeQuestion>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>10</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>4</FieldNo>
+        <Question>2 Option; Input required; Sequence 10</Question>
+        <TypeQuestion>2; 2 options</TypeQuestion>
+        <TextOptions>Optie 1</TextOptions>
+        <TextOptions>Optie 2</TextOptions>
+        <Required>true</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>11</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>5</FieldNo>
+        <Question>2 Option; no input required; Sequence 11</Question>
+        <TypeQuestion>2; 2 options</TypeQuestion>
+        <TextOptions>Optie 1</TextOptions>
+        <TextOptions>Optie 2</TextOptions>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>12</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>6</FieldNo>
+        <Question>3 Option; Input required; Sequence 12</Question>
+        <TypeQuestion>3; 3 options</TypeQuestion>
+        <TextOptions>Optie 1</TextOptions>
+        <TextOptions>Optie 2</TextOptions>
+        <TextOptions>Optie 3</TextOptions>
+        <Required>true</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_4>
+        <SequenceNumber>13</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>7</FieldNo>
+        <Question>3 Option; No input required; Sequence 13</Question>
+        <TypeQuestion>3; 3 options</TypeQuestion>
+        <TextOptions>Optie 1</TextOptions>
+        <TextOptions>Optie 2</TextOptions>
+        <TextOptions>Optie 3</TextOptions>
+        <Required>false</Required>
+      </Scriptcommand_4>
+      <Scriptcommand_2>
+        <SequenceNumber>14</SequenceNumber>
+        <Section>Script command 43; Section; Sequence 14</Section>
+        <SubSection>Script Command 43; Sub Section </SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_43>
+        <SequenceNumber>15</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>8</FieldNo>
+        <Instruction>List required; 4 list items; Sequence 15</Instruction>
+        <ListItem>ListItem 1</ListItem>
+        <ListItem>ListItem 2</ListItem>
+        <ListItem>ListItem 3</ListItem>
+        <ListItem>ListItem 4</ListItem>
+        <Required>true</Required>
+      </Scriptcommand_43>
+      <Scriptcommand_43>
+        <SequenceNumber>16</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00205</MeasurePoint>
+        <FieldNo>9</FieldNo>
+        <Instruction>List not required; 20 list items; Sequence 16</Instruction>
+        <ListItem>ListItem 1</ListItem>
+        <ListItem>ListItem 2</ListItem>
+        <ListItem>ListItem 3</ListItem>
+        <ListItem>ListItem 4</ListItem>
+        <ListItem>ListItem 5</ListItem>
+        <ListItem>ListItem 6</ListItem>
+        <ListItem>ListItem 7</ListItem>
+        <ListItem>ListItem 8</ListItem>
+        <ListItem>ListItem 9</ListItem>
+        <ListItem>ListItem 10</ListItem>
+        <ListItem>ListItem 11</ListItem>
+        <ListItem>ListItem 12</ListItem>
+        <ListItem>ListItem 13</ListItem>
+        <ListItem>ListItem 14</ListItem>
+        <ListItem>ListItem 15</ListItem>
+        <ListItem>ListItem 16</ListItem>
+        <ListItem>ListItem 17</ListItem>
+        <ListItem>ListItem 18</ListItem>
+        <ListItem>ListItem 19</ListItem>
+        <ListItem>ListItem 20</ListItem>
+        <Required>true</Required>
+      </Scriptcommand_43>
+      <Scriptcommand_2>
+        <SequenceNumber>17</SequenceNumber>
+        <Section>Script command 42; Section; Sequence 17</Section>
+        <SubSection>Script Command 42; Sub Section </SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_42>
+        <SequenceNumber>18</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00134</MeasurePoint>
+        <FieldNo>10</FieldNo>
+      </Scriptcommand_42>
+      <Scriptcommand_2>
+        <SequenceNumber>19</SequenceNumber>
+        <Section>Script command 41; Section; Sequence 19</Section>
+        <SubSection>Script Command 41; Sub Section </SubSection>
+      </Scriptcommand_2>
+      <Scriptcommand_41>
+        <SequenceNumber>20</SequenceNumber>
+        <ObjectName/>
+        <MeasurePoint>00210</MeasurePoint>
+        <FieldNo>11</FieldNo>
+        <ShowNextListImmediately>false</ShowNextListImmediately>
+        <List>
+          <SequenceNumberList>1</SequenceNumberList>
+          <ListType>0;OptionList</ListType>
+          <SelectionRequired>true</SelectionRequired>
+          <ListQuestion>Option List</ListQuestion>
+          <OneSelectionAllowed>true</OneSelectionAllowed>
+          <CheckListResult>true</CheckListResult>
+          <ListConditionCode>
+            <ConditionCode>01</ConditionCode>
+            <ConditionCodeDescription>01; Next list display</ConditionCodeDescription>
+            <DisplayNextList>true</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>02</ConditionCode>
+            <ConditionCodeDescription>02; No list display</ConditionCodeDescription>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>03</ConditionCode>
+            <ConditionCodeDescription>03; No list display</ConditionCodeDescription>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+        </List>
+        <List>
+          <SequenceNumberList>2</SequenceNumberList>
+          <ListType>0;OptionList</ListType>
+          <SelectionRequired>true</SelectionRequired>
+          <ListQuestion>Oorzaak</ListQuestion>
+          <OneSelectionAllowed>false</OneSelectionAllowed>
+          <CheckListResult>true</CheckListResult>
+          <ListConditionCode>
+            <ConditionCode>A - Defect hekwerk</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>B - Defecte afrastering</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+        </List>
+        <List>
+          <SequenceNumberList>3</SequenceNumberList>
+          <ListType>0;OptionList</ListType>
+          <SelectionRequired>true</SelectionRequired>
+          <ListQuestion>Hersteld?</ListQuestion>
+          <OneSelectionAllowed>true</OneSelectionAllowed>
+          <CheckListResult>true</CheckListResult>
+          <ListConditionCode>
+            <ConditionCode>Ja</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+          <ListConditionCode>
+            <ConditionCode>Nee</ConditionCode>
+            <ConditionCodeDescription/>
+            <DisplayNextList>false</DisplayNextList>
+          </ListConditionCode>
+        </List>
+      </Scriptcommand_41>
+    </InspectionSequence>
+  </InspectionProcedure>
+
+</InspectionProcedureFile>

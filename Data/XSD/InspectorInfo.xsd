@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by Laurens Eykelkamp (Eykel) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xsd:annotation>
+		<xsd:documentation>Comment describing your root element</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="Inspector" msdata:IsDataSet="true">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="InspectorInfo" type="TypeInspectorInfo"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="TypeInspectorInfo">
+		<xsd:sequence>
+			<xsd:element name="Version" type="xsd:string"/>
+			<xsd:element name="SubVersion" type="xsd:string"/>
+			<xsd:element name="RegistrationCode" type="xsd:string"/>
+			<xsd:element name="PDASerialNumber" type="xsd:string"/>
+			<xsd:element name="LastStartDate" type="xsd:dateTime"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

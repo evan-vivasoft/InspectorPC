@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BluetoothDongles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="T:\SOURCE~1\INSPECTOR.PC\Data\XSD\BluetoothDongle.xsd">
+<BluetoothDongle>
+	<BluetoothAddress>00:15:83:4F:4A:C1</BluetoothAddress>
+</BluetoothDongle>
+<BluetoothDongle>
+	<BluetoothAddress>00:15:83:4F:4A:CC</BluetoothAddress>
+</BluetoothDongle>
+</BluetoothDongles>

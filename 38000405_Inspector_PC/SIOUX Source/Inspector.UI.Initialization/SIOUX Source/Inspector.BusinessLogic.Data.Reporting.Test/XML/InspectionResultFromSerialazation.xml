@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InspectionResultsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<InspectionResult>
+		<Status>5</Status>
+		<PRSIdentification>PRS ID</PRSIdentification>
+		<PRSName>APELDOORN ORDERMOLENWEG 1 | 5 007 230.1</PRSName>
+		<PRSCode>PDASNR=0D9015E4830E0</PRSCode>
+		<GasControlLineName>5 007 230.1.1 OS LS</GasControlLineName>
+		<GCLIdentification>23.05.2012 5 007 230.1.1</GCLIdentification>
+		<GCLCode>GCL Code</GCLCode>
+		<CRC>CRC</CRC>
+		<Measurement_Equipment>
+			<ID_DM1>HM3500DLM110,MOD00B,1048113</ID_DM1>
+			<ID_DM2 />
+			<BT_Address>00:80:98:C4:20:F4</BT_Address>
+		</Measurement_Equipment>
+		<InspectionProcedure>
+			<Name>Inspect Name</Name>
+			<Version>1.0.</Version>
+		</InspectionProcedure>
+		<DateTimeStamp>
+			<StartDate>2012-02-06</StartDate>
+			<StartTime>15:58:52</StartTime>
+			<EndTime>16:17:30</EndTime>
+			<TimeSettings>
+				<TimeZone>GMT+01:00</TimeZone>
+				<DST>No</DST>
+			</TimeSettings>
+		</DateTimeStamp>
+		<Result>
+			<ObjectName>ObjectName</ObjectName>
+			<ObjectID>ObjectId</ObjectID>
+			<MeasurePoint>MeasurePoint</MeasurePoint>
+			<MeasurePointID>MeasurePointId</MeasurePointID>
+			<FieldNo>2</FieldNo>
+			<Time>12:05:30</Time>
+			<Text>Text</Text>
+		</Result>
+	</InspectionResult>
+</InspectionResultsData>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ORDesignPrsMdb">
+  <DataContextMoniker Name="/ORDesignPrsMdbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c70f315f-1530-4390-9645-282bb70ea4e7" absoluteBounds="0.5, 0.75, 1.5, 1.6728111169735591">
+      <DataClassMoniker Name="/ORDesignPrsMdbDataContext/tblDBVersion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41f68e3d-e02d-4ee4-9281-2983ec4aa70e" absoluteBounds="0.51500000000000012, 1.1099999999999999, 1.4700000000000002, 0.96738730619351065" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="ead65002-7de2-4c79-8d0d-b4faf950793f" absoluteBounds="0.51500000000000012, 2.0873873061935106, 1.4700000000000002, 0.23542381078004837" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="924fdbf1-d297-470c-9c34-0f9d65b95231" absoluteBounds="5.25, 0.75, 1.5, 3.5027198555072143">
+      <DataClassMoniker Name="/ORDesignPrsMdbDataContext/tblGCLdata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1f48507-1fe6-451a-99d3-17e587c3ca00" absoluteBounds="5.265, 1.1099999999999999, 1.4700000000000002, 2.4313142970204353" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="dbd3ff5a-fd36-48eb-ba37-1aef008fbac3" absoluteBounds="5.265, 3.551314297020435, 1.4700000000000002, 0.60140555848677968" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0acb4c5d-93b3-49c8-9d41-662e0522a47d" absoluteBounds="7.5, 0.75, 1.5, 3.3197289816538484">
+      <DataClassMoniker Name="/ORDesignPrsMdbDataContext/tblGCLObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b53b5cb9-6fa2-4fdf-b665-5a5b5a7fc627" absoluteBounds="7.515, 1.1099999999999999, 1.4700000000000002, 2.4313142970204353" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="bd250670-984e-49a0-a3ae-bd6ca98b5b1d" absoluteBounds="7.515, 3.551314297020435, 1.4700000000000002, 0.4184146846334138" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="087b4e52-1f47-4406-b1c2-e9f745014d0b" absoluteBounds="2.625, 0.75, 1.5, 2.5877654862403863">
+      <DataClassMoniker Name="/ORDesignPrsMdbDataContext/tblPRSdata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6e85805-2b3a-456c-aeed-2774bd0286ee" absoluteBounds="2.64, 1.1099999999999999, 1.4700000000000002, 1.5163599277536073" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2d5da658-916f-4da5-9a74-42fef3cfc821" absoluteBounds="2.64, 2.6363599277536069, 1.4700000000000002, 0.60140555848677946" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="165b4bd8-5ebd-40c1-b21b-f735a144509e" absoluteBounds="5.25, 4.75, 1.5, 2.4047746123870208">
+      <DataClassMoniker Name="/ORDesignPrsMdbDataContext/tblPRSObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3890e36-526c-4a3e-bf9a-82eee3ac97a0" absoluteBounds="5.265, 5.11, 1.4700000000000002, 1.5163599277536073" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="15e6f976-12b2-4740-8297-66338adb0c21" absoluteBounds="5.265, 6.6363599277536069, 1.4700000000000002, 0.418414684633414" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27f305a9-f68e-46a6-a255-38418057085e" absoluteBounds="0.5, 3.25, 1.5, 1.8558019908269241">
+      <DataClassMoniker Name="/ORDesignPrsMdbDataContext/tlbIdentificationCode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63dd35d7-46be-46cc-a446-9ab8a9caf58f" absoluteBounds="0.515, 3.61, 1.4700000000000002, 1.1503781800468764" name="DataClassHasProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d4125ffb-fc3f-40a6-a8ed-06b321e21147" absoluteBounds="0.515, 4.7703781800468761, 1.4700000000000002, 0.23542381078004837" name="DataClassHasAssociation" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 2.40986449082692); (7.5 : 2.40986449082692)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ORDesignPrsMdbDataContext/tblGCLdata/tblGCLdata_tblGCLObject" />
+      <nodes>
+        <classShapeMoniker Id="924fdbf1-d297-470c-9c34-0f9d65b95231" />
+        <classShapeMoniker Id="0acb4c5d-93b3-49c8-9d41-662e0522a47d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.375 : 3.33776548624039); (3.375 : 5.95238730619351); (5.25 : 5.95238730619351)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ORDesignPrsMdbDataContext/tblPRSdata/tblPRSdata_tblPRSObject" />
+      <nodes>
+        <classShapeMoniker Id="087b4e52-1f47-4406-b1c2-e9f745014d0b" />
+        <classShapeMoniker Id="165b4bd8-5ebd-40c1-b21b-f735a144509e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.125 : 2.04388274312019); (5.25 : 2.04388274312019)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ORDesignPrsMdbDataContext/tblPRSdata/tblPRSdata_tblGCLdata" />
+      <nodes>
+        <classShapeMoniker Id="087b4e52-1f47-4406-b1c2-e9f745014d0b" />
+        <classShapeMoniker Id="924fdbf1-d297-470c-9c34-0f9d65b95231" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</Diagram>

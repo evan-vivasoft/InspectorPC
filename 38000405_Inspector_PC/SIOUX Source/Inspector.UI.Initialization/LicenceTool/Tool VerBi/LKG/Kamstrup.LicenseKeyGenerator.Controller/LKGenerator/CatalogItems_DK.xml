@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<ArrayOfCatalogItemLookupObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>250 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-060.1</string>
+        <string>6697-060.2</string>
+        <string>6697-060.3</string>
+      </CatalogNumbers>
+      <FeatureId>1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>500 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-052.1</string>
+        <string>6697-052.2</string>
+        <string>6697-052.3</string>
+      </CatalogNumbers>
+      <FeatureId>2</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>1.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-053.1</string>
+        <string>6697-053.2</string>
+        <string>6697-053.3</string>
+      </CatalogNumbers>
+      <FeatureId>4</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>2.500 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-054.1</string>
+        <string>6697-054.2</string>
+        <string>6697-054.3</string>
+      </CatalogNumbers>
+      <FeatureId>8</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>5.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-055.1</string>
+        <string>6697-055.2</string>
+        <string>6697-055.3</string>
+      </CatalogNumbers>
+      <FeatureId>16</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>10.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-056.1</string>
+        <string>6697-056.2</string>
+        <string>6697-056.3</string>
+      </CatalogNumbers>
+      <FeatureId>32</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>30.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-057.1</string>
+        <string>6697-057.2</string>
+        <string>6697-057.3</string>
+      </CatalogNumbers>
+      <FeatureId>64</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>3</ProductId>
+      <ProductDescription>PcBase III</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-05X</string>
+      </CatalogNumbers>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>60.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-058.1</string>
+        <string>6697-058.2</string>
+        <string>6697-058.3</string>
+      </CatalogNumbers>
+      <FeatureId>128</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>6</ProductId>
+      <ProductDescription>PcBase Automatic Export</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-074</string>
+        <string>6697-088</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>5</ProductId>
+      <ProductDescription>PcBase Loggerlicense</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-073</string>
+        <string>6697-087</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>11</ProductId>
+      <ProductDescription>PcBase Logger - Workabout Pro</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-079</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>7</ProductId>
+      <ProductDescription>PcNet III</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-081</string>
+        <string>6697-061</string>
+        <string>6697-080</string>
+        <string>6697-062</string>
+        <string>6697-089</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>4</ProductId>
+      <ProductDescription>PcTermPro III</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-067</string>
+        <string>6697-066</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>17</ProductId>
+      <ProductDescription>PcBase Water</ProductDescription>
+      <CatalogNumbers/>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>5.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-084.1</string>
+        <string>6697-084.2</string>
+      </CatalogNumbers>
+      <FeatureId>1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>17</ProductId>
+      <ProductDescription>PcBase Water</ProductDescription>
+      <CatalogNumbers/>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>10.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-085.1</string>
+        <string>6697-085.2</string>
+      </CatalogNumbers>
+      <FeatureId>2</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>4</ProductId>
+      <ProductDescription>PcImportExport III</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>No features</ProductDescription>
+      <CatalogNumbers>
+        <string>6697-069</string>
+        <string>6697-070</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+
+  <!-- Kamstrup Wireless M-Bus Reader-->
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>12</ProductId>
+      <ProductDescription>Kamstrup Wireless M-Bus Reader</ProductDescription>
+      <CatalogNumbers/>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>1.600 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>USBPCSW0020</string>
+      </CatalogNumbers>
+      <FeatureId>1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>12</ProductId>
+      <ProductDescription>Kamstrup Wireless M-Bus Reader</ProductDescription>
+      <CatalogNumbers/>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>2.400 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>USBPCSW0030</string>
+      </CatalogNumbers>
+      <FeatureId>2</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>12</ProductId>
+      <ProductDescription>Kamstrup Wireless M-Bus Reader</ProductDescription>
+      <CatalogNumbers/>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>3.200 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>USBPCSW0040</string>
+      </CatalogNumbers>
+      <FeatureId>4</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>12</ProductId>
+      <ProductDescription>Kamstrup Wireless M-Bus Reader</ProductDescription>
+      <CatalogNumbers/>
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>4.000 MP</ProductDescription>
+      <CatalogNumbers>
+        <string>USBPCSW0050</string>
+      </CatalogNumbers>
+      <FeatureId>8</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+
+  <CatalogItemLookupObject>
+    <Catalog>
+      <ProductId>15</ProductId>
+      <ProductDescription>USB Import and export module</ProductDescription>
+      <CatalogNumbers />
+    </Catalog>
+    <Feature>
+      <ProductId>0</ProductId>
+      <ProductDescription>Meter data import and export module</ProductDescription>
+      <CatalogNumbers>
+        <string>USBPCSW0060</string>
+      </CatalogNumbers>
+      <FeatureId>-1</FeatureId>
+    </Feature>
+  </CatalogItemLookupObject>
+</ArrayOfCatalogItemLookupObject>

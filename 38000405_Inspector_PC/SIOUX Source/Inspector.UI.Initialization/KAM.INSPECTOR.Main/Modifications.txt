@@ -1,0 +1,269 @@
+﻿'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'MOD 01; CHG: In the chart and as value the leakage value is displayed after 10 seconds
+'
+'MOD 02; CHG: In case of leakage (scriptcommand 51) on the secondary x-axis the leakage (mbar/min) is displayed
+'             The range of the chart is now calculated in the INSPECTOR application.
+'
+'MOD 03; CHG: The file "Bluetooth dongles.xml" is not needed anymore. 
+'
+'MOD 04; CHG: A space is added to the volumes (dm3)
+'
+'MOD 05; CHG: The line size of the chart series can be changed
+'
+'MOD 06; CHG: The instruction text size can be changed
+'
+'MOD 07; CHG; Desktop alert set if the Calibration date is due to expire, or is expired. The Desktop Alert is displayed only once during one Inspector 
+'               startup, or after a new PLEXOR device is selected
+'
+'MOD 08; CHG; The user can now select the internal bluetooth device
+'
+'MOD 09; CHG; A form is added to display the result in a simple Webdocument view
+'
+'MOD 10; CHG: A messagebox is displayed when the user stops the inspection. The user can stop the inspection or resume.
+'
+'MOD 11; BUG: In the chart range determination a value double.NAN gives an unexcepted error. 
+'
+'MOD 12; CHG: The file "tempResults.xml" and "Results.xml" are merged at startup of application
+'
+'MOD 13; CHG: New structure for determination/ calculation of chart range. With the previous function the ranges where not always calculated correctly
+'
+'MOD 14; BUG: A double.NAN value as maximum or minimum gives an error on the chart. The chart was not displayed. 
+'
+'MOD 15; CHG: The application is now startup in Windows state Maximized.
+'
+'MOD 16; BUG: If in the file "PLEXOR.XML" two PLEXOR devices with the same bluetooth address where defined, INSPECTOR gives an unhandled exception
+'
+'MOD 17; CHG: The event handling of the initialisation process is changed. In the messagebox also the error is displayed.
+'
+'MOD 18; BUG: In the translation selection window, the current (selected) translation flag was not selected during startup
+'
+'MOD 19; CHG: A check manometer preset state is added to the initialisation function. 
+'
+'MOD 20; CHG: Check is in the section/ subsection selection of a inspection procedure something is selected when the user starts the inspection. If nothing
+'               is selected nothing happen.
+'
+'MOD 21; CHG: At the end of the inspection, the user can, in case of a inspection out of boundaries, select section/ subsections and restart the inspection
+'
+'MOD 22; CHG: The bluetooth connection is closed after an unhandled exception. This is only triggered not during design/ debug mode
+'
+'MOD 23; CHG; A sound is played is the pause is expired during an inspection
+'
+'MOD 24: CHG: Displaying the restart button in a scriptcommand 51 is optional. This is set in the INSPECTOR settings file.
+'
+'MOD 25: CHG: Do not display unit and value when no boundarie is available
+'
+'MOD 26: CHG: Synchronisation of starting of measurement. It was possible; that the timebar was started, but not the actual measurement, e.q. by a retry
+'
+'MOD 27: CHG: Handling of Leakage during a inspection. V1, V2, - and membrane handling
+'
+'MOD 28: CHG: Flash actual measurements and calculated value during the inspection. When the measurement is stopped the value stops flashing
+'
+'MOD 29: CHG: Handling of linking the data to the boundaries. Text is not linked to translation
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'First official release.
+'2013-4-2 Component versions 5.0.0.5 
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'
+'MOD 30: BUG: If an inspection was stopped by the user, it could occur that a message value out of boundaries was displayed
+'
+'MOD 31: BUG: If the user stop the inspection the button Yes No are displayed instead of NoCancel.
+'
+'MOD 32: CHG: Adding Computer ID to windows register installation element.
+'
+'MOD 33: CHG: Update the results when the results tab is selected.
+'
+'MOD 34: BUG: Display grid view also when the user changes the inspection procedure
+'
+'MOD 35: CHG: Implementing scriptcommand 41. No support of "ShowNextListImmediataly"
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-6-26 Component versions 5.0.0.6
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 36: CHG: Convert the lastresult value depending on the unit of the measurement value
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-8-19 Component versions 5.0.0.7
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 37: CHG: The text "No data to display" is shown when no boundaries is available
+'MOD 38: CHG: The text "PRS Name" and "GCL Name" are not displayed any more in case no PRS is selected.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-10-01 Component versions 5.0.0.8
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 39: CHG: The license is not stored at user level but at machine level
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-10-22 Component versions 5.0.0.9
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 40: BUG: Handling of scriptcommand 41. Some items where not handled correctly
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-11-25 Component versions 5.0.0.10
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 41: BUG: The range of the X-axil was not set corretly if a restart of the inspection was initiated.
+'MOD 42; CHG: In case of a leckage measurement (v1 of V2) the end result value is set to "-" if the calculated value is NAN. NAN is set if no volumes are
+			in the station information file
+'MOD 43; BUG: New modules version 5.0.0.661 to solve issue with calculation of leakage value V1/ V2 with decimal sign (example: 0.3dm3/h)
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-04-29 Component versions 5.0.0.11
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 44; CHG: The max length of the remarks fields are decreased to 255; This because the MSAccess database can only store 255 characters. This is done for 
+			Scriptcommand 41 and scriptcommand 42
+'MOD 45; CHG: Expand all other groups in the grid PRS view, so only for the selected PRS the GCL is displayed.
+'MOD 46; CHG: Text at inspection procedure page (PRS, GCL and IP Name) enlarge from 9 to 12.
+'MOD 47; CHG: Add 1 second delay before displaying "NEXT" button at scriptcommand 1
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-08-18 Component versions 5.0.0.12
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 48; BUG: Scrolling and selecting a prs in the PRS grid does not work correctly. List jumps to the first record, and at mouse click the information is not displayed
+'MOD 49; CHG: The component information in the splash screen was not displayed correctly
+'MOD 50; CHG: Name of company is changed from Kamstrup b.v. to Wigersma & Sikkema B.V.'
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-10-18 Component versions 5.0.0.13
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+'MOD 51; BUG: When in the PRS form the data is filtered and a record is expanded a row index error occur
+		 BUG: When filtering or sorting the records, the incorrect row index was set. The behavior was that the previous record index was not set correctly
+'MOD 52; BUG: The name BlueSoleil was not correct; was set to Bluesoleil. The result was that the bluetooth device was not regornized, and no bluetooth adres
+				was assigned. An error 'No bluetooth device found on PC' was popup 
+'MOD 53; BUG: Incase in the rejection boundaries a value Nan for Minimum or maximum was defined, the scaling of the graph does not work any more. 
+			  Fix: In case of Nan value, the start value of the boundaries are not applied.
+'MOD 54; CHG: Change name and logo Kamstrup into Wigersma & Sikkema B.V.'
+'MOD 55: CHG: License; Solved issues with administrator rights and saving data.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-12-05 Component versions 5.0.0.14
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 56: CHG: Add " <Setting Value="True" name="ShowDropDownSelectInspection" />" to file "INSPECTORSettings.xml" to display the selection of the inspection
+			 procedure
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2015-01-15 Component versions 5.0.0.15
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 57; BUG: In case no measurevalue element was defined in the resultlast.xml file an error occurred. Mantis issue 
+'MOD 58; MOD: Support of other units of measurements;
+'MOD 59; MOD: Add Safety value triggered functions;
+'MOD 60; MOD: Bounce effect of pressing button twice
+'MOD 61; MOD: Display information of scriptcommand 42 in scriptcommand4 and visa versa. Also save the information of scriptcommand42 only by stopping the procedure
+'				and when another scriptcommand 42 is loaded
+'MOD 62; MOD: In case of the directory \programdata\ws-gas does not exists the directory \programdata\kamstrup will be used. The installer still installs the files to kamstrup
+'MOD 63; MOD: Add information GCLIdentification to form PRS.
+'MOD 64; BUG: In case of an error during executing the inspection, not all errors are displayed with an error code
+'MOD 65; MOD: Switching off and on of initialization led of Wireless interface is not supported.
+'MOD 66; MOD: Add objectName- and MeasurepointDescription to GCL list
+'MOD 67; MOD: Display license information in about screen
+'MOD 68; MOD: Change in combine path for results.'
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2015-11-13 Component versions 5.0.0.16
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 69; BUG: The restart button is not enabled after completion of a restarted measurement'
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-03-09 Component versions 5.0.0.17
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD - BUG New release of inspector infra componenters version 5.0.0.787
+'Mantis issues 31471; 31449; 31333; 31225
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-03-09 Component versions 5.0.0.18
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'Mantis issues 32381; 3260; 32437; Business logics (SIOUX) version 5.0.0.796
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-12-12 Component versions 5.0.0.19
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'Business logics (SIOUX) version 5.0.0.814
+'INSPECTOR Release with microsoft bluetooth support
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2017-02-06 Component versions 5.1.0.0
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 70: KAM.Licencetool. The license information is saved at machinelevel not at user level' Version Kam.license 5.0.0.8
+'MOD 71; Was already implemented; Use of corporate license; A license file is used for the license information'
+'MOD 72; Result of a option and checklist was saved incorrect value was set to "1" instead of "0"
+'MOD 73; The boundaries grid are cleared when selecting a pressure regulator station.'
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2017-03-29 Component versions 5.1.0.1
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 74; In case the initialisation could not finished, and the user did not start the retry, the running bar was still active.'
+'MOD 75; Bluetooth Unpair added. All PLEXOR BT devices are unpaired when connect to a new selected PLEXOR Device. This to prevent problems
+		''with to many paired bluetooth devices.'
+		'The PLEXOR device is saved after PLEXOR initialisation instead of selecting a PLEXOR device'
+'MOD 76; Add microsoft BT driver to dropdown list of driver selection'
+'MOD 77; The measurement data was handled before the measurement was started'
+
+'Business logics (SIOUX) version 5.0.0.834
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2017-05-09 Component versions 5.1.0.2
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 78; Add unpair option before starting inspection. This is done by a setting.'
+'MOD 79; Unpair in case the initialisation before a inspection is stopped. '
+'MOD 80; XML setting was not saved correctly if the setting does not exists.'
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2017-05-15 Component versions 5.1.0.3
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 81'; On handled error if bluetooth adapter was not present or switched off
+'MOD 82'; Handling of SSD sensor; Extra scriptcommand 56 and 57 where added for measurement of SSD sensor
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2017-05-15 Component versions 5.1.0.4
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 83'; Add option to print debug information to file
+'MOD 84'; Add option for corporate license with license information in file
+'MOD 85'; Change button handling during inspection to prevent double/ bounce of buttons
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2017-12-28 Component versions 5.1.0.5
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 86'; Problem solved with pressing next button during scriptcommando 41
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2018-01-04 Component versions 5.1.0.6
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 87'; Message box while saving license key to register without admin rights is not displayed
+'MOD 88'; Extend debug log information
+'MOD 89'; Scriptcommand 5x out of bounds message was not displayed
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2018-01-19 Component versions 5.1.0.7
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 90'; Corporate license is now automaticaly licensed; The application will starts now without license message.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2018-01-23 Component versions 5.1.0.8
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 91'; BUG solved with filtering of PRS form. If nothings was found, and the user selects the contains, an unhandeld exception was generated
+'MOD 92'; Add of Chinees and russian language
+'MOD 93'; BUG in handling "Stop" button at begin of measurement with script command 5x. The button was displayed before the measurement results where
+'			received. If user pressed the button before the measurement results, the button was not visible any more.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2018-10-24 Component versions 5.1.0.9
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+'MOD 94'; Problem solved when displaying second time about form; Unhandled Exception: Index was out of range. Must be non-negative and less than the size
+'			 of the collection. Parameter name: index'
+
+'MOD 95'; Max length Text input scriptcommand 4 changed to 255. This to handle problems with saving data to msAccess database.
+'MOD 96'; A new report form for displaying the inspection results is added. Now it is possible to select a measurement and preview the inspection results.
+'MOD 97'; Button Next is now default set to not visibile; Timer for displaying next button increase to 2000ms. This to solve isses with not displaying the "Next" button
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2019-01-28 Component versions 5.1.0.10
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 98'; Add Polish language
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2019-05-27 Component versions 5.1.0.11
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MOD 99'; Additional languages can be added by an external xml-file (WS-gas\CONNEXION V5.x\INSPECTORPC", "Languages.xml"); The languagues de-DE, en-GB and nl-NL are default available in the application
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2019-12-03 Component versions 5.1.0.12
+'---------------------------------------------------------------------------------------------------------------------------------------------------------

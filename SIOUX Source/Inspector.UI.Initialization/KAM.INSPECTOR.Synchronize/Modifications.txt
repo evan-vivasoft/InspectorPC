@@ -1,0 +1,156 @@
+﻿'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'MOD 04; CHG: In the results value " " changed by ""
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'First official release.
+'2013-4-2 Component versions 5.0.0.2 
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 05; CHG: Add replace of decimal separator
+'MOD 06; BUG: Handling of closing the application during synchronisation
+'MOD 07: CHG: Handling of different translations in case of an error
+'MOD 08: BUG: In case of temp directory on PC does not exits create it.
+'MOD 09: BUG: Changing the path to communicatorsettings.xml was not saved.
+'MOD 10: CHG: Use the commonapplicationpath for the COMMUNICATORsettings.xml
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-08-20 Component versions 5.0.0.3
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 11 BUG: Wrong message when checking on INSPECTORprocedure.xml. The text PLEXOR.xml was displayed
+'MOD 12 BUG: Unhandled exception when data transfer INSPECTOR PC was started and no Mobile centrum installed
+'MOD 13 BUG: Handling of MeasureValue is incorrect. For INSPECTOR PC the MeasureValue was not saved in the access database
+			 Also for a List the remark in the field "Text" was not stored.
+'MOD 14 CHG: The data paths of INSPECTOR PC are now read out of the "INSPECTORSettings.xml" file, instead of static definition
+'MOD 15 BUG: In case of a "Text" input at a check/ optionlist, only the "Text" was saved into the msAccess database.
+'MOD 16 BUG: If in the PRS.mdb database no "UOV" is defined in the tblGCLObject an error occur.
+'MOD 17 BUG: In case of no results in the "Results.mdb" no "ResultsLast.xml" file is created.
+'MOD 18 CHG: It is posible to define an alternative PRS file name on INSPECTOR PC 
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-10-2 Component versions 5.0.0.4
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 19 BUG: FPR files where not copied from INSPECTOR PC to Network. It was copied from network to INSPECTOR PC
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2013-10-8 Component versions 5.0.0.5
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+'MOD 20 CHG: Check if the main directories are defined
+'MOD 21 CHG: If the validation of the XML file with XSD is not correct. Display error xsd instead of error write file
+'MOD 22 CHG: If no GCLojbects are present in the ACCESS database, a record with fieldnumber 70 is created as dummie record.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-02-26 Component versions 5.0.0.6
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 23 BUG: The value of dm3/h was not stored correctly in the resultlast file. It was stored in <Text> instead of <MeasureValue>. Text was set to m3/h instead of dm3/h
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-05-08 Component versions 5.0.0.7
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 24 BUG: Setting decimal sign was incorrect.
+'MOD 25 MOD: The file "Results.lock" is created if COMMUNICATOR will proces the data from results file from INSPECTOR to a results.xml file. In case another COMMUNICATOR wants to access
+		the Results.xml file it wait until the "Results.lock" file is deleted
+'MOD 26 MOD: The file "StationInformation.lock" is created if COMMUNICATOR will proces the data from stationinformation files from the network. In case another COMMUNICATOR 
+		wants to access the StationInformation.xml file it wait until the "StationInformatio.lock" file is deleted
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-08-18 Component versions 5.0.0.8
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 27 BUG: If the deleted file does not exists an unexpected handler occur.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2014-09-15 Component versions 5.0.0.9
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 28 BUG: In case of setting the PRS file to XML, the PRS is not deleted from the INSPECTOR. If a inspection is performed on a PRS and GCL, the data is
+		not deleted from INSPECTOR.
+		An unexpected error is displayed when the user sets the option for deleting the PRS data to "Delete all PRS except not inspected or not completed"
+		With the modification the data is now deleted depeding on the setting in case the inspection is completed or completed or started of a PRS and/ or GCL. 
+'MOD 29 BUG: The function of deleting the PRS data from the PRS msAccess database did not work.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2015-01-19 Component versions 5.0.0.10
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 30 MOD: Change "Kamstrup" to "Wigersma & Sikkema"; Names and layout; 
+			Installation folder and settings moved from "Kamstrup" to "ws-gas"
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2015-06-2 Component versions 5.0.0.11
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 31 BUG: The decimal separator sign of a value was not set correct. The separator sign of the currency was used. This causes that the value in the resultlast file 
+		was not set correctly; The value was stored in the <Text> element instead of the <Value> element. In INSPECTOR this cause a Unhandled exception
+'MOD 32 BUG: Incorrect counter when creating XML file from MsAccess results database
+'MOD 33 MOD: The GCLindentification was stored in the GCLcode in case of an MsAccess station database
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2015-07-19 Component versions 5.0.0.12
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 34 MOD: Handling of different units than 'mbar, bar, mbar/min, dm3/h'
+				Settings are stored in INSPECTORsettings.xml and handled correct to read data from Access result database
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2015-04-10 Component versions 5.0.0.13
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 35 BUG: In case of a text and list result the data was not stored in GCL and in PRS msaccess results database
+'MOD 36 MOD: IF the no PLEXORunits.xml file exists than the default values are stored in InspectorSettings.xml file.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-04-26 Component versions 5.0.0.14
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 37 MOD: Add option to delete all PRS data from INSPECTOR PC.
+'MOD 38 MOD: It is possible to leave PRS data on INSPECTOR PC if the main database is in MsAccess format.
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-07-04 Component versions 5.0.0.15
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 38 BUG: Enable function which do not save the resultslast.xml file'
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-07-22 Component versions 5.0.0.16
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+'MOD 39 BUG: The unit settings where not applied. The save function was in the else routine'
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-07-22 Component versions 5.0.0.17
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'Implement of units "MPa" Business logics (SIOUX) version 5.0.0.796
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-12-13 Component versions 5.0.0.18
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 40 BUG: For selection on PDASNR a space was required after the '='-sign. In the OLD COMMUNICATOR this was not needed.
+			 Also before and after serialnumber the "'"-sign was required.
+			 Also wrong variable used m_prsFilterOption instead of prsFilterOption
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2016-12-13 Component versions 5.0.0.19
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 41 BUG: In case the file "inspectionprocedure.xml" does not exists the wrong path name was displayed in the error message
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2018-02-07 Component versions 5.0.0.20
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 42 MOD: When synchronisation the data of several stationinformation xml files, the GCL is added in case the PRS and Gcl does not already exists in the 
+''			 combined stationinformation file
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2019-04-26 Component versions 5.0.0.21
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 43 BUG: In case all inspections are done for a gas control line and no inspection procedure is define on the PRS, the PRS is now deleted after synchronisation 
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2019-05-27 Component versions 5.0.0.22
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 44 CHG: The "listitems" create from an msAccess database in the resultlast.xml file are now present. In previous version the listItems where in the text field
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2020-04-08 Component versions 5.0.0.23
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'MOD 45 CHG: Add polish and italian language
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2020-12-22 Component versions 5.0.0.24
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MOD 46 BUG: Error in unit converser (lb/ft)/min
+'---------------------------------------------------------------------------------------------------------------------------------------------------------
+'2020-12-22 Component versions 5.0.0.25
+'---------------------------------------------------------------------------------------------------------------------------------------------------------

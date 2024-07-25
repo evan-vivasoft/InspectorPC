@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2007 rel. 3 sp1 (http://www.altova.com) by Michel De Clercq (Kamstrup b.v.) -->
+<!-- Made by Michel de Clercq (Kamstrup b.v.) Version 2.0 Date 19-12-2006 -->
+<!-- The XSD is used for the results.xml and the resultslast.xml file. It contains the inspection results of the pressure regulator station and the gas control lines.-->
+<!-- Version 2.1 Add GCLCode to node InspectionResult Date 23-10-2008 -->
+<!-- Version 2.2 Change format type of Value from string to Double Date 24-10-2010 -->
+<!-- Version 2.3 Add new values to TypeUnitsValue 04-08-2015 -->
+<!-- Version 2.3 Add new values to TypeRangeDM 04-08-2015 -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="PRSData">
+	<xsd:annotation>
+		<xsd:documentation>XSD document for Kamstrup Inspection system. This document contains the XSD information for inspection results	</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="InspectionResultsData" msdata:IsDataSet="true">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="InspectionResult" type="TypeInspectionResults" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="TypeInspectionResults">
+		<xsd:sequence>
+			<xsd:element name="Status" type="InspResultStatus"/>
+			<xsd:element name="PRSIdentification" type="xsd:string"/>
+			<xsd:element name="PRSName" type="xsd:string"/>
+			<xsd:element name="PRSCode" type="xsd:string"/>
+			<xsd:element name="GasControlLineName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GCLIdentification" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GCLCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CRC" type="xsd:string"/>
+			<xsd:element name="Measurement_Equipment" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ID_DM1" type="xsd:string"/>
+						<xsd:element name="ID_DM2" type="xsd:string"/>
+						<xsd:element name="BT_Address" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InspectionProcedure" type="TypeInspectionProcedure"/>
+			<xsd:element name="DateTimeStamp" type="TypeDateTimeStamp"/>
+			<xsd:element name="Result" type="TypeResult" maxOccurs="100"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TypeObjectID">
+		<xsd:sequence>
+			<xsd:element name="ObjectName" type="xsd:string"/>
+			<xsd:element name="ObjectID" type="xsd:string"/>
+			<xsd:element name="MeasurePoint" type="xsd:string"/>
+			<xsd:element name="MeasurePointID" type="xsd:string"/>
+			<xsd:element name="FieldNo" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="Boundaries" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ValueMax" type="xsd:double"/>
+						<xsd:element name="ValueMin" type="xsd:double"/>
+						<xsd:element name="UOV" type="TypeUnitsValue"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TypeDateTimeStamp">
+		<xsd:sequence>
+			<xsd:element name="StartDate" type="xsd:date"/>
+			<xsd:element name="StartTime" type="xsd:time"/>
+			<xsd:element name="EndTime" type="xsd:time"/>
+			<xsd:element name="TimeSettings">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="TimeZone" type="TypeGMT"/>
+						<xsd:element name="DST" type="TypeYesNo"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TypeResult">
+		<xsd:sequence>
+			<xsd:element name="ObjectName" type="xsd:string"/>
+			<xsd:element name="ObjectID" type="xsd:string"/>
+			<xsd:element name="MeasurePoint" type="xsd:string"/>
+			<xsd:element name="MeasurePointID" type="xsd:string"/>
+			<xsd:element name="FieldNo" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="Time" type="xsd:time"/>
+			<xsd:element name="MeasureValue" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Value" type="xsd:double"/>
+						<xsd:element name="UOM" type="TypeUnitsValue"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Text" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="List" type="xsd:string" minOccurs="0" maxOccurs="5">
+				<xsd:annotation>
+					<xsd:documentation>Result of the choice or option list In case a choice list the condition code is followed by a ";0" (Not OK) or ";1" (OK).  </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="TypeUnitsValue">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="-"/>
+			<xsd:enumeration value="mbar"/>
+			<xsd:enumeration value="bar"/>
+			<xsd:enumeration value="Pa"/>
+			<xsd:enumeration value="hPa"/>
+			<xsd:enumeration value="kPa"/>
+			<xsd:enumeration value="kg/cm2"/>
+			<xsd:enumeration value="kg/m2"/>
+			<xsd:enumeration value="mmHg"/>
+			<xsd:enumeration value="cmHg"/>
+			<xsd:enumeration value="mHg"/>
+			<xsd:enumeration value="inHg"/>
+			<xsd:enumeration value="mmH2o"/>
+			<xsd:enumeration value="cmH2o"/>
+			<xsd:enumeration value="mH2o"/>
+			<xsd:enumeration value="inH2o"/>
+			<xsd:enumeration value="ftH2o"/>
+			<xsd:enumeration value="psi"/>
+			<xsd:enumeration value="lb/in2"/>
+			<xsd:enumeration value="lb/ft2"/>
+			<xsd:enumeration value="torr"/>
+			<xsd:enumeration value="atm"/>
+			<xsd:enumeration value="mbar/min"/>
+			<xsd:enumeration value="Pa/min"/>
+			<xsd:enumeration value="(kg/cm2)/min"/>
+			<xsd:enumeration value="mmHg/min"/>
+			<xsd:enumeration value="inHg/min"/>
+			<xsd:enumeration value="mmH2o/min"/>
+			<xsd:enumeration value="inH2o/min"/>
+			<xsd:enumeration value="ftH2o/min"/>
+			<xsd:enumeration value="(lb/in2)/min"/>
+			<xsd:enumeration value="(lb/ft2)/min"/>
+			<xsd:enumeration value="dm3/h"/>
+			<xsd:enumeration value="ft3/h"/>
+			<xsd:enumeration value="m3/h"/>
+			<xsd:enumeration value="l/h"/>
+			<xsd:enumeration value="gph"/>
+			<xsd:enumeration value="in3/h"/>
+			<xsd:enumeration value="°C"/>
+			<xsd:enumeration value="°F"/>
+			<xsd:enumeration value="°K"/>
+			<xsd:enumeration value="°Re"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TypeYesNo">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Yes"/>
+			<xsd:enumeration value="No"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TypeGMT">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="GMT-12:00"/>
+			<xsd:enumeration value="GMT-11:00"/>
+			<xsd:enumeration value="GMT-10:00"/>
+			<xsd:enumeration value="GMT-09:00"/>
+			<xsd:enumeration value="GMT-08:00"/>
+			<xsd:enumeration value="GMT-07:00"/>
+			<xsd:enumeration value="GMT-06:00"/>
+			<xsd:enumeration value="GMT-05:00"/>
+			<xsd:enumeration value="GMT-04:00"/>
+			<xsd:enumeration value="GMT-03:00"/>
+			<xsd:enumeration value="GMT-02:00"/>
+			<xsd:enumeration value="GMT-01:00"/>
+			<xsd:enumeration value="GMT"/>
+			<xsd:enumeration value="GMT+01:00"/>
+			<xsd:enumeration value="GMT+02:00"/>
+			<xsd:enumeration value="GMT+03:00"/>
+			<xsd:enumeration value="GMT+04:00"/>
+			<xsd:enumeration value="GMT+05:00"/>
+			<xsd:enumeration value="GMT+06:00"/>
+			<xsd:enumeration value="GMT+07:00"/>
+			<xsd:enumeration value="GMT+08:00"/>
+			<xsd:enumeration value="GMT+09:00"/>
+			<xsd:enumeration value="GMT+10:00"/>
+			<xsd:enumeration value="GMT+11:00"/>
+			<xsd:enumeration value="GMT+12:00"/>
+			<xsd:enumeration value="GMT+13:00"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TypeInspectionProcedure">
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string"/>
+			<xsd:element name="Version" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="InspResultStatus">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value=""/>
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="0"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+			<xsd:enumeration value="6"/>
+			<xsd:enumeration value="7"/>
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="9"/>
+			<xsd:enumeration value="10"/>
+			<xsd:enumeration value="11"/>
+			<xsd:enumeration value="12"/>
+			<xsd:enumeration value="13"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TypeRangeDM">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="-"/>
+			<xsd:enumeration value="0..25mbar"/>
+			<xsd:enumeration value="0..70mbar"/>
+			<xsd:enumeration value="0..70mbar"/>
+			<xsd:enumeration value="0..200mbar"/>
+			<xsd:enumeration value="0..300mbar"/>
+			<xsd:enumeration value="0..500mbar"/>
+			<xsd:enumeration value="0..1000mbar"/>
+			<xsd:enumeration value="0..1100mbar"/>
+			<xsd:enumeration value="0..2000mbar"/>
+			<xsd:enumeration value="0..7500mbar"/>
+			<xsd:enumeration value="0..10bar"/>
+			<xsd:enumeration value="0..17bar"/>
+			<xsd:enumeration value="0..35bar"/>
+			<xsd:enumeration value="0..90bar"/>
+			<xsd:enumeration value="0..10inH2O"/>
+			<xsd:enumeration value="0..28nH2O"/>
+			<xsd:enumeration value="0..80inH2O"/>
+			<xsd:enumeration value="0..120inH2O"/>
+			<xsd:enumeration value="0..200inH2O"/>
+			<xsd:enumeration value="0..14.5psi"/>
+			<xsd:enumeration value="0..15.9psi"/>
+			<xsd:enumeration value="0..29psi"/>
+			<xsd:enumeration value="0..100psi"/>
+			<xsd:enumeration value="0..145psi"/>
+			<xsd:enumeration value="0..245psi"/>
+			<xsd:enumeration value="0..500psi"/>
+			<xsd:enumeration value="0..1000psi"/>
+			<xsd:enumeration value="0..1300psi"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

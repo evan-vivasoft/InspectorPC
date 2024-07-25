@@ -1,0 +1,7 @@
+﻿Thank you for your registration. Please use the following license key for @PRODUCT.
+License key for @PRODUCT with Computer key: @COMPUTERKEY
+License key for @PRODUCT with activation key: @ACTIVATIONKEY
+Licence key: @LICENSEKEY 
+Best regards, 
+Kamstrup support 
+

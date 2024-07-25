@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PRSData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PRS>
+    <PRSCode />
+    <PRSName>EWA Bonhöfferstraße, Демонстрационный стенд B-249</PRSName>
+    <PRSIdentification>4302 B MD</PRSIdentification>
+    <Information />
+    <InspectionProcedure>Inspektionsbericht Stadtwerke Essen</InspectionProcedure>
+  </PRS>
+  <GasControlLine>
+    <PRSName>EWA Bonhöfferstraße, Демонстрационный стенд B-249</PRSName>
+    <PRSIdentification>4302 B MD</PRSIdentification>
+    <GasControlLineName>Arbeitsschiene Schiene 1</GasControlLineName>
+    <PeMin>3,8bar</PeMin>
+    <PeMax>3,8bar</PeMax>
+    <VolumeVA>58,9dm3</VolumeVA>
+    <VolumeVAK>58,9dm3</VolumeVAK>
+    <PaRangeDM>0..2000mbar</PaRangeDM>
+    <PeRangeDM>0..17bar</PeRangeDM>
+    <GCLIdentification>Identification; 4302 B MDGCL371</GCLIdentification>
+    <GCLCode>Code; 4302 B MDGCL371</GCLCode>
+    <InspectionProcedure>Kamstrup AS PN16 (ohne SBV)</InspectionProcedure>
+    <FSDStart>900</FSDStart>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>1</FieldNo>
+      <Boundaries>
+        <ValueMax>512.5</ValueMax>
+        <ValueMin>487.5</ValueMin>
+        <UOV>bar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>2</FieldNo>
+      <Boundaries>
+        <ValueMax>512.5</ValueMax>
+        <ValueMin>487.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>3</FieldNo>
+      <Boundaries>
+        <ValueMax>550</ValueMax>
+        <ValueMin>500</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>4</FieldNo>
+      <Boundaries>
+        <ValueMax>550</ValueMax>
+        <ValueMin>500</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>5</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>10</FieldNo>
+      <Boundaries>
+        <ValueMax>787.5</ValueMax>
+        <ValueMin>712.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>11</FieldNo>
+      <Boundaries>
+        <ValueMax>787.5</ValueMax>
+        <ValueMin>712.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>12</FieldNo>
+      <Boundaries>
+        <ValueMax>787.5</ValueMax>
+        <ValueMin>712.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>13</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>14</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>34</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>15</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+  </GasControlLine>
+  <GasControlLine>
+    <PRSName>EWA Bonhöfferstraße, Демонстрационный стенд B-249</PRSName>
+    <PRSIdentification>4302 B MD</PRSIdentification>
+    <GasControlLineName>Arbeitsschiene Schiene 2</GasControlLineName>
+    <PeMin>3,8bar</PeMin>
+    <PeMax>3,8bar</PeMax>
+    <VolumeVA>58,9dm3</VolumeVA>
+    <VolumeVAK>58,9dm3</VolumeVAK>
+    <PaRangeDM>0..2000mbar</PaRangeDM>
+    <PeRangeDM>0..2000mbar</PeRangeDM>
+    <GCLIdentification>4302 B MDGCL372</GCLIdentification>
+    <GCLCode>4302 B MDGCL372</GCLCode>
+    <InspectionProcedure>Kamstrup AS PN16 (ohne SBV)</InspectionProcedure>
+    <FSDStart>900</FSDStart>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>1</FieldNo>
+      <Boundaries>
+        <ValueMax>512.5</ValueMax>
+        <ValueMin>487.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>2</FieldNo>
+      <Boundaries>
+        <ValueMax>512.5</ValueMax>
+        <ValueMin>487.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>3</FieldNo>
+      <Boundaries>
+        <ValueMax>550</ValueMax>
+        <ValueMin>500</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>4</FieldNo>
+      <Boundaries>
+        <ValueMax>550</ValueMax>
+        <ValueMin>500</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>5</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>10</FieldNo>
+      <Boundaries>
+        <ValueMax>787.5</ValueMax>
+        <ValueMin>712.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>11</FieldNo>
+      <Boundaries>
+        <ValueMax>787.5</ValueMax>
+        <ValueMin>712.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>12</FieldNo>
+      <Boundaries>
+        <ValueMax>787.5</ValueMax>
+        <ValueMin>712.5</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>13</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>14</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>34</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>15</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+  </GasControlLine>
+  <GasControlLine>
+    <PRSName>EWA Bonhöfferstraße, Демонстрационный стенд B-249</PRSName>
+    <PRSIdentification>4302 B MD</PRSIdentification>
+    <GasControlLineName>Reserveschiene Schiene 1</GasControlLineName>
+    <PeMin>3,8bar</PeMin>
+    <PeMax>3,8bar</PeMax>
+    <VolumeVA>58,9dm3</VolumeVA>
+    <VolumeVAK>58,9dm3</VolumeVAK>
+    <PaRangeDM>0..2000mbar</PaRangeDM>
+    <PeRangeDM>0..2000mbar</PeRangeDM>
+    <GCLIdentification>4302 B MDGCL373</GCLIdentification>
+    <GCLCode>4302 B MDGCL373</GCLCode>
+    <InspectionProcedure>Kamstrup RS PN16 (ohne SBV)</InspectionProcedure>
+    <FSDStart>0</FSDStart>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>2</FieldNo>
+      <Boundaries>
+        <ValueMax>481.75</ValueMax>
+        <ValueMin>458.25</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>3</FieldNo>
+      <Boundaries>
+        <ValueMax>517</ValueMax>
+        <ValueMin>470</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>4</FieldNo>
+      <Boundaries>
+        <ValueMax>517</ValueMax>
+        <ValueMin>470</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>5</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>10</FieldNo>
+      <Boundaries>
+        <ValueMax>840</ValueMax>
+        <ValueMin>760</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>11</FieldNo>
+      <Boundaries>
+        <ValueMax>840</ValueMax>
+        <ValueMin>760</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>12</FieldNo>
+      <Boundaries>
+        <ValueMax>840</ValueMax>
+        <ValueMin>760</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>13</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>14</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>34</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>15</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+  </GasControlLine>
+  <GasControlLine>
+    <PRSName>EWA Bonhöfferstraße, Демонстрационный стенд B-249</PRSName>
+    <PRSIdentification>4302 B MD</PRSIdentification>
+    <GasControlLineName>Reserveschiene Schiene 2</GasControlLineName>
+    <PeMin>3,8bar</PeMin>
+    <PeMax>3,8bar</PeMax>
+    <VolumeVA>58,9dm3</VolumeVA>
+    <VolumeVAK>58,9dm3</VolumeVAK>
+    <PaRangeDM>0..17bar</PaRangeDM>
+    <PeRangeDM>0..2000mbar</PeRangeDM>
+    <GCLIdentification>4302 B MDGCL374</GCLIdentification>
+    <GCLCode>4302 B MDGCL374</GCLCode>
+    <InspectionProcedure>Kamstrup RS PN16 (ohne SBV)</InspectionProcedure>
+    <FSDStart>0</FSDStart>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>2</FieldNo>
+      <Boundaries>
+        <ValueMax>481.75</ValueMax>
+        <ValueMin>458.25</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>3</FieldNo>
+      <Boundaries>
+        <ValueMax>517</ValueMax>
+        <ValueMin>470</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>4</FieldNo>
+      <Boundaries>
+        <ValueMax>517</ValueMax>
+        <ValueMin>470</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>5</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>10</FieldNo>
+      <Boundaries>
+        <ValueMax>840</ValueMax>
+        <ValueMin>760</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>11</FieldNo>
+      <Boundaries>
+        <ValueMax>840</ValueMax>
+        <ValueMin>760</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>12</FieldNo>
+      <Boundaries>
+        <ValueMax>840</ValueMax>
+        <ValueMin>760</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>13</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>14</FieldNo>
+      <Boundaries>
+        <ValueMax>46</ValueMax>
+        <ValueMin>0</ValueMin>
+        <UOV>mbar</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>34</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+    <GCLObjects>
+      <ObjectName />
+      <ObjectID />
+      <MeasurePoint />
+      <MeasurePointID />
+      <FieldNo>15</FieldNo>
+      <Boundaries>
+        <ValueMax>0.5</ValueMax>
+        <ValueMin>-0.5</ValueMin>
+        <UOV>mbar/min</UOV>
+      </Boundaries>
+    </GCLObjects>
+  </GasControlLine>
+</PRSData>
