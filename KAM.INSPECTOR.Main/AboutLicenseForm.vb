@@ -6,6 +6,7 @@ Imports Telerik.WinControls.UI
 Imports System.Windows.Forms
 Imports QlmLicenseLib
 Imports KAM.LicenceTool
+Imports JSONParser
 Public Class AboutLicenseForm
 #Region "Class members"
     'Private WithEvents ucTranslationSelection As usctrl_TranslationSelection
@@ -58,7 +59,11 @@ Public Class AboutLicenseForm
         ucAbout = New usctrl_About
         loadUserControl(PageAbout, ucAbout)
 
+        Dim licenseHelper = New LicenseHelper.LicenseHelper
+        Dim licenseInfo = licenseHelper.GetLicenseInfo()
+
         'If a permanent license is optained. the license page is not displayed
+        'If license is active and has expriy date remaining then the page is not displayed
         If LicenseValidator.LicenseStatus <> ELicenseStatus.EKeyPermanent Then
             ucLicenceRequest = New uscrtl_LicenseRequest
             loadUserControl(PageRequestLicense, ucLicenceRequest)

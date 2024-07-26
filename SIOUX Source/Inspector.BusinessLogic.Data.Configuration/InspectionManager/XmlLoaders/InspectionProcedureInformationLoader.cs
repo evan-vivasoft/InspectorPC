@@ -83,7 +83,7 @@ namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoader
         /// <summary>
         /// Reloads the plexor information from the XML file.
         /// </summary>
-        public async Task Reload()
+        public void Reload()
         {
             //using (StreamReader reader = new StreamReader("./inspectionProcedure.json"))
             //{

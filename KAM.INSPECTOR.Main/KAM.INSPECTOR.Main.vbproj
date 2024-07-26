@@ -682,6 +682,10 @@
     <Folder Include="Translations\Country flags\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\ParserOlderVersionCompatible\JSONParser\JSONParser.csproj">
+      <Project>{0F8FA240-EF49-405B-986A-2C4C8737CF02}</Project>
+      <Name>JSONParser</Name>
+    </ProjectReference>
     <ProjectReference Include="..\KAM.Infra\KAM.Infra.vbproj">
       <Project>{cb9c2c96-4e0d-4c6b-8f07-30b620c23423}</Project>
       <Name>KAM.Infra</Name>

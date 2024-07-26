@@ -27,7 +27,7 @@ Partial Class usctrl_About
         Me.rdlblVersion = New Telerik.WinControls.UI.RadLabel()
         Me.rdlblInstallProducts = New Telerik.WinControls.UI.RadLabel()
         Me.rdlblLicense = New Telerik.WinControls.UI.RadLabel()
-        Me.rdlblLicenceKey = New Telerik.WinControls.UI.RadLabel()
+        Me.rdlblLicenceStatus = New Telerik.WinControls.UI.RadLabel()
         Me.rdtxtbInstalledComponents = New Telerik.WinControls.UI.RadTextBox()
         Me.RadPanel1 = New Telerik.WinControls.UI.RadPanel()
         Me.rdlblLicenceComputerKey = New Telerik.WinControls.UI.RadLabel()
@@ -35,7 +35,7 @@ Partial Class usctrl_About
         CType(Me.rdlblVersion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rdlblInstallProducts, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rdlblLicense, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.rdlblLicenceKey, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rdlblLicenceStatus, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rdtxtbInstalledComponents, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadPanel1.SuspendLayout()
@@ -78,22 +78,22 @@ Partial Class usctrl_About
         Me.rdlblLicense.RootElement.Text = resources.GetString("rdlblLicense.RootElement.Text")
         Me.rdlblLicense.RootElement.TextOrientation = CType(resources.GetObject("rdlblLicense.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
         '
-        'rdlblLicenceKey
+        'rdlblLicenceStatus
         '
-        resources.ApplyResources(Me.rdlblLicenceKey, "rdlblLicenceKey")
-        Me.rdlblLicenceKey.BackColor = System.Drawing.Color.Transparent
-        Me.rdlblLicenceKey.Name = "rdlblLicenceKey"
+        resources.ApplyResources(Me.rdlblLicenceStatus, "rdlblLicenceStatus")
+        Me.rdlblLicenceStatus.BackColor = System.Drawing.Color.Transparent
+        Me.rdlblLicenceStatus.Name = "rdlblLicenceStatus"
         '
         '
         '
-        Me.rdlblLicenceKey.RootElement.AccessibleDescription = resources.GetString("rdlblLicenceKey.RootElement.AccessibleDescription")
-        Me.rdlblLicenceKey.RootElement.AccessibleName = resources.GetString("rdlblLicenceKey.RootElement.AccessibleName")
-        Me.rdlblLicenceKey.RootElement.Alignment = CType(resources.GetObject("rdlblLicenceKey.RootElement.Alignment"), System.Drawing.ContentAlignment)
-        Me.rdlblLicenceKey.RootElement.AngleTransform = CType(resources.GetObject("rdlblLicenceKey.RootElement.AngleTransform"), Single)
-        Me.rdlblLicenceKey.RootElement.FlipText = CType(resources.GetObject("rdlblLicenceKey.RootElement.FlipText"), Boolean)
-        Me.rdlblLicenceKey.RootElement.Margin = CType(resources.GetObject("rdlblLicenceKey.RootElement.Margin"), System.Windows.Forms.Padding)
-        Me.rdlblLicenceKey.RootElement.Text = resources.GetString("rdlblLicenceKey.RootElement.Text")
-        Me.rdlblLicenceKey.RootElement.TextOrientation = CType(resources.GetObject("rdlblLicenceKey.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+        Me.rdlblLicenceStatus.RootElement.AccessibleDescription = resources.GetString("rdlblLicenceKey.RootElement.AccessibleDescription")
+        Me.rdlblLicenceStatus.RootElement.AccessibleName = resources.GetString("rdlblLicenceKey.RootElement.AccessibleName")
+        Me.rdlblLicenceStatus.RootElement.Alignment = CType(resources.GetObject("rdlblLicenceKey.RootElement.Alignment"), System.Drawing.ContentAlignment)
+        Me.rdlblLicenceStatus.RootElement.AngleTransform = CType(resources.GetObject("rdlblLicenceKey.RootElement.AngleTransform"), Single)
+        Me.rdlblLicenceStatus.RootElement.FlipText = CType(resources.GetObject("rdlblLicenceKey.RootElement.FlipText"), Boolean)
+        Me.rdlblLicenceStatus.RootElement.Margin = CType(resources.GetObject("rdlblLicenceKey.RootElement.Margin"), System.Windows.Forms.Padding)
+        Me.rdlblLicenceStatus.RootElement.Text = resources.GetString("rdlblLicenceKey.RootElement.Text")
+        Me.rdlblLicenceStatus.RootElement.TextOrientation = CType(resources.GetObject("rdlblLicenceKey.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
         '
         'rdtxtbInstalledComponents
         '
@@ -124,7 +124,7 @@ Partial Class usctrl_About
         Me.RadPanel1.Controls.Add(Me.rdLabelInspector)
         Me.RadPanel1.Controls.Add(Me.rdlblVersion)
         Me.RadPanel1.Controls.Add(Me.rdlblInstallProducts)
-        Me.RadPanel1.Controls.Add(Me.rdlblLicenceKey)
+        Me.RadPanel1.Controls.Add(Me.rdlblLicenceStatus)
         Me.RadPanel1.Name = "RadPanel1"
         '
         '
@@ -165,7 +165,7 @@ Partial Class usctrl_About
         CType(Me.rdlblVersion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rdlblInstallProducts, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rdlblLicense, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.rdlblLicenceKey, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rdlblLicenceStatus, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rdtxtbInstalledComponents, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadPanel1.ResumeLayout(False)
@@ -178,7 +178,7 @@ Partial Class usctrl_About
     Friend WithEvents rdlblVersion As Telerik.WinControls.UI.RadLabel
     Friend WithEvents rdlblInstallProducts As Telerik.WinControls.UI.RadLabel
     Friend WithEvents rdlblLicense As Telerik.WinControls.UI.RadLabel
-    Friend WithEvents rdlblLicenceKey As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents rdlblLicenceStatus As Telerik.WinControls.UI.RadLabel
     Friend WithEvents rdtxtbInstalledComponents As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents RadPanel1 As Telerik.WinControls.UI.RadPanel
     Friend WithEvents rdlblLicenceComputerKey As Telerik.WinControls.UI.RadLabel

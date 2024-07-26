@@ -212,7 +212,7 @@ namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.Managers
         public async Task Refresh()
         {
             m_StationInfoLoader.Reload();
-            await m_InspectionProcedureInfoLoader.Reload();
+            m_InspectionProcedureInfoLoader.Reload();
         }
         #endregion IInspectionInformationManager Members
 
