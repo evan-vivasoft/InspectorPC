@@ -22,6 +22,7 @@ Public Class MainForm
     Private WithEvents ucInspection As KAM.INSPECTOR.IP.usctrl_MainInspection
     Private WithEvents ucPrs As KAM.INSPECTOR.PRS.usctrl_FormPRS
     Private WithEvents ucResults As KAM.INSPECTOR.ResultsGridView.usctrl_FormDisplayResults
+    Private WithEvents usctrl_Synchr As usctrl_Synchr
     'KAM.INSPECTOR.Results.DisplayResults
 
     Private WithEvents ucLicenceRequest As KAM.LicenceTool.uscrtl_LicenseRequest
@@ -62,12 +63,12 @@ Public Class MainForm
 
 
     Private Function CheckLicenseStatus() As Boolean
-        'Dim baseUrl = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath"), ConfigurationManager.AppSettings.Get("InspectorPCBaseUrl"), Nothing)
-        'Dim customerId = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath"), ConfigurationManager.AppSettings.Get("InspectorPCCustomerId"), Nothing)
-        'Dim deviceId = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath"), ConfigurationManager.AppSettings.Get("InspectorPCDeviceId"), Nothing)
-        'Dim apiToken = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath"), ConfigurationManager.AppSettings.Get("InspectorPCApiToken"), Nothing)
-
-        Dim maybeLicense = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath"), ConfigurationManager.AppSettings.Get("LicenseInfo"), Nothing)
+        Dim maybeLicense
+        If Environment.Is64BitOperatingSystem Then
+            maybeLicense = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath64Bit"), ConfigurationManager.AppSettings.Get("LicenseInfo"), Nothing)
+        Else
+            maybeLicense = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath"), ConfigurationManager.AppSettings.Get("LicenseInfo"), Nothing)
+        End If
 
         If maybeLicense Is Nothing Then
             Return False
@@ -101,6 +102,8 @@ Public Class MainForm
             Me.ucResults = New KAM.INSPECTOR.ResultsGridView.usctrl_FormDisplayResults
             Me.LoadDocumentWindow(DocWindowResults, ucResults)
 
+            Me.usctrl_Synchr = New usctrl_Synchr
+            Me.LoadDocumentWindow(DocWindowSync, usctrl_Synchr)
             'MOD NEW
             'If ModuleSettings.SettingFile.GetSetting(GsSectionFunctions, GsSettingFunctionsSynchronize) = False Then
             '    Me.rdDockMain.DockWindows(Me.DocWindowSync.Name).Hide()

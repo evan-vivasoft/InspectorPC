@@ -1,4 +1,4 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
     Inherits Telerik.WinControls.UI.RadForm
 
@@ -20,13 +20,13 @@ Partial Class MainForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.rdDockMain = New Telerik.WinControls.UI.Docking.RadDock()
-        Me.DocWindowPRS = New Telerik.WinControls.UI.Docking.DocumentWindow()
         Me.MainDocumentContainer = New Telerik.WinControls.UI.Docking.DocumentContainer()
         Me.DocumentTabStrip2 = New Telerik.WinControls.UI.Docking.DocumentTabStrip()
+        Me.DocWindowPRS = New Telerik.WinControls.UI.Docking.DocumentWindow()
         Me.DocWindowInspection = New Telerik.WinControls.UI.Docking.DocumentWindow()
         Me.DocWindowPLEXOR = New Telerik.WinControls.UI.Docking.DocumentWindow()
         Me.DocWindowResults = New Telerik.WinControls.UI.Docking.DocumentWindow()
@@ -40,6 +40,7 @@ Partial Class MainForm
         Me.rdMenuHelp = New Telerik.WinControls.UI.RadMenuItem()
         Me.rdMenuAbout = New Telerik.WinControls.UI.RadMenuItem()
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
+        Me.DocWindowSync = New Telerik.WinControls.UI.Docking.DocumentWindow()
         CType(Me.rdDockMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.rdDockMain.SuspendLayout()
         CType(Me.MainDocumentContainer, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,7 +55,8 @@ Partial Class MainForm
         '
         'rdDockMain
         '
-        Me.rdDockMain.ActiveWindow = Me.DocWindowInspection
+        Me.rdDockMain.ActiveWindow = Me.DocWindowSync
+        Me.rdDockMain.CausesValidation = False
         Me.rdDockMain.Controls.Add(Me.MainDocumentContainer)
         Me.rdDockMain.Controls.Add(Me.ToolTabStrip1)
         resources.ApplyResources(Me.rdDockMain, "rdDockMain")
@@ -75,21 +77,11 @@ Partial Class MainForm
         Me.rdDockMain.RootElement.TextOrientation = CType(resources.GetObject("rdDockMain.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
         Me.rdDockMain.TabStop = False
         '
-        'DocWindowPRS
-        '
-        Me.DocWindowPRS.DocumentButtons = Telerik.WinControls.UI.Docking.DocumentStripButtons.None
-        resources.ApplyResources(Me.DocWindowPRS, "DocWindowPRS")
-        Me.DocWindowPRS.ForeColor = System.Drawing.Color.Black
-        Me.HelpProvider1.SetHelpKeyword(Me.DocWindowPRS, resources.GetString("DocWindowPRS.HelpKeyword"))
-        Me.DocWindowPRS.Name = "DocWindowPRS"
-        Me.DocWindowPRS.PreviousDockState = Telerik.WinControls.UI.Docking.DockState.TabbedDocument
-        Me.HelpProvider1.SetShowHelp(Me.DocWindowPRS, CType(resources.GetObject("DocWindowPRS.ShowHelp"), Boolean))
-        '
         'MainDocumentContainer
         '
+        Me.MainDocumentContainer.CausesValidation = False
         Me.MainDocumentContainer.Controls.Add(Me.DocumentTabStrip2)
         Me.MainDocumentContainer.Name = "MainDocumentContainer"
-        resources.ApplyResources(Me.MainDocumentContainer, "MainDocumentContainer")
         '
         '
         '
@@ -102,13 +94,15 @@ Partial Class MainForm
         Me.MainDocumentContainer.RootElement.MinSize = New System.Drawing.Size(0, 0)
         Me.MainDocumentContainer.RootElement.Text = resources.GetString("MainDocumentContainer.RootElement.Text")
         Me.MainDocumentContainer.RootElement.TextOrientation = CType(resources.GetObject("MainDocumentContainer.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-        Me.MainDocumentContainer.SizeInfo.AbsoluteSize = New System.Drawing.Size(200, 440)
+        Me.MainDocumentContainer.SizeInfo.AbsoluteSize = New System.Drawing.Size(858, 440)
         Me.MainDocumentContainer.SizeInfo.SizeMode = Telerik.WinControls.UI.Docking.SplitPanelSizeMode.Fill
-        Me.MainDocumentContainer.SizeInfo.SplitterCorrection = New System.Drawing.Size(0, 100)
+        Me.MainDocumentContainer.SizeInfo.SplitterCorrection = New System.Drawing.Size(7, 100)
         '
         'DocumentTabStrip2
         '
         Me.DocumentTabStrip2.CanUpdateChildIndex = True
+        Me.DocumentTabStrip2.CausesValidation = False
+        Me.DocumentTabStrip2.Controls.Add(Me.DocWindowSync)
         Me.DocumentTabStrip2.Controls.Add(Me.DocWindowPRS)
         Me.DocumentTabStrip2.Controls.Add(Me.DocWindowInspection)
         Me.DocumentTabStrip2.Controls.Add(Me.DocWindowPLEXOR)
@@ -127,8 +121,17 @@ Partial Class MainForm
         Me.DocumentTabStrip2.RootElement.MinSize = New System.Drawing.Size(0, 0)
         Me.DocumentTabStrip2.RootElement.Text = resources.GetString("DocumentTabStrip2.RootElement.Text")
         Me.DocumentTabStrip2.RootElement.TextOrientation = CType(resources.GetObject("DocumentTabStrip2.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-        Me.DocumentTabStrip2.SelectedIndex = 1
+        Me.DocumentTabStrip2.SelectedIndex = 0
         Me.DocumentTabStrip2.TabStop = False
+        '
+        'DocWindowPRS
+        '
+        Me.DocWindowPRS.DocumentButtons = Telerik.WinControls.UI.Docking.DocumentStripButtons.None
+        resources.ApplyResources(Me.DocWindowPRS, "DocWindowPRS")
+        Me.DocWindowPRS.ForeColor = System.Drawing.Color.Black
+        Me.DocWindowPRS.Name = "DocWindowPRS"
+        Me.DocWindowPRS.PreviousDockState = Telerik.WinControls.UI.Docking.DockState.TabbedDocument
+        Me.HelpProvider1.SetShowHelp(Me.DocWindowPRS, CType(resources.GetObject("DocWindowPRS.ShowHelp"), Boolean))
         '
         'DocWindowInspection
         '
@@ -162,8 +165,8 @@ Partial Class MainForm
         '
         Me.ToolTabStrip1.RootElement.MinSize = New System.Drawing.Size(0, 0)
         Me.ToolTabStrip1.SelectedIndex = 0
-        Me.ToolTabStrip1.SizeInfo.AbsoluteSize = New System.Drawing.Size(200, 100)
-        Me.ToolTabStrip1.SizeInfo.SplitterCorrection = New System.Drawing.Size(0, -100)
+        Me.ToolTabStrip1.SizeInfo.AbsoluteSize = New System.Drawing.Size(193, 100)
+        Me.ToolTabStrip1.SizeInfo.SplitterCorrection = New System.Drawing.Size(-7, -100)
         Me.ToolTabStrip1.TabStop = False
         '
         'toolWindowRemarks
@@ -186,8 +189,8 @@ Partial Class MainForm
         '
         'RadMenuSeparatorItem1
         '
-        resources.ApplyResources(Me.RadMenuSeparatorItem1, "RadMenuSeparatorItem1")
         Me.RadMenuSeparatorItem1.Name = "RadMenuSeparatorItem1"
+        resources.ApplyResources(Me.RadMenuSeparatorItem1, "RadMenuSeparatorItem1")
         '
         'rdMenuExit
         '
@@ -202,8 +205,6 @@ Partial Class MainForm
         '
         '
         '
-        Me.RadMenu1.RootElement.AccessibleDescription = resources.GetString("RadMenu1.RootElement.AccessibleDescription")
-        Me.RadMenu1.RootElement.AccessibleName = resources.GetString("RadMenu1.RootElement.AccessibleName")
         Me.RadMenu1.RootElement.Alignment = CType(resources.GetObject("RadMenu1.RootElement.Alignment"), System.Drawing.ContentAlignment)
         Me.RadMenu1.RootElement.AngleTransform = CType(resources.GetObject("RadMenu1.RootElement.AngleTransform"), Single)
         Me.RadMenu1.RootElement.FlipText = CType(resources.GetObject("RadMenu1.RootElement.FlipText"), Boolean)
@@ -225,6 +226,13 @@ Partial Class MainForm
         'HelpProvider1
         '
         resources.ApplyResources(Me.HelpProvider1, "HelpProvider1")
+        '
+        'DocWindowSync
+        '
+        Me.DocWindowSync.DocumentButtons = Telerik.WinControls.UI.Docking.DocumentStripButtons.None
+        resources.ApplyResources(Me.DocWindowSync, "DocWindowSync")
+        Me.DocWindowSync.Name = "DocWindowSync"
+        Me.DocWindowSync.PreviousDockState = Telerik.WinControls.UI.Docking.DockState.TabbedDocument
         '
         'MainForm
         '
@@ -276,5 +284,6 @@ Partial Class MainForm
     Friend WithEvents rdMenuAbout As Telerik.WinControls.UI.RadMenuItem
     Friend WithEvents DocWindowResults As Telerik.WinControls.UI.Docking.DocumentWindow
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
+    Friend WithEvents DocWindowSync As Telerik.WinControls.UI.Docking.DocumentWindow
 End Class
 
