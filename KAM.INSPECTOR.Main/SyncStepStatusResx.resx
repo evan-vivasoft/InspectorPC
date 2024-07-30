@@ -133,7 +133,7 @@
     <value>!Creating_temp_directory</value>
   </data>
   <data name="Step_5005" xml:space="preserve">
-    <value>!Getting_pda_information</value>
+    <value>Get Updated Data</value>
   </data>
   <data name="Step_5006" xml:space="preserve">
     <value>!Copy_files_From_Inspector</value>

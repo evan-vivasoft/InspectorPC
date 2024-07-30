@@ -110,7 +110,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to !Getting_pda_information.
+        '''  Looks up a localized string similar to Get Updated Data.
         '''</summary>
         Friend Shared ReadOnly Property Step_5005() As String
             Get

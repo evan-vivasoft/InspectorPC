@@ -171,5 +171,14 @@ Namespace My.Resources
                 Return ResourceManager.GetString("StepError_63007", resourceCulture)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Data could not be updated.
+        '''</summary>
+        Friend Shared ReadOnly Property StepError_63008() As String
+            Get
+                Return ResourceManager.GetString("StepError_63008", resourceCulture)
+            End Get
+        End Property
     End Class
 End Namespace

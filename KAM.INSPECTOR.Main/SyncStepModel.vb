@@ -232,7 +232,7 @@ Public Class SyncErrorMessages
         Public Shared ReadOnly NonDirectoryDefined As New enumErrorMessages(63005)
         Public Shared ReadOnly PlexorLoginError As New enumErrorMessages(63006)
         Public Shared ReadOnly LicenseInformationNotValid As New enumErrorMessages(63007)
-
+        Public Shared ReadOnly UpdatingDataError As New enumErrorMessages(63008)
 
         Private Sub New(key As Integer)
             Me.key = key

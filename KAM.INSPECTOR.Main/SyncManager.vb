@@ -237,7 +237,7 @@ Public Class SyncManager
                     Case SynchronisationStep.Check_result.ToString
                         stepExecute = False
                         RaiseEventStatusStarted(synchronisationStepToExecute, syncStatusInfo)
-                        IsResultFilePresent = syncService.IsResultFilePresent
+                        IsResultFilePresent = False 'syncService.IsResultFilePresent
                         EvntHandlingsetNextSyncStep(SyncStatus.Succes, enumErrorMessages.NoError, "")
 
                     Case SynchronisationStep.Transfer_result.ToString
@@ -246,24 +246,20 @@ Public Class SyncManager
                         RaiseEventStatusStarted(synchronisationStepToExecute, syncStatusInfo)
                         syncService.SendResultToPlexorOnline()
 
-                        'Case SynchronisationStep.Remove_result.ToString
-                        '    stepExecute = False
-                        '    'Getting the communication paths of the selected device
-                        '    RaiseEventStatusStarted(synchronisationStepToExecute, syncStatusInfo)
-                        '    GetCommunicatorPaths("BCS-9C:B6:D0:9C:7F:C7")'deviceSyncHandling.InspectionInformation.SerialNumber)
+                    Case SynchronisationStep.Remove_result.ToString
+                        stepExecute = False
+                        'Getting the communication paths of the selected device
+                        RaiseEventStatusStarted(synchronisationStepToExecute, syncStatusInfo)
 
-                        'Case SynchronisationStep.Get_updated_data.ToString
-                        '    stepExecute = False
-                        '    'Create temp directories for synchronization 
-                        '    modCommunicationPaths.InspectorSerialnumber = deviceSyncHandling.InspectionInformation.SerialNumber
-                        '    modCommunicationPaths.CreateTempDirectory()
-                        '    EvntHandlingsetNextSyncStep(SyncStatus.Succes, enumErrorMessages.NoError, "")
-
-                        'Case SynchronisationStep.Get_last_result.ToString
-                        '    stepExecute = False
-                        '    'Copy the files from INSPECTOR to DPC
-                        '    RaiseEventStatusStarted(synchronisationStepToExecute, syncStatusInfo)
-                        '    deviceSyncHandling.TransferDataIPToDpc()
+                    Case SynchronisationStep.Get_updated_data.ToString
+                        stepExecute = False
+                        RaiseEventStatusStarted(synchronisationStepToExecute, syncStatusInfo)
+                        GetUpdatedData()
+                    Case SynchronisationStep.Get_last_result.ToString
+                        stepExecute = False
+                        'Copy the files from INSPECTOR to DPC
+                        'RaiseEventStatusStarted(synchronisationStepToExecute, syncStatusInfo)
+                        'deviceSyncHandling.TransferDataIPToDpc()
 
                         'Case SynchronisationStep.Data_sync_complete.ToString
                         '    'Process the results from Inspector to PC
@@ -366,11 +362,23 @@ Public Class SyncManager
         End If
     End Sub
 
-    Public Sub CheckLicenseInformation(isLicenseValid As Boolean)
-        If isLicenseValid Then
+    Public Sub CheckLicenseInformation(maybeError As String)
+        If String.IsNullOrEmpty(maybeError) Then
             EvntHandlingsetNextSyncStep(SyncStatus.Succes, enumErrorMessages.NoError, "")
         Else
-            EvntHandlingsetNextSyncStep(SyncStatus.SError, enumErrorMessages.LicenseInformationNotValid, "")
+            EvntHandlingsetNextSyncStep(SyncStatus.SError, enumErrorMessages.LicenseInformationNotValid, maybeError)
+        End If
+    End Sub
+
+    Private Sub GetUpdatedData()
+        syncService.FetchUpdatedData(ModuleSettings.SettingFilename, AddressOf GetUpdatedDataCallBack)
+    End Sub
+
+    Private Sub GetUpdatedDataCallBack(maybeError As String)
+        If String.IsNullOrEmpty(maybeError) Then
+            EvntHandlingsetNextSyncStep(SyncStatus.Succes, enumErrorMessages.NoError, "")
+        Else
+            EvntHandlingsetNextSyncStep(SyncStatus.SError, enumErrorMessages.UpdatingDataError, maybeError)
         End If
     End Sub
     ''' <summary>

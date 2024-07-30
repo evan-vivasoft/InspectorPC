@@ -154,4 +154,7 @@
   <data name="StepError_63007" xml:space="preserve">
     <value>License couldn't be valdiated</value>
   </data>
+  <data name="StepError_63008" xml:space="preserve">
+    <value>Data could not be updated</value>
+  </data>
 </root>
