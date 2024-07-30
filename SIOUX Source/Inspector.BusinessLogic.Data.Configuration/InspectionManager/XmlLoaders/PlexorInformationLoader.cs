@@ -8,8 +8,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Inspector.BusinessLogic.Data.Configuration.InspectionManager.AutMapper;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Plexor;
+using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Station;
 using Inspector.Infra.Utils;
+using JSONParser.InformationManager;
 
 namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoaders
 {
@@ -80,7 +83,8 @@ namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoader
         /// </summary>
         public void Reload()
         {
-            Plexors = ReadPlexorInformation(m_XmlFilePath, m_XsdFilePath);
+            Console.WriteLine(m_XmlFilePath);
+            Plexors = MapperClass.Instance.Mapper.Map<List<PlexorEntity>>(InformationManager.Instance.GetPlexorInformation);
         }
         #endregion Public
 

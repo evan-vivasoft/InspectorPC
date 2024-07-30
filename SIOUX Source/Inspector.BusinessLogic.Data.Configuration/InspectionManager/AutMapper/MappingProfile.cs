@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Plexor;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Station;
 using JSONParser;
 using JSONParser.InspectionProcedure;
+using JSONParser.PlexorInformation;
 using JSONParser.StationInformation;
 using System;
 using System.Collections.Generic;
@@ -9,6 +11,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PlexorEntity = Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Plexor.PlexorEntity;
 
 namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.AutMapper
 {
@@ -100,6 +103,13 @@ namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.AutMapper
                .ForMember(dest => dest.ScriptCommandId, opt => opt.MapFrom(src => src.ScriptCommandId))
                .ForMember(dest => dest.Offset, opt => opt.MapFrom(src => src.Offset))
                .ForMember(dest => dest.UOV, opt => opt.MapFrom(src => src.UOV));
+
+            CreateMap<JSONParser.PlexorInformation.PlexorEntity, PlexorEntity>()
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
+                .ForMember(dest => dest.BlueToothAddress, opt => opt.MapFrom(src => src.BlueToothAddress))
+                .ForMember(dest => dest.PN, opt => opt.MapFrom(src => src.PN))
+                .ForMember(dest => dest.CalibrationDate, opt => opt.MapFrom(src => src.CalibrationDate))
+                .ForMember(dest => dest.SerialNumber, opt => opt.MapFrom(src => src.SerialNumber));
         }
     }
 }
