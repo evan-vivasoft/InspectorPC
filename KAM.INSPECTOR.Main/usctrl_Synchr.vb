@@ -162,7 +162,9 @@ Public Class usctrl_Synchr
         rdProgressCopyfile.Visible = False
         pictureConnectStatus.Enabled = True
     End Sub
-
+    Private Sub EvntHandlingSynchronizeError() Handles InspectorSyncHandling.EvntSyncError
+        BeginInvoke(New Action(AddressOf InvokeSynchronizeError))
+    End Sub
 #End Region
 
 #Region "Event handling of synchronization process status"
@@ -183,6 +185,10 @@ Public Class usctrl_Synchr
     Private Sub InvokeSyncStatus(info As SyncStatusStepModel)
         Debug.Print("Status info: " & info.StepId.ToString & " " & info.StepResult.ToString & vbCrLf)
         SyncStatusGridRowChange(info)
+    End Sub
+
+    Private Sub EvntHandlingSynchronizeFinished() Handles InspectorSyncHandling.EvntSyncFinished
+        BeginInvoke(New Action(AddressOf InvokeSynchronizeFinished))
     End Sub
 #End Region
 
@@ -245,7 +251,7 @@ Public Class usctrl_Synchr
         Next
         If row >= rdGridSyncStatus.RowCount - 1 Then
             Dim StepIDText = ResourceConvert.GetSyncStepTranslation(stepInformation.StepId.ToString)
-            Me.rdGridSyncStatus.Rows.Add(Format(stepInformation.StepDateTime, "HH:mm:ss"), "", stepInformation.StepId.ToString, StepIDText, "")
+            Me.rdGridSyncStatus.Rows.Add(Format(stepInformation.StepDateTime, "HH:mm:ss"), "", stepInformation.StepId.ToString, StepIDText, stepInformation.SetpAdditionalMessage)
             SyncStatusUpdateGridImage(rdGridSyncStatus.RowCount - 1, stepInformation)
         End If
     End Sub

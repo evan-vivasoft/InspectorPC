@@ -121,7 +121,7 @@
     <value>Establish Connection with plexor online</value>
   </data>
   <data name="Step_5001" xml:space="preserve">
-    <value>Check License Information</value>
+    <value>Check &amp; Update License Information</value>
   </data>
   <data name="Step_5002" xml:space="preserve">
     <value>Check Result File</value>
@@ -136,16 +136,16 @@
     <value>Get Updated Data</value>
   </data>
   <data name="Step_5006" xml:space="preserve">
-    <value>!Copy_files_From_Inspector</value>
+    <value>Get Last Result</value>
   </data>
   <data name="Step_5007" xml:space="preserve">
-    <value>!Process_Result_file_Inspector</value>
+    <value>Data Synchronization Completed</value>
   </data>
   <data name="Step_5008" xml:space="preserve">
-    <value>!Delete_Result_files_Inspector</value>
+    <value>Set Last Upload Information</value>
   </data>
   <data name="Step_5009" xml:space="preserve">
-    <value>!Create_Station_information_File</value>
+    <value>Something went wrong</value>
   </data>
   <data name="Step_5010" xml:space="preserve">
     <value>!Delete_station_File_Inspector</value>

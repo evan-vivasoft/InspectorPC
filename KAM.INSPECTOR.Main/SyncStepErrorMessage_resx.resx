@@ -149,12 +149,15 @@
     <value>!The directory is not defined</value>
   </data>
   <data name="StepError_63006" xml:space="preserve">
-    <value>Plexor Online Login Error</value>
+    <value>Plexor Online Login Error. </value>
   </data>
   <data name="StepError_63007" xml:space="preserve">
-    <value>License couldn't be valdiated</value>
+    <value>License couldn't be valdiated. </value>
   </data>
   <data name="StepError_63008" xml:space="preserve">
-    <value>Data could not be updated</value>
+    <value>Data could not be updated. </value>
+  </data>
+  <data name="StepError_63009" xml:space="preserve">
+    <value>Last upload information coulnd't be updated. </value>
   </data>
 </root>

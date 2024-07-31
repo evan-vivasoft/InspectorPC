@@ -155,7 +155,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Plexor Online Login Error.
+        '''  Looks up a localized string similar to Plexor Online Login Error. .
         '''</summary>
         Friend Shared ReadOnly Property StepError_63006() As String
             Get
@@ -164,7 +164,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to License couldn&apos;t be valdiated.
+        '''  Looks up a localized string similar to License couldn&apos;t be valdiated. .
         '''</summary>
         Friend Shared ReadOnly Property StepError_63007() As String
             Get
@@ -173,11 +173,20 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Data could not be updated.
+        '''  Looks up a localized string similar to Data could not be updated. .
         '''</summary>
         Friend Shared ReadOnly Property StepError_63008() As String
             Get
                 Return ResourceManager.GetString("StepError_63008", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Last upload information coulnd&apos;t be updated. .
+        '''</summary>
+        Friend Shared ReadOnly Property StepError_63009() As String
+            Get
+                Return ResourceManager.GetString("StepError_63009", resourceCulture)
             End Get
         End Property
     End Class
