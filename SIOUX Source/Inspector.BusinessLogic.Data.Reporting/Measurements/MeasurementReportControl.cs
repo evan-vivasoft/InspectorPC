@@ -20,7 +20,7 @@ using Inspector.Infra.Utils;
 using Inspector.Model;
 using Inspector.Model.InspectionProcedure;
 using Inspector.Model.MeasurementResult;
-using JSONParser.InformationManager;
+using Inspector.POService.InformationManager;
 using KAM.INSPECTOR.Infra;
 using Measurement = Inspector.BusinessLogic.Data.Reporting.Measurements.Model.Measurement;
 
@@ -435,7 +435,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Measurements
             try
             {
                 int countTotal;
-                var endOfMeasurement = measurementMetadata.EndOfMeasurement?.ToString("dd-MM-yyyy HH:mm:ss", CultureInfo.InvariantCulture) ?? string.Empty;
+                var endOfMeasurement = measurementMetadata.EndOfMeasurement;
 
                 lock (m_ProcessingLock)
                 {
@@ -630,7 +630,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Measurements
                 lock (m_ProcessingLock)
                 {
                     var measurmentResult =
-                        MapperClass.Instance.Mapper.Map<JSONParser.InspectionResults.Model.MeasurementReport>(m_MeasurementReport);
+                        MapperClass.Instance.Mapper.Map<POService.InspectionResults.Model.MeasurementReport>(m_MeasurementReport);
                     
                     InformationManager.Instance.StoreMeasurementResult(measurmentResult);
                     Console.WriteLine(measurmentResult);

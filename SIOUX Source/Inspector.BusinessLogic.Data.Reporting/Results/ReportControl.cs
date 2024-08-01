@@ -16,7 +16,7 @@ using Inspector.BusinessLogic.Data.Reporting.Results.Model;
 using Inspector.Infra.Utils;
 using Inspector.Model.InspectionProcedure;
 using log4net;
-using JSONParser.InformationManager;
+using Inspector.POService.InformationManager;
 using Inspector.BusinessLogic.Data.Reporting.Results.Automapper;
 
 namespace Inspector.BusinessLogic.Data.Reporting.Results
@@ -353,7 +353,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results
                 InspectionReportsData.AddCurrentResults(InspectionReport.InspectionResults);
 
                 var inspectionResult =
-                    MapperClass.Instance.Mapper.Map<List<JSONParser.InspectionResults.Model.InspectionResult>>(InspectionReport.InspectionResults);
+                    MapperClass.Instance.Mapper.Map<List<POService.InspectionResults.Model.InspectionResult>>(InspectionReport.InspectionResults);
 
 
                 InformationManager.Instance.StoreInspectionResult(inspectionResult);

@@ -14,7 +14,7 @@ using AutoMapper;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.AutMapper;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.InspectionProcedure;
 using Inspector.Infra.Utils;
-using JSONParser.InformationManager;
+using Inspector.POService.InformationManager;
 namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoaders
 {
     /// <summary>
@@ -85,21 +85,9 @@ namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoader
         /// </summary>
         public void Reload()
         {
-            //using (StreamReader reader = new StreamReader("./inspectionProcedure.json"))
-            //{
-            //    var jsonLine = reader.ReadToEnd();
-            //    var jsonToXmlConverter = new JsonToXMLClass(jsonLine);
-
-            //    var mapper = MapperClass.Instance.Mapper;   
-            //    InspectionProcedures = 
-            //        mapper.Map<IList<Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.InspectionProcedure.InspectionProcedureEntity>>(jsonToXmlConverter.GetJsonToXml);
-
-            //};
-
             InspectionProcedures =
                 MapperClass.Instance.Mapper.Map<IList<InspectionProcedureEntity>>(InformationManager.Instance.GetInspectionProcedure);
             Console.WriteLine(m_XmlFilePath);
-            //InspectionProcedures = ReadInspectionProcedureInformation(m_XmlFilePath, m_XsdFilePath);
         }
         #endregion Public
 

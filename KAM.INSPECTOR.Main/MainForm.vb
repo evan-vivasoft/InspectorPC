@@ -14,6 +14,8 @@ Imports System.Globalization
 Imports System.Threading
 Imports Microsoft.Win32
 Imports System.Configuration
+Imports System.Runtime.Remoting.Contexts
+Imports Inspector.POService.LicenseValidator
 
 
 Public Class MainForm
@@ -23,6 +25,7 @@ Public Class MainForm
     Private WithEvents ucPrs As KAM.INSPECTOR.PRS.usctrl_FormPRS
     Private WithEvents ucResults As KAM.INSPECTOR.ResultsGridView.usctrl_FormDisplayResults
     Private WithEvents usctrl_Synchr As usctrl_Synchr
+    Private _poLicenseValidator As IPOLicenseValidator
     'KAM.INSPECTOR.Results.DisplayResults
 
     Private WithEvents ucLicenceRequest As KAM.LicenceTool.uscrtl_LicenseRequest
@@ -61,21 +64,6 @@ Public Class MainForm
         ' Add any initialization after the InitializeComponent() call.
     End Sub
 
-
-    Private Function CheckLicenseStatus() As Boolean
-        Dim maybeLicense
-        If Environment.Is64BitOperatingSystem Then
-            maybeLicense = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath64Bit"), ConfigurationManager.AppSettings.Get("LicenseInfo"), Nothing)
-        Else
-            maybeLicense = Registry.GetValue(ConfigurationManager.AppSettings.Get("RegistryPath"), ConfigurationManager.AppSettings.Get("LicenseInfo"), Nothing)
-        End If
-
-        If maybeLicense Is Nothing Then
-            Return False
-        End If
-        Return True
-    End Function
-
     ''' <summary>
     ''' Loading the different user controls to the form
     ''' First load Inspection procedure; To display data of selected PRS/ GCL</summary>
@@ -84,7 +72,7 @@ Public Class MainForm
     ''' <remarks></remarks>
     Private Sub SettingsForm_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-        If CheckLicenseStatus() Then
+        If Not POLicenseValidator.IsNewUser Then
             'If LicenseValidator.LicenseStatus = ELicenseStatus.EKeyDemo Or LicenseValidator.LicenseStatus = ELicenseStatus.EKeyPermanent Then
 
             Me.ucInspection = New KAM.INSPECTOR.IP.usctrl_MainInspection
@@ -270,7 +258,7 @@ Public Class MainForm
     ''' <param name="keyData"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    Protected Overrides Function ProcessCmdKey(ByRef msg As Message, _
+    Protected Overrides Function ProcessCmdKey(ByRef msg As Message,
                   ByVal keyData As Keys) As Boolean
         Const WM_KEYDOWN As Integer = &H100
         Const WM_SYSKEYDOWN As Integer = &H104
@@ -392,6 +380,15 @@ Public Class MainForm
             ucLicenceRequest.Left = (Me.Width - ucLicenceRequest.Width) / 2
         End If
     End Sub
+
+    Public ReadOnly Property POLicenseValidator As IPOLicenseValidator
+        Get
+            If _poLicenseValidator Is Nothing Then
+                _poLicenseValidator = ContextRegistry.Context.Resolve(Of IPOLicenseValidator)
+            End If
+            Return _poLicenseValidator
+        End Get
+    End Property
 #End Region
 
 

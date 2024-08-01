@@ -38,7 +38,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Measurements.Model
         /// <value>
         /// The start time.
         /// </value>
-        public string StartTime { get; set; }
+        public DateTime StartTime { get; set; }
 
         /// <summary>
         /// Gets or sets the start time.
@@ -46,7 +46,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Measurements.Model
         /// <value>
         /// The start time.
         /// </value>
-        public string EndTime { get; set; }
+        public DateTime? EndTime { get; set; }
 
         /// <summary>
         /// Gets or sets the maximum value time stamp.
@@ -108,7 +108,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Measurements.Model
             ExtraMeasurementValues = new List<Inspector.Model.Measurement>();
             Unit = measurementUnit;
             ReportIoStatus = reportIoStatus;
-            StartTime = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+            StartTime = DateTime.Now;
             MaxValueTimeStamp = DateTime.MinValue;
         }
 

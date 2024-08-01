@@ -113,7 +113,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Measurements.Model
         /// <value>
         /// The end date time.
         /// </value>
-        public string EndDateTime { get; set; }
+        public DateTime? EndDateTime { get; set; }
         #endregion Properties
 
         /// <summary>

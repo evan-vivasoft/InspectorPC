@@ -23,18 +23,18 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
         public MappingProfile()
         {
             // Map DateTimeStamp
-            CreateMap<DateTimeStamp, JSONParser.InspectionResults.Model.DateTimeStamp>()
+            CreateMap<DateTimeStamp, POService.InspectionResults.Model.DateTimeStamp>()
                 .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate))
                 .ForMember(dest => dest.StartTime, opt => opt.MapFrom(src => src.StartTime))
                 .ForMember(dest => dest.EndTime, opt => opt.MapFrom(src => src.EndTime))
                 .ForMember(dest => dest.TimeSettings, opt => opt.MapFrom(src => src.TimeSettings));
 
-            CreateMap<TimeSetting, JSONParser.InspectionResults.Model.TimeSetting>()
+            CreateMap<TimeSetting, POService.InspectionResults.Model.TimeSetting>()
                 .ForMember(dest => dest.TimeZone, opt => opt.MapFrom(src => src.TimeZone))
                 .ForMember(dest => dest.DST, opt => opt.MapFrom(src => src.DST));
 
             // Mapping for Result class
-            CreateMap<Result, JSONParser.InspectionResults.Model.Result>()
+            CreateMap<Result, POService.InspectionResults.Model.Result>()
                 .ForMember(dest => dest.ObjectName, opt => opt.MapFrom(src => src.ObjectName))
                 .ForMember(dest => dest.ObjectID, opt => opt.MapFrom(src => src.ObjectID))
                 .ForMember(dest => dest.MeasurePoint, opt => opt.MapFrom(src => src.MeasurePoint))
@@ -71,18 +71,18 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
                 .ForCtorParam("measurePointDescription", opt => opt.MapFrom(src => src.MeasurePointDescription));
 
             // Map MeasurementEquipment
-            CreateMap<MeasurementEquipment, JSONParser.InspectionResults.Model.MeasurementEquipment>()
+            CreateMap<MeasurementEquipment, POService.InspectionResults.Model.MeasurementEquipment>()
                 .ForMember(dest => dest.ID_DM1, opt => opt.MapFrom(src => src.ID_DM1))
                 .ForMember(dest => dest.ID_DM2, opt => opt.MapFrom(src => src.ID_DM2))
                 .ForMember(dest => dest.BT_Address, opt => opt.MapFrom(src => src.BT_Address));
 
             // Map InspectionProcedure
-            CreateMap<InspectionProcedure, JSONParser.InspectionResults.Model.InspectionProcedure>()
+            CreateMap<InspectionProcedure, POService.InspectionResults.Model.InspectionProcedure>()
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.Version, opt => opt.MapFrom(src => src.Version));
 
             // Map InspectionResult with explicit constructor parameters
-            CreateMap<InspectionResult, JSONParser.InspectionResults.Model.InspectionResult>()
+            CreateMap<InspectionResult, POService.InspectionResults.Model.InspectionResult>()
                 .ForCtorParam("status", opt => opt.MapFrom(src => src.Status))
                 .ForCtorParam("prsIdentification", opt => opt.MapFrom(src => src.PRSIdentification))
                 .ForCtorParam("prsName", opt => opt.MapFrom(src => src.PRSName))
@@ -112,7 +112,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
                 .ForMember(dest => dest.DateTimeStamp, opt => opt.MapFrom(src => src.DateTimeStamp))
                 .ForMember(dest => dest.Results, opt => opt.MapFrom(
                                         src => src.Results.Select( a =>
-                                            new JSONParser.InspectionResults.Model.Result {
+                                            new Inspector.POService.InspectionResults.Model.Result {
                                                 ObjectName = a.ObjectName,
                                                 ObjectID = a.ObjectID,
                                                 MeasurePoint = a.MeasurePoint,
@@ -122,7 +122,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
                                                 MeasureValue = ConvertMeasureValue(a.MeasureValue),
                                                 List = a.List,
                                                 Text = a.Text,
-                                                Uom = (JSONParser.InspectionResults.Model.UnitOfMeasurement)((int) a.Uom),
+                                                Uom = (Inspector.POService.InspectionResults.Model.UnitOfMeasurement)((int) a.Uom),
                                                 MaximumValue = a.MaximumValue,
                                                 MinimumValue = a.MinimumValue,
                                                 Offset = a.Offset,
@@ -132,14 +132,14 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
                                         )
                                       ));
 
-            CreateMap<UnitOfMeasurement, JSONParser.InspectionResults.Model.UnitOfMeasurement>()
+            CreateMap<UnitOfMeasurement, Inspector.POService.InspectionResults.Model.UnitOfMeasurement>()
             .ConvertUsing(src => EnumConverter.Convert(src));
 
-            CreateMap<MeasurementReportMeasuredEntity, JSONParser.InspectionResults.Model.Data>();
+            CreateMap<MeasurementReportMeasuredEntity, Inspector.POService.InspectionResults.Model.Data>();
 
-            CreateMap<MeasurementReport, JSONParser.InspectionResults.Model.MeasurementReport>()
+            CreateMap<MeasurementReport, POService.InspectionResults.Model.MeasurementReport>()
                 .ForMember(dest => dest.Measurements, opt => opt.MapFrom(src => src.Measurements.Select(a =>
-                    new JSONParser.InspectionResults.Model.Measurement
+                    new Inspector.POService.InspectionResults.Model.Measurement
                     {
                         Data = ConvertMeasurementData(a.Data),
                         LinkId = a.LinkId,
@@ -150,18 +150,18 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
             
         }
 
-        static JSONParser.InspectionResults.Model.MeasureValue ConvertMeasureValue(MeasureValue measureValue)
+        static Inspector.POService.InspectionResults.Model.MeasureValue ConvertMeasureValue(MeasureValue measureValue)
         {
-            return new JSONParser.InspectionResults.Model.MeasureValue
+            return new Inspector.POService.InspectionResults.Model.MeasureValue
             {
                 Value = measureValue.Value,
                 UOM = EnumConverter.Convert(measureValue.UOM)
             };
         }
 
-        static JSONParser.InspectionResults.Model.Data ConvertMeasurementData (MeasurementReportMeasuredEntity data)
+        static Inspector.POService.InspectionResults.Model.Data ConvertMeasurementData (MeasurementReportMeasuredEntity data)
         {
-            return new JSONParser.InspectionResults.Model.Data
+            return new Inspector.POService.InspectionResults.Model.Data
             {
                 MeasurementValues = ConvertMeasurementValues(data.MeasurementValues),
                 ExtraMeasurementValues = ConvertMeasurementValues(data.ExtraMeasurementValues),
@@ -173,13 +173,13 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
             };
         }
 
-        static List<JSONParser.InspectionResults.Model.MeasurementValue> ConvertMeasurementValues (List<Inspector.Model.Measurement> measurement)
+        static List<Inspector.POService.InspectionResults.Model.MeasurementValue> ConvertMeasurementValues (List<Inspector.Model.Measurement> measurement)
         {
             return (
                 measurement
                     .Select(m =>
                     {
-                        return new JSONParser.InspectionResults.Model.MeasurementValue
+                        return new Inspector.POService.InspectionResults.Model.MeasurementValue
                         {
                             Value = m.Value,
                             IoStatus = m.IoStatus,
@@ -193,9 +193,9 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
 
     public static class EnumConverter
     {
-        public static JSONParser.InspectionResults.Model.UnitOfMeasurement Convert(UnitOfMeasurement source)
+        public static Inspector.POService.InspectionResults.Model.UnitOfMeasurement Convert(UnitOfMeasurement source)
         {
-            return (JSONParser.InspectionResults.Model.UnitOfMeasurement)((int)source);
+            return (Inspector.POService.InspectionResults.Model.UnitOfMeasurement)((int)source);
         }
     }
 }

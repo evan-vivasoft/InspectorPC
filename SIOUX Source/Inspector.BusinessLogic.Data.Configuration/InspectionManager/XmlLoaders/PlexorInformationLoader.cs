@@ -12,7 +12,7 @@ using Inspector.BusinessLogic.Data.Configuration.InspectionManager.AutMapper;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Plexor;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Station;
 using Inspector.Infra.Utils;
-using JSONParser.InformationManager;
+using Inspector.POService.InformationManager;
 
 namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoaders
 {

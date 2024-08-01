@@ -33,7 +33,6 @@ using Inspector.Model.InspectionProcedure;
 using Inspector.Model.InspectionStepResult;
 using Inspector.Model.MeasurementResult;
 using Inspector.Model.Plexor;
-using JSONParser.InformationManager;
 using KAM.INSPECTOR.Infra;
 using log4net;
 using log4net.Appender;

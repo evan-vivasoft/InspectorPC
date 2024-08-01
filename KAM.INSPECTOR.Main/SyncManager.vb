@@ -19,12 +19,11 @@ Imports KAM.COMMUNICATOR.Synchronize.Infra.COMMUNICATOR.Status.Model
 Imports KAM.COMMUNICATOR.Synchronize.Infra.COMMUNICATOR.Status.Model.SynchronisationStep
 Imports KAM.INSPECTOR.Infra
 Imports KAM.INSPECTOR.Main.SyncErrorMessages
-Imports JSONParser.LicenseHelper
 Imports KAM.INSPECTOR.Main.SynchronisationStep
 Imports System.ComponentModel
-Imports JSONParser.SyncService
 Imports System.Configuration
 Imports System.Reflection
+Imports Inspector.POService.SyncService
 
 ''' <summary>
 ''' Class for handling the data exchange between Inspector and desktop PC

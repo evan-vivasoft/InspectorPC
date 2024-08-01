@@ -14,8 +14,7 @@ using Inspector.BusinessLogic.Data.Configuration.InspectionManager.AutMapper;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.Model.Station;
 using Inspector.Infra.Utils;
 using Inspector.Model;
-using JSONParser.InformationManager;
-using JSONParser.StationInformation;
+using Inspector.POService.InformationManager;
 
 namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoaders
 {
@@ -83,8 +82,6 @@ namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoader
             Console.WriteLine(m_XmlFilePath);
             PRSEntities = 
                 MapperClass.Instance.Mapper.Map<List<PRSEntity>>(InformationManager.Instance.GetPRSInformation);
-
-            //PRSEntities = ReadStationInformation(m_XmlFilePath, m_XsdFilePath);
         }
         #endregion Public
 

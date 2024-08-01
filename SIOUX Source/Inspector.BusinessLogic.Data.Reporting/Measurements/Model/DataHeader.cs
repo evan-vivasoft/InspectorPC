@@ -39,7 +39,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Measurements.Model
         /// <value>
         /// The end of measurement.
         /// </value>
-        public string EndOfMeasurement { get; set; }
+        public DateTime? EndOfMeasurement { get; set; }
 
         /// <summary>
         /// Gets or sets the count total.

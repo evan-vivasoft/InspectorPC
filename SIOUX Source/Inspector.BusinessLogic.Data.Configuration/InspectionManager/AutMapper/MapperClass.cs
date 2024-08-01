@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Inspector.BusinessLogic.Data.Configuration.InspectionManager.XmlLoaders;
-using JSONParser;
 
 namespace Inspector.BusinessLogic.Data.Configuration.InspectionManager.AutMapper
 {
