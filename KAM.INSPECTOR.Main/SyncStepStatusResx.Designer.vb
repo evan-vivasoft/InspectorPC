@@ -74,7 +74,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Check License Information.
+        '''  Looks up a localized string similar to Check &amp; Update License Information.
         '''</summary>
         Friend Shared ReadOnly Property Step_5001() As String
             Get
@@ -119,7 +119,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to !Copy_files_From_Inspector.
+        '''  Looks up a localized string similar to Get Last Result.
         '''</summary>
         Friend Shared ReadOnly Property Step_5006() As String
             Get
@@ -128,7 +128,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to !Process_Result_file_Inspector.
+        '''  Looks up a localized string similar to Data Synchronization Completed.
         '''</summary>
         Friend Shared ReadOnly Property Step_5007() As String
             Get
@@ -137,7 +137,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to !Delete_Result_files_Inspector.
+        '''  Looks up a localized string similar to Set Last Upload Information.
         '''</summary>
         Friend Shared ReadOnly Property Step_5008() As String
             Get
@@ -146,7 +146,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to !Create_Station_information_File.
+        '''  Looks up a localized string similar to Something went wrong.
         '''</summary>
         Friend Shared ReadOnly Property Step_5009() As String
             Get

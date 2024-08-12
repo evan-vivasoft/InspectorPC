@@ -123,7 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\ParserOlderVersionCompatible\JSONParser\JSONParser.csproj">
-      <Project>{0F8FA240-EF49-405B-986A-2C4C8737CF02}</Project>
+      <Project>{3BD5294B-AC7E-4D9C-91A9-3D35E5B316DC}</Project>
       <Name>JSONParser</Name>
     </ProjectReference>
     <ProjectReference Include="..\Inspector.BusinessLogic.Data.Configuration.Interfaces\Inspector.BusinessLogic.Data.Configuration.Interfaces.csproj">

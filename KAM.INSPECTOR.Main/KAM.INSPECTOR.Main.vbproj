@@ -94,6 +94,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>External Components\Common.Logging.dll</HintPath>
     </Reference>
+    <Reference Include="JSONParser">
+      <HintPath>..\..\..\ParserOlderVersionCompatible\JSONParser\bin\Debug\JSONParser.exe</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>External Components\log4net.dll</HintPath>
@@ -215,6 +218,23 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="SyncStepErrorMessage_resx.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SyncStepErrorMessage_resx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SyncStepStatusResx.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SyncStepStatusResx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SyncManager\Images\Images.Designer.vb">
+      <DependentUpon>Images.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SyncManager\ResourceConvert.vb" />
+    <Compile Include="SyncStepModel.vb" />
     <Compile Include="General.vb" />
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -238,10 +258,17 @@
     <Compile Include="SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SyncManager.vb" />
     <Compile Include="Translations\countryFlags.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>countryFlags.resx</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_Synchr.Designer.vb">
+      <DependentUpon>usctrl_Synchr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usctrl_Synchr.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User controls forms\uscrtl_ChartSettings.designer.vb">
       <DependentUpon>uscrtl_ChartSettings.vb</DependentUpon>
@@ -305,6 +332,18 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="SyncStepErrorMessage_resx.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SyncStepErrorMessage_resx.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncStepStatusResx.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SyncStepStatusResx.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\TelerikGridResx.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
@@ -314,6 +353,14 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncManager\Images\Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrl_Synchr.resx">
+      <DependentUpon>usctrl_Synchr.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User controls forms\uscrtl_ChartSettings.resx">
       <DependentUpon>uscrtl_ChartSettings.vb</DependentUpon>
@@ -673,6 +720,15 @@
     <None Include="Resources\Yemen-Flag.ico" />
     <None Include="Resources\Zambia-Flag.ico" />
     <None Include="Resources\Zimbabwe-Flag.ico" />
+    <None Include="SyncManager\Images\connectionComplete.jpg" />
+    <None Include="SyncManager\Images\connectionError.jpg" />
+    <None Include="SyncManager\Images\connectionIdle.jpg" />
+    <None Include="SyncManager\Images\connectionStart.jpg" />
+    <None Include="SyncManager\Images\Delete.png" />
+    <None Include="SyncManager\Images\Green Check.png" />
+    <Content Include="SyncManager\Images\Synchronize.png" />
+    <Content Include="SyncManager\Images\warning.png" />
+    <None Include="SyncManager\Images\yellow-warning-sign.jpg" />
     <Content Include="Vlam.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -682,10 +738,6 @@
     <Folder Include="Translations\Country flags\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ParserOlderVersionCompatible\JSONParser\JSONParser.csproj">
-      <Project>{0F8FA240-EF49-405B-986A-2C4C8737CF02}</Project>
-      <Name>JSONParser</Name>
-    </ProjectReference>
     <ProjectReference Include="..\KAM.Infra\KAM.Infra.vbproj">
       <Project>{cb9c2c96-4e0d-4c6b-8f07-30b620c23423}</Project>
       <Name>KAM.Infra</Name>

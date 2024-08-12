@@ -36,7 +36,7 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Model
         /// <summary>
         /// Prevents a default instance of the <see cref="MeasureValue"/> class from being created.
         /// </summary>
-        private MeasureValue()
+        public MeasureValue()
         {
             Value = 0.0;
             UOM = UnitOfMeasurement.Item;

@@ -249,6 +249,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usctrl_Synchr.resx">
       <DependentUpon>usctrl_Synchr.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

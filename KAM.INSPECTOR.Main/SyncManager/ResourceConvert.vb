@@ -17,6 +17,7 @@ Public Module ResourceConvert
     ''' <param name="ErrorNumber"></param>
     ''' <returns></returns>
     ''' <remarks></remarks>
+    ''' <remarks></remarks>
     Public Function GetSyncErrorTranslation(errorNumber As Integer) As String
         Return (SyncStepErrorMessage_resx.ResourceManager.GetString("StepError_" & errorNumber))
     End Function

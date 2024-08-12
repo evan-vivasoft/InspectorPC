@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using AutoMapper;
 using Inspector.BusinessLogic.Data.Configuration.Interfaces.Managers;
 using Inspector.BusinessLogic.Data.Reporting.Interfaces;
+using Inspector.BusinessLogic.Data.Reporting.Results.Automapper;
 using Inspector.BusinessLogic.Data.Reporting.Results.Model;
 using Inspector.Infra.Ioc;
 using Inspector.Infra.Utils;
 using Inspector.Model.InspectionProcedure;
 using Inspector.Model.InspectionReportingResults;
+using JSONParser.InspectionResults;
 
 namespace Inspector.BusinessLogic.Data.Reporting.Results
 {
@@ -175,10 +178,15 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results
         /// <param name="resultFile">The result file.</param>
         internal static InspectionReport ReadResultFile(string resultFile)
         {
-            InspectionReport inspectionReport;
+            InspectionReport inspectionReport = new InspectionReport();
             try
             {
-                inspectionReport = XMLUtils.Load<InspectionReport>(resultFile);
+                using (var adapter = new InspectionReportAdapter())
+                {
+                    inspectionReport.InspectionResults = MapperClass.Instance.Mapper.Map<List<InspectionResult>>(adapter.results);
+                }
+                Console.WriteLine(resultFile);
+                //inspectionReport = XMLUtils.Load<InspectionReport>(resultFile);
             }
             catch (Exception exception)
             {

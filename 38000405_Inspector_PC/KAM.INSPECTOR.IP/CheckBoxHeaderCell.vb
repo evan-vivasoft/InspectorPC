@@ -90,7 +90,10 @@ Public Class CheckBoxHeaderCell
     Public Overrides Sub Detach()
         MyBase.Detach()
         Try
-            RemoveHandler Me.GridControl.ValueChanged, AddressOf GridControl_ValueChanged
+
+            If Me.GridControl IsNot Nothing Then
+                RemoveHandler Me.GridControl.ValueChanged, AddressOf GridControl_ValueChanged
+            End If
         Catch ex As Exception
 
         End Try

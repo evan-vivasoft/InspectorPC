@@ -83,54 +83,79 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
 
             // Map InspectionResult with explicit constructor parameters
             CreateMap<InspectionResult, POService.InspectionResults.Model.InspectionResult>()
-                .ForCtorParam("status", opt => opt.MapFrom(src => src.Status))
-                .ForCtorParam("prsIdentification", opt => opt.MapFrom(src => src.PRSIdentification))
-                .ForCtorParam("prsName", opt => opt.MapFrom(src => src.PRSName))
-                .ForCtorParam("prsCode", opt => opt.MapFrom(src => src.PRSCode))
-                .ForCtorParam("gasControlLineName", opt => opt.MapFrom(src => src.GasControlLineName))
-                .ForCtorParam("gclIdentification", opt => opt.MapFrom(src => src.GCLIdentification))
-                .ForCtorParam("gclCode", opt => opt.MapFrom(src => src.GCLCode))
-                .ForCtorParam("crc", opt => opt.MapFrom(src => src.CRC))
-                .ForCtorParam("measurementEquipment", opt => opt.MapFrom(src => src.Measurement_Equipment))
-                .ForCtorParam("inspectionProcedure", opt => opt.MapFrom(src => src.InspectionProcedure))
-                .ForCtorParam("dateTimestamp", opt => opt.MapFrom(src => src.DateTimeStamp))
-                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status))
-                .ForMember(dest => dest.InspectionProcedureId, opt => opt.MapFrom(src => src.InspectionProcedureId))
-                .ForMember(dest => dest.StartPosition, opt => opt.MapFrom(src => src.StartPosition))
-                .ForMember(dest => dest.StatusAsText, opt => opt.MapFrom(src => src.StatusAsText))
-                .ForMember(dest => dest.PRSIdentification, opt => opt.MapFrom(src => src.PRSIdentification))
-                .ForMember(dest => dest.PRSName, opt => opt.MapFrom(src => src.PRSName))
-                .ForMember(dest => dest.PRSId, opt => opt.MapFrom(src => src.PRSId))
-                .ForMember(dest => dest.PRSCode, opt => opt.MapFrom(src => src.PRSCode))
-                .ForMember(dest => dest.GasControlLineName, opt => opt.MapFrom(src => src.GasControlLineName))
-                .ForMember(dest => dest.GCLId, opt => opt.MapFrom(src => src.GCLId))
-                .ForMember(dest => dest.GCLIdentification, opt => opt.MapFrom(src => src.GCLIdentification))
-                .ForMember(dest => dest.GCLCode, opt => opt.MapFrom(src => src.GCLCode))
-                .ForMember(dest => dest.CRC, opt => opt.MapFrom(src => src.CRC))
-                .ForMember(dest => dest.Measurement_Equipment, opt => opt.MapFrom(src => src.Measurement_Equipment))
-                .ForMember(dest => dest.InspectionProcedure, opt => opt.MapFrom(src => src.InspectionProcedure))
-                .ForMember(dest => dest.DateTimeStamp, opt => opt.MapFrom(src => src.DateTimeStamp))
-                .ForMember(dest => dest.Results, opt => opt.MapFrom(
-                                        src => src.Results.Select( a =>
-                                            new Inspector.POService.InspectionResults.Model.Result {
-                                                ObjectName = a.ObjectName,
-                                                ObjectID = a.ObjectID,
-                                                MeasurePoint = a.MeasurePoint,
-                                                MeasurePointID = a.MeasurePointID,
-                                                Time = a.Time,
-                                                SequenceNumber = a.SequenceNumber,
-                                                MeasureValue = ConvertMeasureValue(a.MeasureValue),
-                                                List = a.List,
-                                                Text = a.Text,
-                                                Uom = (Inspector.POService.InspectionResults.Model.UnitOfMeasurement)((int) a.Uom),
-                                                MaximumValue = a.MaximumValue,
-                                                MinimumValue = a.MinimumValue,
-                                                Offset = a.Offset,
-                                                ScriptCommandId = a.ScriptCommandId,
-                                                LinkId = a.LinkId ?? Guid.Empty
-                                            }
-                                        )
-                                      ));
+           .ForCtorParam("status", opt => opt.MapFrom(src => src.Status))
+           .ForCtorParam("prsIdentification", opt => opt.MapFrom(src => src.PRSIdentification))
+           .ForCtorParam("prsName", opt => opt.MapFrom(src => src.PRSName))
+           .ForCtorParam("prsCode", opt => opt.MapFrom(src => src.PRSCode))
+           .ForCtorParam("gasControlLineName", opt => opt.MapFrom(src => src.GasControlLineName))
+           .ForCtorParam("gclIdentification", opt => opt.MapFrom(src => src.GCLIdentification))
+           .ForCtorParam("gclCode", opt => opt.MapFrom(src => src.GCLCode))
+           .ForCtorParam("crc", opt => opt.MapFrom(src => src.CRC))
+           .ForCtorParam("measurementEquipment", opt => opt.MapFrom(src => src.Measurement_Equipment))
+           .ForCtorParam("inspectionProcedure", opt => opt.MapFrom(src => src.InspectionProcedure))
+           .ForCtorParam("dateTimestamp", opt => opt.MapFrom(src => src.DateTimeStamp))
+           .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status))
+           .ForMember(dest => dest.InspectionProcedureId, opt => opt.MapFrom(src => src.InspectionProcedureId))
+           .ForMember(dest => dest.StartPosition, opt => opt.MapFrom(src => src.StartPosition))
+           .ForMember(dest => dest.StatusAsText, opt => opt.MapFrom(src => src.StatusAsText))
+           .ForMember(dest => dest.PRSIdentification, opt => opt.MapFrom(src => src.PRSIdentification))
+           .ForMember(dest => dest.PRSName, opt => opt.MapFrom(src => src.PRSName))
+           .ForMember(dest => dest.PRSId, opt => opt.MapFrom(src => src.PRSId))
+           .ForMember(dest => dest.PRSCode, opt => opt.MapFrom(src => src.PRSCode))
+           .ForMember(dest => dest.GasControlLineName, opt => opt.MapFrom(src => src.GasControlLineName))
+           .ForMember(dest => dest.GCLId, opt => opt.MapFrom(src => src.GCLId))
+           .ForMember(dest => dest.GCLIdentification, opt => opt.MapFrom(src => src.GCLIdentification))
+           .ForMember(dest => dest.GCLCode, opt => opt.MapFrom(src => src.GCLCode))
+           .ForMember(dest => dest.CRC, opt => opt.MapFrom(src => src.CRC))
+           .ForMember(dest => dest.Measurement_Equipment, opt => opt.MapFrom(src => src.Measurement_Equipment))
+           .ForMember(dest => dest.InspectionProcedure, opt => opt.MapFrom(src => src.InspectionProcedure))
+           .ForMember(dest => dest.DateTimeStamp, opt => opt.MapFrom(src => src.DateTimeStamp))
+           .ForMember(dest => dest.Results, opt => opt.MapFrom(
+               src => src.Results.Select(a =>
+                   new Inspector.POService.InspectionResults.Model.Result
+                   {
+                       ObjectName = a.ObjectName,
+                       ObjectID = a.ObjectID,
+                       MeasurePoint = a.MeasurePoint,
+                       MeasurePointID = a.MeasurePointID,
+                       Time = a.Time,
+                       SequenceNumber = a.SequenceNumber,
+                       MeasureValue = ConvertMeasureValue(a.MeasureValue),
+                       List = a.List,
+                       Text = a.Text,
+                       Uom = (Inspector.POService.InspectionResults.Model.UnitOfMeasurement)((int)a.Uom),
+                       MaximumValue = a.MaximumValue,
+                       MinimumValue = a.MinimumValue,
+                       Offset = a.Offset,
+                       ScriptCommandId = a.ScriptCommandId,
+                       LinkId = a.LinkId ?? Guid.Empty
+                   }
+               ).ToList()))
+           .ReverseMap()
+           .ForMember(dest => dest.Measurement_Equipment, opt => opt.MapFrom(src => src.Measurement_Equipment))
+           .ForMember(dest => dest.InspectionProcedure, opt => opt.MapFrom(src => src.InspectionProcedure))
+           .ForMember(dest => dest.DateTimeStamp, opt => opt.MapFrom(src => src.DateTimeStamp))
+           .ForMember(dest => dest.Results, opt => opt.MapFrom(src => src.Results.Select(a =>
+               new Result
+               {
+                   ObjectName = a.ObjectName,
+                   ObjectID = a.ObjectID,
+                   MeasurePoint = a.MeasurePoint,
+                   MeasurePointID = a.MeasurePointID,
+                   Time = a.Time,
+                   SequenceNumber = a.SequenceNumber,
+                   MeasureValue = ConvertMeasureValueBack(a.MeasureValue),
+                   List = a.List,
+                   Text = a.Text,
+                   Uom = (UnitOfMeasurement)((int)a.Uom),
+                   MaximumValue = a.MaximumValue,
+                   MinimumValue = a.MinimumValue,
+                   Offset = a.Offset,
+                   ScriptCommandId = a.ScriptCommandId,
+                   LinkId = a.LinkId
+               }
+           ).ToList()));
+
 
             CreateMap<UnitOfMeasurement, Inspector.POService.InspectionResults.Model.UnitOfMeasurement>()
             .ConvertUsing(src => EnumConverter.Convert(src));
@@ -147,7 +172,68 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
                         Interval = a.Interval
                     }
                 ).ToList()));
-            
+
+            CreateMap<DateTimeStamp, POService.InspectionResults.Model.DateTimeStamp>()
+            .ReverseMap();
+            CreateMap<TimeSetting, POService.InspectionResults.Model.TimeSetting>()
+                .ReverseMap();
+
+            CreateMap<Result, POService.InspectionResults.Model.Result>()
+                .ForCtorParam("time", opt => opt.MapFrom(src => TimeSpan.Parse(src.Time)))
+                .ReverseMap();
+
+            CreateMap<MeasurementEquipment, POService.InspectionResults.Model.MeasurementEquipment>()
+                .ReverseMap();
+
+            CreateMap<InspectionProcedure, POService.InspectionResults.Model.InspectionProcedure>()
+                .ReverseMap();
+
+            CreateMap<InspectionResult, POService.InspectionResults.Model.InspectionResult>()
+                .ForCtorParam("status", opt => opt.MapFrom(src => src.Status))
+                .ForCtorParam("prsIdentification", opt => opt.MapFrom(src => src.PRSIdentification))
+                .ForCtorParam("prsName", opt => opt.MapFrom(src => src.PRSName))
+                .ForCtorParam("prsCode", opt => opt.MapFrom(src => src.PRSCode))
+                .ForCtorParam("gasControlLineName", opt => opt.MapFrom(src => src.GasControlLineName))
+                .ForCtorParam("gclIdentification", opt => opt.MapFrom(src => src.GCLIdentification))
+                .ForCtorParam("gclCode", opt => opt.MapFrom(src => src.GCLCode))
+                .ForCtorParam("crc", opt => opt.MapFrom(src => src.CRC))
+                .ForCtorParam("measurementEquipment", opt => opt.MapFrom(src => src.Measurement_Equipment))
+                .ForCtorParam("inspectionProcedure", opt => opt.MapFrom(src => src.InspectionProcedure))
+                .ForCtorParam("dateTimestamp", opt => opt.MapFrom(src => src.DateTimeStamp))
+                .ReverseMap();
+
+            CreateMap<UnitOfMeasurement, POService.InspectionResults.Model.UnitOfMeasurement>()
+                .ConvertUsing(src => EnumConverter.Convert(src));
+
+            CreateMap<MeasurementReportMeasuredEntity, POService.InspectionResults.Model.Data>()
+                .ReverseMap();
+
+            CreateMap<MeasurementReport, POService.InspectionResults.Model.MeasurementReport>()
+                .ReverseMap();
+
+
+            CreateMap<MeasureValue, POService.InspectionResults.Model.MeasureValue>()
+                .ForCtorParam("value", opt => opt.MapFrom(src => src.Value))
+                .ForCtorParam("uom", opt => opt.MapFrom(src => src.UOM))
+                .ReverseMap();
+            //CreateMap<Inspector.POService.InspectionResults.Model.InspectionResult, InspectionResult>()
+            //.ForMember(dest => dest.Measurement_Equipment, opt => opt.MapFrom(src => src.Measurement_Equipment))
+            //.ForMember(dest => dest.InspectionProcedure, opt => opt.MapFrom(src => src.InspectionProcedure))
+            //.ForMember(dest => dest.DateTimeStamp, opt => opt.MapFrom(src => src.DateTimeStamp))
+            //.ForMember(dest => dest.Results, opt => opt.MapFrom(src => src.Results))
+            //.ForMember(dest => dest.StartPosition, opt => opt.MapFrom(src => src.StartPosition))
+            //.ForMember(dest => dest.InspectionProcedureId, opt => opt.MapFrom(src => src.InspectionProcedureId))
+            //.ForMember(dest => dest.GCLId, opt => opt.MapFrom(src => src.GCLId))
+            //.ForMember(dest => dest.PRSId, opt => opt.MapFrom(src => src.PRSId))
+            //.ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status))
+            //.ForMember(dest => dest.PRSIdentification, opt => opt.MapFrom(src => src.PRSIdentification))
+            //.ForMember(dest => dest.PRSName, opt => opt.MapFrom(src => src.PRSName))
+            //.ForMember(dest => dest.PRSCode, opt => opt.MapFrom(src => src.PRSCode))
+            //.ForMember(dest => dest.GasControlLineName, opt => opt.MapFrom(src => src.GasControlLineName))
+            //.ForMember(dest => dest.GCLIdentification, opt => opt.MapFrom(src => src.GCLIdentification))
+            //.ForMember(dest => dest.GCLCode, opt => opt.MapFrom(src => src.GCLCode))
+            //.ForMember(dest => dest.CRC, opt => opt.MapFrom(src => src.CRC));
+
         }
 
         static Inspector.POService.InspectionResults.Model.MeasureValue ConvertMeasureValue(MeasureValue measureValue)
@@ -188,6 +274,15 @@ namespace Inspector.BusinessLogic.Data.Reporting.Results.Automapper
                     })
                     .ToList()
             );
+        }
+
+        static MeasureValue ConvertMeasureValueBack(Inspector.POService.InspectionResults.Model.MeasureValue measureValue)
+        {
+            return new MeasureValue
+            {
+                Value = measureValue.Value,
+                UOM = (UnitOfMeasurement)measureValue.UOM
+            };
         }
     }
 

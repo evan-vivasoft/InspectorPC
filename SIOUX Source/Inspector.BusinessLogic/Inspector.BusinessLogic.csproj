@@ -76,10 +76,6 @@
     <Compile Include="VersionInformation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\ParserOlderVersionCompatible\JSONParser\JSONParser.csproj">
-      <Project>{0F8FA240-EF49-405B-986A-2C4C8737CF02}</Project>
-      <Name>JSONParser</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Inspector.BusinessLogic.Data.Configuration.Interfaces\Inspector.BusinessLogic.Data.Configuration.Interfaces.csproj">
       <Project>{ECF2C1BE-46B2-4B1E-820E-CFAA8A08CF65}</Project>
       <Name>Inspector.BusinessLogic.Data.Configuration.Interfaces</Name>

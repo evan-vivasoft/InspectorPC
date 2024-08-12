@@ -123,10 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="rdWaitingSync.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 221</value>
+    <value>6, 408</value>
+  </data>
+  <data name="rdWaitingSync.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="rdWaitingSync.Size" type="System.Drawing.Size, System.Drawing">
-    <value>693, 18</value>
+    <value>949, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rdWaitingSync.TabIndex" type="System.Int32, mscorlib">
@@ -151,10 +154,13 @@
     <value>Bottom, Left, Right</value>
   </data>
   <data name="rdProgressCopyfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 194</value>
+    <value>6, 366</value>
+  </data>
+  <data name="rdProgressCopyfile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="rdProgressCopyfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>693, 18</value>
+    <value>949, 28</value>
   </data>
   <data name="rdProgressCopyfile.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -175,10 +181,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="rdGridSyncStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 3</value>
+    <value>652, 5</value>
+  </data>
+  <data name="rdGridSyncStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="rdGridSyncStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 184</value>
+    <value>380, 351</value>
   </data>
   <data name="rdGridSyncStatus.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -202,10 +211,13 @@
     <value>Top, Bottom, Left</value>
   </data>
   <data name="rdGridPDA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
+    <value>6, 6</value>
+  </data>
+  <data name="rdGridPDA.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="rdGridPDA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 183</value>
+    <value>638, 350</value>
   </data>
   <data name="rdGridPDA.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -229,10 +241,13 @@
     <value>Bottom, Right</value>
   </data>
   <data name="pictureConnectStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>703, 193</value>
+    <value>963, 365</value>
+  </data>
+  <data name="pictureConnectStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="pictureConnectStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 45</value>
+    <value>68, 69</value>
   </data>
   <data name="pictureConnectStatus.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -253,10 +268,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 20</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 241</value>
+    <value>1037, 439</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>usctrl_Synchr</value>

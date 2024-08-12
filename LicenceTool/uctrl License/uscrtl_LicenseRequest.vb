@@ -2,12 +2,14 @@
 'Copyright Wigersma 2012
 'All rights reserved.
 '===============================================================================
-Imports JSONParser.LicenseHelper
+Imports Inspector.Infra.Ioc
+Imports Inspector.POService.LicenseValidator
 Imports KAM.LicenceTool.My.Resources
 Imports QlmLicenseLib
 Imports Telerik.WinControls.UI
 
 Public Class uscrtl_LicenseRequest
+    Private _poLicenseValidator As POLicenseValidator
 #Region "Constructor"
     ''' <summary>
     ''' Initialize component
@@ -42,7 +44,15 @@ Public Class uscrtl_LicenseRequest
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim maybeToken = VerificationTokenInput.Text
-        Dim licenseHelper = New LicenseHelper
-        licenseHelper.ProcessVerificationToken(maybeToken, AddressOf HandleRestOfTheLogic)
+        POLicenseValidator.ProcessVerificationToken(maybeToken, AddressOf HandleRestOfTheLogic)
     End Sub
+    Public ReadOnly Property POLicenseValidator As IPOLicenseValidator
+        Get
+            If _poLicenseValidator Is Nothing Then
+                _poLicenseValidator = ContextRegistry.Context.Resolve(Of IPOLicenseValidator)
+            End If
+            Return _poLicenseValidator
+        End Get
+    End Property
+
 End Class

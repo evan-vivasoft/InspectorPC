@@ -118,114 +118,132 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="DocWindowInspection.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="DocWindowSync.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt</value>
   </data>
-  <data name="DocWindowInspection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 29</value>
+  <data name="DocWindowSync.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 37</value>
   </data>
-  <data name="DocWindowInspection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>688, 405</value>
+  <data name="DocWindowSync.Size" type="System.Drawing.Size, System.Drawing">
+    <value>846, 814</value>
   </data>
-  <data name="DocWindowInspection.Text" xml:space="preserve">
-    <value>!Inspectieprocedure</value>
+  <data name="DocWindowSync.Text" xml:space="preserve">
+    <value>Sync</value>
   </data>
-  <data name="&gt;&gt;DocWindowInspection.Name" xml:space="preserve">
-    <value>DocWindowInspection</value>
+  <data name="&gt;&gt;DocWindowSync.Name" xml:space="preserve">
+    <value>DocWindowSync</value>
   </data>
-  <data name="&gt;&gt;DocWindowInspection.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="&gt;&gt;DocWindowSync.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="&gt;&gt;DocWindowInspection.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DocWindowSync.Parent" xml:space="preserve">
     <value>DocumentTabStrip2</value>
   </data>
-  <data name="&gt;&gt;DocWindowInspection.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DocWindowPRS.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;DocWindowSync.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="HelpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="HelpProvider1.HelpNamespace" xml:space="preserve">
-    <value>C:\Users\mcl.KAMSTRUPDK\Desktop\Source\NewProject.chm</value>
-  </data>
-  <data name="DocWindowPRS.HelpKeyword" xml:space="preserve">
-    <value>Indeling</value>
+  <data name="DocWindowPRS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt</value>
   </data>
   <data name="DocWindowPRS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 29</value>
+    <value>6, 37</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DocWindowPRS.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>False</value>
   </data>
   <data name="DocWindowPRS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>688, 405</value>
+    <value>846, 814</value>
   </data>
   <data name="DocWindowPRS.Text" xml:space="preserve">
-    <value>!PRS</value>
+    <value>DocWindowPRS</value>
   </data>
   <data name="&gt;&gt;DocWindowPRS.Name" xml:space="preserve">
     <value>DocWindowPRS</value>
   </data>
   <data name="&gt;&gt;DocWindowPRS.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;DocWindowPRS.Parent" xml:space="preserve">
     <value>DocumentTabStrip2</value>
   </data>
   <data name="&gt;&gt;DocWindowPRS.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="DocWindowInspection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt</value>
+  </data>
+  <data name="DocWindowInspection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 37</value>
+  </data>
+  <data name="DocWindowInspection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>839, 814</value>
+  </data>
+  <data name="DocWindowInspection.Text" xml:space="preserve">
+    <value>DocWindowInspection</value>
+  </data>
+  <data name="&gt;&gt;DocWindowInspection.Name" xml:space="preserve">
+    <value>DocWindowInspection</value>
+  </data>
+  <data name="&gt;&gt;DocWindowInspection.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;DocWindowInspection.Parent" xml:space="preserve">
+    <value>DocumentTabStrip2</value>
+  </data>
+  <data name="&gt;&gt;DocWindowInspection.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="DocWindowPLEXOR.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+    <value>Microsoft Sans Serif, 8pt</value>
   </data>
   <data name="DocWindowPLEXOR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 29</value>
+    <value>6, 37</value>
   </data>
   <data name="DocWindowPLEXOR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>688, 405</value>
+    <value>839, 814</value>
   </data>
   <data name="DocWindowPLEXOR.Text" xml:space="preserve">
-    <value>!PLEXOR</value>
+    <value>DocWindowPLEXOR</value>
   </data>
   <data name="&gt;&gt;DocWindowPLEXOR.Name" xml:space="preserve">
     <value>DocWindowPLEXOR</value>
   </data>
   <data name="&gt;&gt;DocWindowPLEXOR.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;DocWindowPLEXOR.Parent" xml:space="preserve">
     <value>DocumentTabStrip2</value>
   </data>
   <data name="&gt;&gt;DocWindowPLEXOR.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="DocWindowResults.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+    <value>Microsoft Sans Serif, 8pt</value>
   </data>
   <data name="DocWindowResults.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 29</value>
+    <value>6, 37</value>
   </data>
   <data name="DocWindowResults.Size" type="System.Drawing.Size, System.Drawing">
-    <value>688, 405</value>
+    <value>839, 814</value>
   </data>
   <data name="DocWindowResults.Text" xml:space="preserve">
-    <value>!Results</value>
+    <value>DocWindowResults</value>
   </data>
   <data name="&gt;&gt;DocWindowResults.Name" xml:space="preserve">
     <value>DocWindowResults</value>
   </data>
   <data name="&gt;&gt;DocWindowResults.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;DocWindowResults.Parent" xml:space="preserve">
     <value>DocumentTabStrip2</value>
   </data>
   <data name="&gt;&gt;DocWindowResults.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="DocumentTabStrip2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -237,8 +255,12 @@
   <data name="DocumentTabStrip2.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="DocumentTabStrip2.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="DocumentTabStrip2.RootElement.Alignment" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJh
+        d2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=
+</value>
   </data>
   <data name="DocumentTabStrip2.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
@@ -256,16 +278,16 @@
     <value>Horizontal</value>
   </data>
   <data name="DocumentTabStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>700, 440</value>
+    <value>858, 857</value>
   </data>
   <data name="DocumentTabStrip2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;DocumentTabStrip2.Name" xml:space="preserve">
     <value>DocumentTabStrip2</value>
   </data>
   <data name="&gt;&gt;DocumentTabStrip2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentTabStrip, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentTabStrip, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;DocumentTabStrip2.Parent" xml:space="preserve">
     <value>MainDocumentContainer</value>
@@ -273,17 +295,18 @@
   <data name="&gt;&gt;DocumentTabStrip2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="MainDocumentContainer.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="MainDocumentContainer.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="MainDocumentContainer.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="MainDocumentContainer.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="MainDocumentContainer.RootElement.Alignment" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJh
+        d2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=
+</value>
   </data>
   <data name="MainDocumentContainer.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
@@ -304,7 +327,7 @@
     <value>MainDocumentContainer</value>
   </data>
   <data name="&gt;&gt;MainDocumentContainer.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentContainer, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentContainer, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;MainDocumentContainer.Parent" xml:space="preserve">
     <value>rdDockMain</value>
@@ -313,22 +336,22 @@
     <value>0</value>
   </data>
   <data name="toolWindowRemarks.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+    <value>Microsoft Sans Serif, 8pt</value>
   </data>
   <data name="toolWindowRemarks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 24</value>
+    <value>1, 30</value>
   </data>
   <data name="toolWindowRemarks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>698, 74</value>
+    <value>191, 825</value>
   </data>
   <data name="toolWindowRemarks.Text" xml:space="preserve">
-    <value>!Remark</value>
+    <value>toolWindowRemarks</value>
   </data>
   <data name="&gt;&gt;toolWindowRemarks.Name" xml:space="preserve">
     <value>toolWindowRemarks</value>
   </data>
   <data name="&gt;&gt;toolWindowRemarks.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;toolWindowRemarks.Parent" xml:space="preserve">
     <value>ToolTabStrip1</value>
@@ -337,10 +360,10 @@
     <value>0</value>
   </data>
   <data name="ToolTabStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 449</value>
+    <value>870, 8</value>
   </data>
   <data name="ToolTabStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>700, 100</value>
+    <value>193, 857</value>
   </data>
   <data name="ToolTabStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -349,7 +372,7 @@
     <value>ToolTabStrip1</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip1.Parent" xml:space="preserve">
     <value>rdDockMain</value>
@@ -361,10 +384,10 @@
     <value>Fill</value>
   </data>
   <data name="rdDockMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
+    <value>0, 28</value>
   </data>
-  <data name="rdDockMain.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="rdDockMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
   </data>
   <data name="rdDockMain.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -391,19 +414,19 @@
     <value>Horizontal</value>
   </data>
   <data name="rdDockMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>710, 554</value>
+    <value>1071, 873</value>
   </data>
   <data name="rdDockMain.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="rdDockMain.Text" xml:space="preserve">
-    <value>RadDock1</value>
+    <value>radDock1</value>
   </data>
   <data name="&gt;&gt;rdDockMain.Name" xml:space="preserve">
     <value>rdDockMain</value>
   </data>
   <data name="&gt;&gt;rdDockMain.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.RadDock, Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.RadDock, Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;rdDockMain.Parent" xml:space="preserve">
     <value>$this</value>
@@ -435,33 +458,6 @@
   <data name="rdMenuExtra.ImageKey" xml:space="preserve">
     <value />
   </data>
-  <data name="rdMenuSettings.AccessibleDescription" xml:space="preserve">
-    <value>!Settings</value>
-  </data>
-  <data name="rdMenuSettings.AccessibleName" xml:space="preserve">
-    <value>!Settings</value>
-  </data>
-  <data name="rdMenuSettings.Text" xml:space="preserve">
-    <value>!&amp;Settings</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.AccessibleDescription" xml:space="preserve">
-    <value>RadMenuSeparatorItem1</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.AccessibleName" xml:space="preserve">
-    <value>RadMenuSeparatorItem1</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.Text" xml:space="preserve">
-    <value>RadMenuSeparatorItem1</value>
-  </data>
-  <data name="rdMenuExit.AccessibleDescription" xml:space="preserve">
-    <value>!Exit</value>
-  </data>
-  <data name="rdMenuExit.AccessibleName" xml:space="preserve">
-    <value>!Exit</value>
-  </data>
-  <data name="rdMenuExit.Text" xml:space="preserve">
-    <value>!E&amp;xit</value>
-  </data>
   <data name="rdMenuExtra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -480,20 +476,35 @@
   <data name="rdMenuExtra.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
+  <data name="rdMenuSettings.AccessibleDescription" xml:space="preserve">
+    <value>!Settings</value>
+  </data>
+  <data name="rdMenuSettings.AccessibleName" xml:space="preserve">
+    <value>!Settings</value>
+  </data>
+  <data name="rdMenuSettings.Text" xml:space="preserve">
+    <value>!&amp;Settings</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.Text" xml:space="preserve">
+    <value>RadMenuSeparatorItem1</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="rdMenuExit.AccessibleDescription" xml:space="preserve">
+    <value>!Exit</value>
+  </data>
+  <data name="rdMenuExit.AccessibleName" xml:space="preserve">
+    <value>!Exit</value>
+  </data>
+  <data name="rdMenuExit.Text" xml:space="preserve">
+    <value>!E&amp;xit</value>
+  </data>
   <data name="rdMenuHelp.AccessibleDescription" xml:space="preserve">
     <value>!Help</value>
   </data>
   <data name="rdMenuHelp.AccessibleName" xml:space="preserve">
     <value>!Help</value>
-  </data>
-  <data name="rdMenuAbout.AccessibleDescription" xml:space="preserve">
-    <value>!About</value>
-  </data>
-  <data name="rdMenuAbout.AccessibleName" xml:space="preserve">
-    <value>!About</value>
-  </data>
-  <data name="rdMenuAbout.Text" xml:space="preserve">
-    <value>!&amp;About</value>
   </data>
   <data name="rdMenuHelp.Text" xml:space="preserve">
     <value>!&amp;Help</value>
@@ -501,11 +512,8 @@
   <data name="RadMenu1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="RadMenu1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadMenu1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="RadMenu1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="RadMenu1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -526,7 +534,7 @@
     <value>Horizontal</value>
   </data>
   <data name="RadMenu1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>710, 20</value>
+    <value>1071, 28</value>
   </data>
   <data name="RadMenu1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -538,7 +546,7 @@
     <value>RadMenu1</value>
   </data>
   <data name="&gt;&gt;RadMenu1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenu, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenu, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadMenu1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -546,14 +554,29 @@
   <data name="&gt;&gt;RadMenu1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="rdMenuAbout.AccessibleDescription" xml:space="preserve">
+    <value>!About</value>
+  </data>
+  <data name="rdMenuAbout.AccessibleName" xml:space="preserve">
+    <value>!About</value>
+  </data>
+  <data name="rdMenuAbout.Text" xml:space="preserve">
+    <value>!&amp;About</value>
+  </data>
+  <metadata name="HelpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="HelpProvider1.HelpNamespace" xml:space="preserve">
+    <value>C:\Users\mcl.KAMSTRUPDK\Desktop\Source\NewProject.chm</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>710, 574</value>
+    <value>1071, 901</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6727,6 +6750,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="MainForm.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -6758,37 +6784,37 @@
     <value>rdMenuExtra</value>
   </data>
   <data name="&gt;&gt;rdMenuExtra.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;rdMenuSettings.Name" xml:space="preserve">
     <value>rdMenuSettings</value>
   </data>
   <data name="&gt;&gt;rdMenuSettings.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadMenuSeparatorItem1.Name" xml:space="preserve">
     <value>RadMenuSeparatorItem1</value>
   </data>
   <data name="&gt;&gt;RadMenuSeparatorItem1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuSeparatorItem, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuSeparatorItem, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;rdMenuExit.Name" xml:space="preserve">
     <value>rdMenuExit</value>
   </data>
   <data name="&gt;&gt;rdMenuExit.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;rdMenuHelp.Name" xml:space="preserve">
     <value>rdMenuHelp</value>
   </data>
   <data name="&gt;&gt;rdMenuHelp.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;rdMenuAbout.Name" xml:space="preserve">
     <value>rdMenuAbout</value>
   </data>
   <data name="&gt;&gt;rdMenuAbout.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;HelpProvider1.Name" xml:space="preserve">
     <value>HelpProvider1</value>
@@ -6800,6 +6826,6 @@
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
 </root>

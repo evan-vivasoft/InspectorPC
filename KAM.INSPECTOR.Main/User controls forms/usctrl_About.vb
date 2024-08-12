@@ -7,7 +7,11 @@ Imports Inspector.BusinessLogic
 Imports QlmLicenseLib
 Imports KAM.LicenceTool
 Imports KAM.INSPECTOR.info.modLicenseInfo
-Imports JSONParser.LicenseHelper
+Imports Inspector.POService.LicenseValidator.POLicenseValidator
+Imports Inspector.POService.LicenseValidator
+Imports System.Drawing.Text
+
+
 
 Public Class usctrl_About
 #Region "Constructor"
@@ -18,10 +22,8 @@ Public Class usctrl_About
     ''' <remarks></remarks>
     Public Sub New()
         Dim infra As New Infra.clsGeneral
-        Dim licenseHelper = New LicenseHelper
-        Dim licenseInfo = licenseHelper.GetLicenseInfo()
         Dim versionInfo As Version = System.Reflection.Assembly.GetExecutingAssembly.GetName.Version
-
+        Dim a = New POLicenseValidator
         ' This call is required by the designer.
         InitializeComponent()
         rdLabelInspector.Text = QlmProductName
@@ -29,11 +31,11 @@ Public Class usctrl_About
 
         rdlblLicense.Text = INSPECTORMainResx.str_License_to & vbCrLf & LicenseValidator.CustomerName & vbCrLf & "" & LicenseValidator.CustomerCompany & vbCrLf
 
-        rdlblLicenceStatus.Text += vbCrLf & licenseInfo.LicenseStatus
+        rdlblLicenceStatus.Text += vbCrLf & LicenseValidator.LicenseStatus
 
         'MOD 67
         rdlblLicenceComputerKey.Text += vbCrLf & LicenseValidator.ComputerActionvationKey.ToString
-
+        Console.WriteLine(a.ActualDeviceKey)
         If LicenseValidator.LicenseStatus = ELicenseStatus.EKeyDemo Then rdlblLicenceStatus.Text += vbCrLf & INSPECTORMainResx.str_demo_version_days_left & " " & LicenseValidator.GetLicenseDaysLeft & vbCrLf
         If LicenseValidator.LicenseStatus = ELicenseStatus.EKeyDemo Or LicenseValidator.LicenseStatus = ELicenseStatus.EKeyPermanent Then
         Else
